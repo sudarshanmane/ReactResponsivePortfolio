@@ -318,7 +318,7 @@ font-size: 18px;
     flex-direction: column;
     /* border: 1px solid wheat; */
     transition: backgroud 0.5s ,transform 0.5 s;
-    background-color: rgb(87, 238, 70);
+    background-color: rgb(60, 77, 58);
     opacity: 0.8;
     border-radius: 20px;
     box-shadow: 0 0 10px 5px rgba(179,103,245,0.81);

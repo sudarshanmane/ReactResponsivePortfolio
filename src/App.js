@@ -1,4 +1,6 @@
+import { Carousel } from "react-responsive-carousel";
 import "./App.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 function App() {
   return (
@@ -80,6 +82,30 @@ function App() {
           >
             Download Resume
           </a>
+
+          <Carousel>
+            <div>
+              <img
+                style={{ width: "50px" }}
+                src={require("./Images/newLogo.png")}
+              />
+              <p className="legend">Legend 1</p>
+            </div>
+            <div>
+              <img
+                style={{ width: "50px" }}
+                src={require("./Images/newLogo.png")}
+              />{" "}
+              <p className="legend">Legend 2</p>
+            </div>
+            <div>
+              <img
+                style={{ width: "400px" }}
+                src={require("./Images/Sudarshan_Mane_NB.png")}
+              />{" "}
+              <p className="legend">Legend 3</p>
+            </div>
+          </Carousel>
 
           {/* -----------about---------  */}
 
