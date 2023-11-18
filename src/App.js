@@ -1,13 +1,14 @@
 import { Carousel } from "react-responsive-carousel";
 import "./App.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import GitHubCalendar from "react-github-calendar";
+import "./style.scss";
 
 function App() {
   return (
     <div>
       <>
         <div id="header">
-          {/* <Navbar></Navbar> */}
           <nav>
             <div className="logo">
               <img src={require("./Images/newLogo.png")} alt="" />
@@ -576,6 +577,11 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="github-calender">
+            <div className="github-calender__github-calender">
+              <GitHubCalendar className="calender" username="sudarshanmane" />
+            </div>
+          </div>
 
           {/* contact */}
 
@@ -617,7 +623,6 @@ function App() {
                     </div>
                   </a>
                 </div>
-
                 <h3>©2022 copyright all right reserved</h3>
               </div>
             </div>

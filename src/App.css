@@ -3,9 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
     /* font-family: 'Eczar', serif; */
-    font-family: 'Lora', serif;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    /* font-family: 'Fira Code, monospace', 
+     */
+    /* font-family: 'Lora', serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+font-family: 'Operator Mono, monospace';
 }
 
 body{
