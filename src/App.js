@@ -84,7 +84,7 @@ function App() {
             Download Resume
           </a>
 
-          <Carousel>
+          {/* <Carousel>
             <div>
               <img
                 style={{ width: "50px" }}
@@ -106,7 +106,7 @@ function App() {
               />{" "}
               <p className="legend">Legend 3</p>
             </div>
-          </Carousel>
+          </Carousel> */}
 
           {/* -----------about---------  */}
 
@@ -160,47 +160,47 @@ function App() {
                 </div>
 
                 <div>
-                  <img src="Images/sql.png" alt="" />
+                  <img src={require("./Images/sql.png")} alt="" />
                   <p>MySQL</p>
                 </div>
 
                 <div>
-                  <img src="Images/JDBC.png" alt="" />
+                  <img src={require("./Images/JDBC.png")} alt="" />
                   <p>JDBC</p>
                 </div>
 
                 <div>
-                  <img src="Images/Hiber.png" alt="" />
+                  <img src={require("./Images/Hiber.png")} alt="" />
                   <p>Hibernate</p>
                 </div>
 
                 <div>
-                  <img src="Images/maven.jpg" alt="" />
+                  <img src={require("./Images/maven.jpg")} alt="" />
                   <p>Maven</p>
                 </div>
 
                 <div>
-                  <img src="Images/spring.jpg" alt="" />
+                  <img src={require("./Images/spring.jpg")} alt="" />
                   <p>Spring</p>
                 </div>
 
                 <div>
-                  <img src="Images/sb.png" alt="" />
+                  <img src={require("./Images/sb.png")} alt="" />
                   <p>Spring Boot</p>
                 </div>
 
                 <div>
-                  <img src="Images/HTML.png" alt="" />
+                  <img src={require("./Images/HTML.png")} alt="" />
                   <p>HTML</p>
                 </div>
 
                 <div>
-                  <img src="Images/css.png" alt="" />
+                  <img src={require("./Images/css.png")} alt="" />
                   <p>CSS</p>
                 </div>
 
                 <div>
-                  <img src="Images/js.png" alt="" />
+                  <img src={require("./Images/js.png")} alt="" />
                   <p>JavaScript</p>
                 </div>
               </div>
@@ -214,7 +214,7 @@ function App() {
                 <div>
                   <video
                     controls
-                    poster="Images/tender.png"
+                    poster={require("./Images/tender.png")}
                     style={{
                       display: "flexl",
                       alignItems: "center",
@@ -265,7 +265,7 @@ function App() {
                       >
                         <div>
                           <div>Code</div>
-                          <img src="Images/github.png" alt="" />
+                          <img src={require("./Images/github.png")} alt="" />
                         </div>
                       </a>
                     </div>
@@ -282,7 +282,9 @@ function App() {
                       justifyContent: "center",
                       margin: "auto",
                     }}
-                    src="https://blog.vantagecircle.com/content/images/size/w1000/2021/01/Employee-Management-Meaning-Importance-Tips-Tools---More.png"
+                    src={
+                      "https://cdn.elearningindustry.com/wp-content/uploads/2021/02/learning-and-development-strategies.png"
+                    }
                     alt=""
                   />
 
@@ -325,7 +327,7 @@ function App() {
                       >
                         <div>
                           <div>Code</div>
-                          <img src="Images/github.png" alt="" />
+                          <img src={require("./Images/github.png")} alt="" />
                         </div>
                       </a>
                     </div>
@@ -341,7 +343,9 @@ function App() {
                       justifyContent: "center",
                       margin: "auto",
                     }}
-                    src="https://cdn.elearningindustry.com/wp-content/uploads/2021/02/learning-and-development-strategies.png"
+                    src={
+                      "https://img.freepik.com/free-vector/isometric-online-education-illustration_1284-32914.jpg?w=740&t=st=1700756921~exp=1700757521~hmac=0f5939396794c67e62c430fae2f6254e93c2f439b3480119ad663d54586564e0"
+                    }
                     alt=""
                   />
 
@@ -379,7 +383,7 @@ function App() {
                       >
                         <div>
                           <div>Code</div>
-                          <img src="Images/github.png" alt="" />
+                          <img src={require("./Images/github.png")} alt="" />
                         </div>
                       </a>
                     </div>
@@ -387,7 +391,7 @@ function App() {
                 </div>
 
                 <div>
-                  <img src="Images/nyk.png" alt="" />
+                  <img src={require("./Images/nyk.png")} alt="" />
                   <div id="prdetails">
                     <h1>Nykaa clone</h1>
                     <p>
@@ -408,14 +412,14 @@ function App() {
                       >
                         <div>
                           <div>Code</div>
-                          <img src="Images/github.png" alt="" />
+                          <img src={require("./Images/github.png")} alt="" />
                         </div>
                       </a>
 
                       <a href="https://lnkd.in/dZHGrysM" target="_blank">
                         <div>
                           <div>Link</div>
-                          <img src="Images/link.png" alt="" />
+                          <img src={require("./Images/link.png")} alt="" />
                         </div>
                       </a>
                     </div>
@@ -423,7 +427,7 @@ function App() {
                 </div>
 
                 <div>
-                  <img src="Images/Wheather.png" alt="" />
+                  <img src={require("./Images/Wheather.png")} alt="" />
 
                   <div id="prdetails">
                     <h1>Weather App</h1>
@@ -442,7 +446,7 @@ function App() {
                       >
                         <div>
                           <div>Code</div>
-                          <img src="Images/github.png" alt="" />
+                          <img src={require("./Images/github.png")} alt="" />
                         </div>
                       </a>
 
@@ -452,7 +456,7 @@ function App() {
                       >
                         <div>
                           <div>Link</div>
-                          <img src="Images/link.png" alt="" />
+                          <img src={require("./Images/link.png")} alt="" />
                         </div>
                       </a>
                     </div>
@@ -460,7 +464,7 @@ function App() {
                 </div>
 
                 <div>
-                  <img src="Images/Star.png" alt="" />
+                  <img src={require("./Images/Star.png")} alt="" />
                   <div id="prdetails">
                     <h1>Star Wars search bar</h1>
                     <p>
@@ -480,7 +484,7 @@ function App() {
                       >
                         <div>
                           <div>Code</div>
-                          <img src="Images/github.png" alt="" />
+                          <img src={require("./Images/github.png")} alt="" />
                         </div>
                       </a>
 
@@ -490,15 +494,14 @@ function App() {
                       >
                         <div>
                           <div>Link</div>
-                          <img src="Images/link.png" alt="" />
+                          <img src={require("./Images/link.png")} alt="" />
                         </div>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <img src="Images/h.png" alt="" />
-
+                  <img src={require("./Images/h.png")} alt="" />
                   <div id="prdetails">
                     <h1>Hotstar</h1>
                     <p>
@@ -517,6 +520,8 @@ function App() {
                       >
                         <div>
                           <div>Code</div>
+                          <img src={require("./Images/github.png")} alt="" />
+
                           <img src="Images/github.png" alt="" />
                         </div>
                       </a>
@@ -527,7 +532,7 @@ function App() {
                       >
                         <div>
                           <div>Link</div>
-                          <img src="Images/link.png" alt="" />
+                          <img src={require("./Images/link.png")} alt="" />
                         </div>
                       </a>
                     </div>
@@ -597,28 +602,28 @@ function App() {
                     target="_blank"
                   >
                     <div>
-                      <img src="Images/in.png" alt="" />
+                      <img src={require("./Images/in.png")} alt="" />
                       <p>Likedin</p>
                     </div>
                   </a>
 
                   <a href="https://github.com/sudarshanmane" target="_blank">
                     <div>
-                      <img src="Images/github.png" alt="" />
+                      <img src={require("./Images/github.png")} alt="" />
                       <p>GitHub</p>
                     </div>
                   </a>
 
                   <a href="mailto:sudarshanmane2110@gmail.com">
                     <div>
-                      <img src="Images/gmail.png" alt="" />
+                      <img src={require("./Images/gmail.png")} alt="" />
                       <p>Email</p>
                     </div>
                   </a>
 
                   <a href="tel:9370105149">
                     <div>
-                      <img src="Images/cont.png" alt="" />
+                      <img src={require("./Images/cont.png")} alt="" />
                       <p>phone</p>
                     </div>
                   </a>
