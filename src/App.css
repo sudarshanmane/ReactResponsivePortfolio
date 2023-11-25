@@ -15,6 +15,9 @@ body {
   /* background-color: white; */
   /* color: #fff; */
   background: linear-gradient(to right, #e9c0c8, #bbc6fa);
+  background: url("https://img.freepik.com/premium-vector/abstract-organic-floral-leaves-liquid-wave-minimalist-background-with-colorful-gradient-vivid-vibrant-color-good-greeting-cards-invitations-flyers-social-media-template_181182-17183.jpg?w=1060");
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 html {
@@ -121,6 +124,7 @@ nav ul li a:hover::after {
 
 .header-text {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   text-align: center;
   align-items: center;
@@ -277,9 +281,9 @@ nav ul li a:hover::after {
 
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  gap: 70px 100px;
+  gap: 25px 3%;
   /* border: 1px solid wheat; */
   width: 100%;
   margin-top: -3%;
@@ -291,11 +295,11 @@ nav ul li a:hover::after {
   flex-direction: column;
   /* border: 1px solid wheat; */
   transition: backgroud 0.5s, transform 0.5 s;
-  background-color: orange;
+  background-color: rgb(98, 56, 99);
   opacity: 0.8;
   border-radius: 20px;
   box-shadow: 0 0 10px 5px rgba(179, 103, 245, 0.81);
-  color: black;
+  color: white;
 }
 
 .skills-list > div > img {
@@ -1250,5 +1254,9 @@ nav ul li a:hover::after {
 
   .github-calender__github-calender {
     width: 930px !important;
-    }
+  }
+}
+
+.hello-sections {
+  border: 1px solid black;
 }

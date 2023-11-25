@@ -3,7 +3,7 @@ import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
 import "./style.scss";
-import { Typewriter } from "react-simple-typewriter";
+import Typewriter from "typewriter-effect";
 
 function App() {
   return (
@@ -76,38 +76,30 @@ function App() {
               <br />
               <Typewriter
                 className="typewriter"
-                words={[
-                  "Exploring DSA as a stepping stone",
-                  "into the world of Software Engineering.",
-                ]}
                 options={{
                   strings: [
                     `<div class="wrapper">
-                <h1>
-                  Exploring DSA as a stepping 
+                <b>
+                  Exploring DSA as a stepping  stone into the world Software development. 
                   <br /> 
-                  
-                  <br /> 
-                 
-                </h1>
+                </b>
               </div>`,
                   ],
                   autoStart: true,
                   loop: true,
-                  changeDelay: 10,
-                  delay: 10,
+                  changeDelay: 20,
+                  delay: 20,
                 }}
               />
             </h1>
+            <a
+              id="resume"
+              href="https://drive.google.com/file/d/1g7crRjJS1zXkeB1XW0e6GMIJgB3VDAbn/view?usp=share_link"
+              target="_blank"
+            >
+              Download Resume
+            </a>
           </div>
-
-          <a
-            id="resume"
-            href="https://drive.google.com/file/d/1g7crRjJS1zXkeB1XW0e6GMIJgB3VDAbn/view?usp=share_link"
-            target="_blank"
-          >
-            Download Resume
-          </a>
 
           {/* <Carousel>
             <div>
@@ -176,6 +168,45 @@ function App() {
               <h1 className="sub-title">Skills</h1>
               <div className="skills-list">
                 <div>
+                  <img src={require("./Images/HTML.png")} alt="" />
+                  <p>HTML5</p>
+                </div>
+
+                <div>
+                  <img src={require("./Images/css.png")} alt="" />
+                  <p>CSS3</p>
+                </div>
+
+                <div>
+                  <img src={require("./Images/js.png")} alt="" />
+                  <p>JavaScript</p>
+                </div>
+
+                <div>
+                  <img src={require("./Images/reactJs.png")} alt="" />
+                  <p>ReactJs</p>
+                </div>
+
+                <div>
+                  <img src={require("./Images/Redux.jpeg")} alt="" />
+                  <p>Redux</p>
+                </div>
+
+                <div>
+                  <img src={require("./Images/reduxSaga.jpg")} alt="" />
+                  <p>Redux-Saga</p>
+                </div>
+                <div>
+                  <img src={require("./Images/router.png")} alt="" />
+                  <p>Redux Router</p>
+                </div>
+
+                <div>
+                  <img src={require("./Images/Antd.png")} alt="" />
+                  <p>Ant Design</p>
+                </div>
+
+                <div>
                   <img src={require("./Images/java.png")} alt="" />
                   <p>JAVA</p>
                 </div>
@@ -208,21 +239,6 @@ function App() {
                 <div>
                   <img src={require("./Images/sb.png")} alt="" />
                   <p>Spring Boot</p>
-                </div>
-
-                <div>
-                  <img src={require("./Images/HTML.png")} alt="" />
-                  <p>HTML</p>
-                </div>
-
-                <div>
-                  <img src={require("./Images/css.png")} alt="" />
-                  <p>CSS</p>
-                </div>
-
-                <div>
-                  <img src={require("./Images/js.png")} alt="" />
-                  <p>JavaScript</p>
                 </div>
               </div>
             </div>
