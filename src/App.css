@@ -1,19 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Oswald&family=Roboto+Slab&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /* font-family: 'Eczar', serif; */
-  /* font-family: 'Fira Code, monospace', 
-     */
-  /* font-family: 'Lora', serif;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-  font-family: "Operator Mono, monospace";
+  font-family: "Roboto Slab", serif;
 }
 
 body {
-  /* background-color:  #080808; */
-  /* background-color: white; */
-  /* color: #fff; */
   background: linear-gradient(to right, #e9c0c8, #bbc6fa);
   background: url("https://img.freepik.com/premium-vector/abstract-organic-floral-leaves-liquid-wave-minimalist-background-with-colorful-gradient-vivid-vibrant-color-good-greeting-cards-invitations-flyers-social-media-template_181182-17183.jpg?w=1060");
   background-repeat: repeat;
@@ -102,19 +95,15 @@ nav ul li a:hover::after {
   /* border: 1px solid wheat; */
   margin-top: 0.5%;
   /* font-size: 30px; */
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .header-text > h1 > span:nth-child(2) {
   color: #5f0cf9;
   font-display: inherit;
   font-size: 35px;
-  font-family: monospace, sans-serif, "Gill Sans";
   font-style: italic;
   font-weight: bolder;
   text-shadow: rgba(168, 24, 170, 0.45);
-  /* font-family: 'Courgette', cursive; */
-  font-family: "Merriweather", serif;
 }
 
 .header-text > img {
@@ -144,7 +133,6 @@ nav ul li a:hover::after {
   font-weight: 600;
   border-radius: 5px;
   flex-wrap: wrap;
-  font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 1%;
   margin-bottom: 17%;
 }
@@ -178,6 +166,7 @@ nav ul li a:hover::after {
   padding: 2%;
   border-radius: 7px;
   box-shadow: 0 0 10px 5px rgba(179, 103, 245, 0.81);
+  background: linear-gradient(to right, #bcc5d4, #f1c76c) !important;
 }
 
 .row > div {
@@ -204,9 +193,7 @@ nav ul li a:hover::after {
 
 .row > div:nth-child(2) > p {
   font-size: 18px;
-  /*     font-family: monospace; */
 
-  font-family: "PT Serif", serif;
   font-weight: bold;
 }
 
@@ -221,7 +208,6 @@ nav ul li a:hover::after {
   font-weight: 600;
   cursor: pointer;
   position: relative;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .tab-links::after {
@@ -246,7 +232,6 @@ nav ul li a:hover::after {
 
 .tab-content ul li {
   margin: 10px 0px;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .tab-content ul li span {
@@ -346,7 +331,7 @@ nav ul li a:hover::after {
 
 .projects-list > div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 40% 55%;
   gap: 20px 20px;
   margin-top: 50px;
   transition: backgroud 0.5s, transform 0.5 s, red;
@@ -358,11 +343,17 @@ nav ul li a:hover::after {
   /* box-shadow: 0px 4px 17px 3px rgba(118,98,245,0.81); */
   /* box-shadow: 0px 6px 13px 1px rgba(179,103,245,1); */
   box-shadow: 0px 5px 17px 5px rgba(179, 103, 245, 0.81);
-  background: linear-gradient(to right, #537ab9, #f5af19);
+  background: linear-gradient(to right, #d1d2d3, #23e639);
+}
+.projects-list > div p,
+.projects-list > div ul {
+  font-size: 14px;
 }
 
 .projects-list > div > img {
   transition: backgroud 0.5s;
+  width: 100%;
+  height: 100%;
 }
 
 .projects-list > div:hover {
@@ -389,10 +380,12 @@ nav ul li a:hover::after {
 #prdetails {
   margin-top: 15px;
 }
+#prdetails > h1 {
+  border-bottom: 1px solid #800040;
+}
 
 #prdetails > p {
   margin-top: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #details {
@@ -473,17 +466,17 @@ nav ul li a:hover::after {
   transition: backgroud 0.5s, transform 0.5 s, red;
   /* border: 1px solid black;; */
   color: rgba(94, 70, 233, 0.81);
-  box-shadow: 0px 5px 17px 5px rgba(75, 15, 254, 0.81);
+  /* box-shadow: 0px 5px 17px 5px rgba(75, 15, 254, 0.81); */
   margin-top: 12px;
 
-  background-color: rgb(55, 50, 50);
-  color: rgba(54, 214, 242, 0.81);
+  background-color: rgb(205, 214, 153);
+  color: rgba(31, 47, 49, 0.81);
   border-radius: 12%;
   border-radius: 50%;
 }
 
 #staData {
-  background-color: #e9db5d;
+  background-color: #abdc50;
   transition: backgroud 0.5s, transform 0.5 s, red;
   border-radius: 12%;
 
@@ -491,20 +484,10 @@ nav ul li a:hover::after {
 }
 
 #staData:hover {
-  background-color: #030514;
-  color: #80ff00;
+  background-color: rgb(192, 231, 174);
+  color: teal;
   box-shadow: 0px 5px 17px 5px rgba(119, 123, 240, 0.81);
-  color: rgba(242, 183, 54, 0.81);
   transform: translateY(-10px);
-  border-radius: 12%;
-}
-
-#staData > div:hover {
-  background-color: rgba(179, 103, 245, 0.81);
-  box-shadow: 0px 5px 17px 5px rgba(242, 183, 54, 0.81);
-
-  background-color: black;
-  color: rgba(242, 183, 54, 0.81);
   border-radius: 12%;
 }
 
@@ -528,25 +511,27 @@ nav ul li a:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(220, 231, 250);
+  background-color: rgb(9, 11, 15);
   border-radius: 15px;
   box-shadow: 0 10px 6px -6px rgba(133, 11, 239, 0.81);
   margin-bottom: 30px;
   margin-top: -3%;
   background: linear-gradient(to right, #537ab9, #f5af19) !important;
+  padding-bottom: 30px;
 }
 
 #contact > h2:first-child {
+  text-align: center;
+
+  margin-top: 10px;
+  padding: 10px;
   color: rgb(47, 10, 82);
+  width: 100%;
+  border-bottom: 1px solid white;
 }
 
 #contact > h2 {
   margin-top: 2%;
-  font-family: "Merriweather", serif;
-}
-
-#contact > h2:nth-child(2) {
-  font-family: "Merriweather", serif;
 }
 
 #contact > div {
@@ -578,13 +563,12 @@ nav ul li a:hover::after {
   color: black;
 }
 
-#contact > h3 {
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
 @media all and (min-width: 250px) and (max-width: 299.9px) {
   /*  menu */
+
+  .projects-list > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   nav > div:last-child {
     display: block;
@@ -609,6 +593,10 @@ nav ul li a:hover::after {
     margin-right: 10px;
   }
 
+  .projects-list > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .navbar a {
     float: left;
     color: white;
@@ -628,7 +616,6 @@ nav ul li a:hover::after {
     outline: none;
     color: white;
     background-color: inherit;
-    font-family: inherit;
     margin: 0;
     display: flex;
     align-items: center;
@@ -687,10 +674,6 @@ nav ul li a:hover::after {
   #resume {
     width: 80%;
     height: 35px;
-  }
-
-  .logo {
-    font-family: monospace;
   }
 
   .logo > img {
@@ -856,6 +839,10 @@ nav ul li a:hover::after {
 @media all and (min-width: 300px) and (max-width: 640.99px) {
   /* droupDown */
 
+  .projects-list > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .logo > img {
     width: 100%;
   }
@@ -893,7 +880,6 @@ nav ul li a:hover::after {
     outline: none;
     color: white;
     background-color: inherit;
-    font-family: inherit;
     margin: 0;
     display: flex;
     align-items: center;
@@ -972,12 +958,11 @@ nav ul li a:hover::after {
     width: 60%;
   }
 
-  .logo {
-    font-family: monospace;
-  }
-
   .container {
     padding: 10px 4%;
+  }
+  .header-text {
+    padding-top: -100px !important;
   }
 
   .header-text > h1 {
@@ -1051,10 +1036,6 @@ nav ul li a:hover::after {
   }
 
   /* projects */
-
-  .projects-list > div {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
   .projects-list > div > img {
     width: 100%;
@@ -1141,7 +1122,6 @@ nav ul li a:hover::after {
   }
 
   .logo {
-    font-family: monospace;
     width: 9%;
   }
 
@@ -1203,13 +1183,7 @@ nav ul li a:hover::after {
 
   /* projects */
 
-  .projects-list > div {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .projects-list > div > img {
-    width: 100%;
-
     border-top-left-radius: 10px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 10px;
@@ -1220,11 +1194,14 @@ nav ul li a:hover::after {
     flex-direction: column;
     width: 90%;
     justify-content: center;
-    /* border: 1px solid black; */
     margin-left: 5%;
     margin-bottom: 2%;
     font-size: 18px;
     font-weight: 400;
+  }
+
+  .projects-list > div {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   #adjSta {
@@ -1247,6 +1224,7 @@ nav ul li a:hover::after {
     font-size: 18px;
   }
 }
+
 @media all and (min-width: 1171px) and (max-width: 2048px) {
   .github-calender {
     width: 800px;
@@ -1259,4 +1237,23 @@ nav ul li a:hover::after {
 
 .hello-sections {
   border: 1px solid black;
+}
+
+.github-calender {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: -20%;
+}
+
+.github-title {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #c4e22c;
+  text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5),
+    3px 0 3px #ff002b, 5px 0 3px #800015, 6px 2px 3px rgba(77, 0, 13, 0.5),
+    6px 0 9px #f8ad88, 8px 0 9px #802a00, 9px 2px 9px rgba(77, 25, 0, 0.5),
+    9px 0 18px #ffd500, 11px 0 18px #806a00, 12px 2px 18px rgba(77, 66, 0, 0.5),
+    12px 0 30px #d4ff00, 14px 0 30px #6a8000, 15px 2px 30px rgba(64, 77, 0, 0.5),
+    15px 0 45px #80ff00, 17px 0 45px #408000, 17px 2px 45px rgba(38, 77, 0, 0.5);
 }

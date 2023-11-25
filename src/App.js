@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
 import "./style.scss";
 import Typewriter from "typewriter-effect";
+import { Divider, Tabs } from "antd";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1g7crRjJS1zXkeB1XW0e6GMIJgB3VDAbn/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view?usp=sharing"
                   target="_blank"
                 >
                   Resume
@@ -57,7 +58,7 @@ function App() {
                   <a href="#Statistics">Statistics</a>
                   <a href="#Projects">Contact</a>
                   <a
-                    href="https://drive.google.com/file/d/1g7crRjJS1zXkeB1XW0e6GMIJgB3VDAbn/view?usp=share_link"
+                    href="https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view?usp=sharing"
                     target="_blank"
                   >
                     Resume
@@ -71,7 +72,7 @@ function App() {
         <div id="b">
           <div className="header-text">
             <h1>
-              <span>Hi ,</span> I am <span>Sudarshan</span>
+              <span>Hi,</span> I am <span>Sudarshan</span>
               <br /> Full Stack Web Developer
               <br />
               <Typewriter
@@ -94,7 +95,7 @@ function App() {
             </h1>
             <a
               id="resume"
-              href="https://drive.google.com/file/d/1g7crRjJS1zXkeB1XW0e6GMIJgB3VDAbn/view?usp=share_link"
+              href="https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view?usp=sharing"
               target="_blank"
             >
               Download Resume
@@ -140,23 +141,63 @@ function App() {
                 <div className="about-col-2">
                   <h1 className="sub-title">About Me</h1>
                   <p>
-                    A self Motivated and Ambitious Java Developer.
-                    Problem-solving mindset and ability to perform well in
-                    collaboration. seeking a job in an organization where I can
-                    learn new skills and utilize skills for the growth of myself
-                    and the organization.
+                    Self-motivated ReactJS Developer with over One years of
+                    experience, showcasing proven problem-solving skills and a
+                    strong aptitude for collaborative work. Actively seeking a
+                    position in an organization to leverage my ReactJS
+                    expertise, enhance skills, and contribute to both personal
+                    and organizational growth through innovative solutions and
+                    efficient development practices.
                   </p>
-                  <div className="tab-titles">
-                    <p className="tab-links active-link">Education</p>
-                  </div>
 
-                  <div className="tab-content">
-                    <ul>
-                      <li>
-                        <span>2017- 2021</span> <br />
-                        Bachelor's of Engineering. Pune University
-                      </li>
-                    </ul>
+                  <div className="tab-content" style={{ marginTop: "3%" }}>
+                    <Tabs
+                      type="card"
+                      items={[
+                        {
+                          label: <span>Education</span>,
+                          key: 1,
+                          children: (
+                            <>
+                              <ul style={{ paddingLeft: "10%" }}>
+                                <li>
+                                  Bachelor's of Engineering. Pune University -
+                                  07/2017- 07/2021
+                                </li>
+                              </ul>
+                            </>
+                          ),
+                        },
+                        {
+                          label: <span>Certification</span>,
+                          key: 2,
+                          children: (
+                            <>
+                              <ul style={{ paddingLeft: "10%" }}>
+                                <li>
+                                  Masai School: Full Stack Web Development -
+                                  02/2022 - 11/2022
+                                </li>
+                              </ul>
+                            </>
+                          ),
+                        },
+                        {
+                          label: <span>Organizations</span>,
+                          key: 3,
+                          children: (
+                            <>
+                              <ul style={{ paddingLeft: "10%" }}>
+                                <li>
+                                  Metamind System Private Limited - 02/2023 -
+                                  11/2023
+                                </li>
+                              </ul>
+                            </>
+                          ),
+                        },
+                      ]}
+                    />
                   </div>
                 </div>
               </div>
@@ -249,6 +290,84 @@ function App() {
               <h1 className="sub-title">Projects</h1>
               <div className="projects-list">
                 <div>
+                  <img
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "auto",
+                    }}
+                    src={require("./Images/employeeManament.jpg")}
+                    alt=""
+                  />
+                  <div id="prdetails">
+                    <h1>
+                      File Management System
+                      <br />
+                      <div
+                        style={{
+                          fontSize: "17px",
+                          textAlign: "end",
+                          width: "100%",
+                          color: "lightyellow",
+                          paddingRight: "10%",
+                        }}
+                      >
+                        Organization: Metamind System
+                      </div>
+                    </h1>
+                    <p>
+                      Led the end-to-end development of a comprehensive File
+                      Management System using React JS, focused on streamlining
+                      and digitizing map data. Solely responsible for the
+                      project, demonstrating strong individual initiative and
+                      technical expertise.
+                    </p>
+                    <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
+
+                    <ul
+                      type="circle"
+                      style={{ fontWeight: "lighter", marginLeft: 17 }}
+                    >
+                      <li>
+                        Developed and maintained a React JS frontend for a file
+                        management system used to digitize maps independently
+                      </li>
+                      <li>
+                        Implemented features to allow super admins to upload
+                        files, assign them to agencies, and then to employees
+                        •Developed functionality for users to work on files and
+                        send them for digitization
+                      </li>
+                      <li>
+                        Added support for PDF creation, Excel file generation,
+                        and barcode reading
+                      </li>
+                    </ul>
+
+                    <h4 style={{ marginTop: 7 }}>
+                      Project Duration: 08/2023 - present
+                    </h4>
+                    <h4 style={{ marginTop: 7 }}>
+                      ReactJs | React Router | Redux | Redux Saga | Ant Design |
+                      HTML | CSS | JavaScript | NPM | Github
+                    </h4>
+
+                    <div id="details">
+                      <a
+                        href="https://github.com/sudarshanmane/Tender_Management_System"
+                        target="_blank"
+                      >
+                        <div>
+                          <div>Code</div>
+                          <img src={require("./Images/github.png")} alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
                   <video
                     controls
                     poster={require("./Images/tender.png")}
@@ -257,6 +376,7 @@ function App() {
                       alignItems: "center",
                       justifyContent: "center",
                       marginTop: "2.4%",
+                      width: "100%",
                     }}
                   >
                     {" "}
@@ -267,9 +387,7 @@ function App() {
                   </video>
 
                   <div id="prdetails">
-                    <h1>TenderSolution</h1>
-                    <h3>Tender Management System</h3>
-
+                    <h1>Tender Management System</h1>
                     <p>
                       Whenever a company requires a service/merchandise , a
                       tender is floated. Company maintains an empaneled list of
@@ -319,9 +437,7 @@ function App() {
                       justifyContent: "center",
                       margin: "auto",
                     }}
-                    src={
-                      "https://cdn.elearningindustry.com/wp-content/uploads/2021/02/learning-and-development-strategies.png"
-                    }
+                    src={require("./Images/employeeManament.jpg")}
                     alt=""
                   />
 
@@ -379,10 +495,9 @@ function App() {
                       alignItems: "center",
                       justifyContent: "center",
                       margin: "auto",
+                      height: "100%",
                     }}
-                    src={
-                      "https://img.freepik.com/free-vector/isometric-online-education-illustration_1284-32914.jpg?w=740&t=st=1700756921~exp=1700757521~hmac=0f5939396794c67e62c430fae2f6254e93c2f439b3480119ad663d54586564e0"
-                    }
+                    src={require("./Images/studentMangement.webp")}
                     alt=""
                   />
 
@@ -587,7 +702,7 @@ function App() {
               <div id="adjSta">
                 <div id="staData">
                   <div id="circle">
-                    <h2>1000+</h2>
+                    <h2>7000+</h2>
                   </div>
                   <h3>Hours</h3>
                   <p>of coading</p>
@@ -595,7 +710,7 @@ function App() {
 
                 <div id="staData">
                   <div id="circle">
-                    <h2>200+</h2>
+                    <h2>400+</h2>
                   </div>
                   <h3>GitHub</h3>
                   <p>Contributions</p>
@@ -603,7 +718,7 @@ function App() {
 
                 <div id="staData">
                   <div id="circle">
-                    <h2>7+</h2>
+                    <h2>20+</h2>
                   </div>
                   <h3>Projects</h3>
                   <p>Completed</p>
@@ -620,6 +735,7 @@ function App() {
             </div>
           </div>
           <div className="github-calender">
+            <strong className="github-title">My GitHub Calender</strong>
             <div className="github-calender__github-calender">
               <GitHubCalendar className="calender" username="sudarshanmane" />
             </div>
@@ -665,7 +781,6 @@ function App() {
                     </div>
                   </a>
                 </div>
-                <h3>©2022 copyright all right reserved</h3>
               </div>
             </div>
           </div>
