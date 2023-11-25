@@ -533,7 +533,7 @@ nav ul li a:hover::after {
 }
 
 #contact > h2:first-child {
-  color: rgb(47, 10, 82)
+  color: rgb(47, 10, 82);
 }
 
 #contact > h2 {
@@ -1242,4 +1242,13 @@ nav ul li a:hover::after {
   #contact > div {
     font-size: 18px;
   }
+}
+@media all and (min-width: 1171px) and (max-width: 2048px) {
+  .github-calender {
+    width: 800px;
+  }
+
+  .github-calender__github-calender {
+    width: 930px !important;
+    }
 }

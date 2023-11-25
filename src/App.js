@@ -3,6 +3,7 @@ import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
 import "./style.scss";
+import { Typewriter } from "react-simple-typewriter";
 
 function App() {
   return (
@@ -70,9 +71,33 @@ function App() {
         <div id="b">
           <div className="header-text">
             <h1>
-              {" "}
-              <span>Hi,</span> I am <span>Sudarshan</span>
-              <br /> Java Developer
+              <span>Hi ,</span> I am <span>Sudarshan</span>
+              <br /> Full Stack Web Developer
+              <br />
+              <Typewriter
+                className="typewriter"
+                words={[
+                  "Exploring DSA as a stepping stone",
+                  "into the world of Software Engineering.",
+                ]}
+                options={{
+                  strings: [
+                    `<div class="wrapper">
+                <h1>
+                  Exploring DSA as a stepping 
+                  <br /> 
+                  
+                  <br /> 
+                 
+                </h1>
+              </div>`,
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  changeDelay: 10,
+                  delay: 10,
+                }}
+              />
             </h1>
           </div>
 
@@ -120,7 +145,6 @@ function App() {
                     alt=""
                   />
                 </div>
-
                 <div className="about-col-2">
                   <h1 className="sub-title">About Me</h1>
                   <p>
@@ -146,13 +170,10 @@ function App() {
               </div>
             </div>
           </div>
-
           {/* Skills */}
-
           <div id="skills">
             <div className="container">
               <h1 className="sub-title">Skills</h1>
-
               <div className="skills-list">
                 <div>
                   <img src={require("./Images/java.png")} alt="" />
