@@ -336,7 +336,9 @@ function App() {
                       <li>
                         Implemented features to allow super admins to upload
                         files, assign them to agencies, and then to employees
-                        •Developed functionality for users to work on files and
+                      </li>
+                      <li>
+                        Developed functionality for users to work on files and
                         send them for digitization
                       </li>
                       <li>
