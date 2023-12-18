@@ -7,8 +7,21 @@
 }
 
 body {
-  background: linear-gradient(to right, #e9c0c8, #bbc6fa);
-  background: url("https://img.freepik.com/premium-vector/abstract-organic-floral-leaves-liquid-wave-minimalist-background-with-colorful-gradient-vivid-vibrant-color-good-greeting-cards-invitations-flyers-social-media-template_181182-17183.jpg?w=1060");
+  background: linear-gradient(
+    to top,
+    #bae0ff,
+    #b5f5ec,
+    #d9f7be,
+    #ffbb96,
+    #ffffb8,
+    #f0f5ff,
+    #69c0ff,
+    #ffe58f,
+    #87e8de,
+    #d3f261,
+    #bae0ff,
+    #bae7ff
+  );
   background-repeat: repeat;
   background-size: contain;
 }
@@ -38,6 +51,7 @@ html {
 
 .header-text {
   padding-top: 15%;
+  display: flex;
 }
 
 nav {
@@ -91,6 +105,27 @@ nav ul li a:hover::after {
   margin-top: 5%;
 }
 
+#header-text {
+  display: flex;
+  flex-direction: row;
+}
+#header-text > div:first-child {
+  margin-top: -5%;
+
+  width: 40%;
+}
+#header-text > div:last-child {
+  margin-top: -8%;
+  width: 38%;
+}
+
+#header-text img {
+  width: 100%;
+  background: transparent;
+  margin-top: -5%;
+  border-radius: 15px;
+}
+
 .header-text > h1 {
   /* border: 1px solid wheat; */
   margin-top: 0.5%;
@@ -125,7 +160,8 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 75%;
+  height: auto;
   height: 35px;
   background-color: #39d3f6;
   text-decoration: none;
@@ -565,6 +601,9 @@ nav ul li a:hover::after {
 
 @media all and (min-width: 250px) and (max-width: 299.9px) {
   /*  menu */
+  #header-text h1 {
+    font-size: 14px !important;
+  }
 
   .projects-list > div {
     grid-template-columns: repeat(1, 1fr);
@@ -837,7 +876,13 @@ nav ul li a:hover::after {
 }
 
 @media all and (min-width: 300px) and (max-width: 640.99px) {
-  /* droupDown */
+  #header-text div {
+    margin-top: 5% !important;
+  }
+
+  #header-text h1 {
+    font-size: 10px !important;
+  }
 
   .projects-list > div {
     grid-template-columns: repeat(1, 1fr);
@@ -1112,6 +1157,14 @@ nav ul li a:hover::after {
 }
 
 @media all and (min-width: 641px) and (max-width: 1170px) {
+  #header-text div {
+    margin-top: 0% !important;
+  }
+
+  #header-text h1 {
+    font-size: 20px !important;
+  }
+
   #resume {
     width: 30%;
     height: 35px;
