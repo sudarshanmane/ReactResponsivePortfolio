@@ -103,7 +103,7 @@ function App() {
           </div>
           <div>
             <img
-              src="https://raw.githubusercontent.com/sudarshanmane/sudarshanmane/main/anim1.gif"
+              src="https://github.com/sudarshanmane/sudarshanmane/blob/main/anim1.gif?raw=true"
               alt=""
             />
           </div>
@@ -278,12 +278,10 @@ function App() {
                 <img src={require("./Images/maven.jpg")} alt="" />
                 <p>Maven</p>
               </div>
-
               <div>
                 <img src={require("./Images/spring.jpg")} alt="" />
                 <p>Spring</p>
               </div>
-
               <div>
                 <img src={require("./Images/sb.png")} alt="" />
                 <p>Spring Boot</p>
