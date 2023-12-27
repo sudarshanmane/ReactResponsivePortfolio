@@ -146,7 +146,9 @@ function App() {
                 />
               </div>
               <div className="about-col-2">
-                <h1 className="sub-title">About Me</h1>
+                <h1 className="sub-title" id="aboute_me_title">
+                  About Me
+                </h1>
                 <p>
                   Self-motivated ReactJS Developer with over One years of
                   experience, showcasing proven problem-solving skills and a
@@ -226,6 +228,15 @@ function App() {
               </div>
 
               <div>
+                <img src={require("./Images/bootstrap.jpg")} alt="" />
+                <p>Bootstrap 5</p>
+              </div>
+              <div>
+                <img src={require("./Images/tailwind.png")} alt="" />
+                <p>Tailwind CSS</p>
+              </div>
+
+              <div>
                 <img src={require("./Images/js.png")} alt="" />
                 <p>JavaScript</p>
               </div>
@@ -244,6 +255,7 @@ function App() {
                 <img src={require("./Images/reduxSaga.jpg")} alt="" />
                 <p>Redux-Saga</p>
               </div>
+
               <div>
                 <img src={require("./Images/router.png")} alt="" />
                 <p>Redux Router</p>
@@ -302,25 +314,25 @@ function App() {
                     justifyContent: "center",
                     margin: "auto",
                   }}
-                  src={require("./Images/employeeManament.jpg")}
+                  src={require("./Images/FMS.png")}
                   alt=""
                 />
                 <div id="prdetails">
                   <h1>
                     File Management System
                     <br />
-                    <div
-                      style={{
-                        fontSize: "17px",
-                        textAlign: "end",
-                        width: "100%",
-                        color: "lightyellow",
-                        paddingRight: "10%",
-                      }}
-                    >
-                      Organization: Metamind System
-                    </div>
                   </h1>
+                  <div
+                    style={{
+                      fontSize: "17px",
+                      textAlign: "end",
+                      width: "100%",
+                      color: "lightyellow",
+                      paddingRight: "10%",
+                    }}
+                  >
+                    Organization: Metamind System
+                  </div>
                   <p>
                     Led the end-to-end development of a comprehensive File
                     Management System using React JS, focused on streamlining
@@ -375,54 +387,88 @@ function App() {
               </div>
 
               <div>
-                <video
-                  controls
-                  poster={require("./Images/tender.png")}
+                <img
                   style={{
-                    display: "flexl",
+                    display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    marginTop: "2.4%",
-                    width: "100%",
+                    margin: "auto",
                   }}
-                >
-                  {" "}
-                  <source
-                    src="Images/TenderManagement.mp4"
-                    type="video/mp4"
-                  />{" "}
-                </video>
-
+                  src={require("./Images/QuizzApp.png")}
+                  alt=""
+                />
                 <div id="prdetails">
-                  <h1>Tender Management System</h1>
-                  <p>
-                    Whenever a company requires a service/merchandise , a tender
-                    is floated. Company maintains an empaneled list of Vendors.
-                    The company will then select the most suitable bid and
-                    places the order to that vendor.
-                  </p>
-
-                  <h3 style={{ marginTop: 7 }}>Features:</h3>
+                  <h1>
+                    Quiz App
+                    <br />
+                  </h1>
+                  <p>It is a quiz application</p>
+                  <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
 
                   <ul
                     type="circle"
                     style={{ fontWeight: "lighter", marginLeft: 17 }}
                   >
-                    <li>Login/Signup system</li>
-                    <li> Creating the tenders </li>
-                    <li> Assigning the tender to the vendor</li>
+                    <li>
+                      Student can select the answers until there answer will not
+                      come true.
+                    </li>
+                    <li>
+                      If selected wrong answer then he will get notified by red
+                      color.
+                    </li>
+                    <li>
+                      If selected Correct answer then he will get notified by
+                      green color.
+                    </li>
+                    <li>They can show the total score.</li>
+                    <li>After Finishing the quiz they can restart the quiz.</li>
                   </ul>
 
+                  <h4 style={{ marginTop: 7 }}>Project Duration: One Day</h4>
                   <h4 style={{ marginTop: 7 }}>
-                    A mini project, built within 5 days
-                  </h4>
-                  <h4 style={{ marginTop: 7 }}>
-                    Java | MySQL | JDBC | Spring Boot{" "}
+                    HTML | CSS | JavaScript | Github
                   </h4>
 
                   <div id="details">
                     <a
-                      href="https://github.com/sudarshanmane/Tender_Management_System"
+                      href="https://github.com/sudarshanmane/QuizApp"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>Code</div>
+                        <img src={require("./Images/github.png")} alt="" />
+                      </div>
+                    </a>
+                    <a
+                      href="https://quiz-app-six-ruby.vercel.app/"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>Link</div>
+                        <img src={require("./Images/link.png")} alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src={require("./Images/nyk.png")} alt="" />
+                <div id="prdetails">
+                  <h1>Nykaa clone</h1>
+                  <p>
+                    This website is the clone of the Nykaa. which is one of the
+                    famous E-commerce website in India and we tried to make this
+                    website similar to the original website as much as possible.
+                  </p>
+                  <p>
+                    A collaborative project, built in 6 days by a team of 6
+                    members.
+                  </p>
+                  <p>HTML | CSS | JavaScript </p>
+                  <div id="details">
+                    <a
+                      href="https://github.com/sudarshanmane/NykaaClone"
                       target="_blank"
                     >
                       <div>
@@ -433,9 +479,80 @@ function App() {
                   </div>
                 </div>
               </div>
-
               {/* Emplpoyee Management System */}
+              <div>
+                <img src={require("./Images/Wheather.png")} alt="" />
 
+                <div id="prdetails">
+                  <h1>Weather App</h1>
+                  <p>
+                    You can search weather condition at your city just by
+                    submitting the name of your city. Which will show you the
+                    temprature of your city, max temprature, min temprature,
+                    humidity, etc. and the map of your city also.{" "}
+                  </p>
+                  <p>A mini project, built within 4 days</p>
+                  <p>HTML | CSS | JavaScript </p>
+                  <div id="details">
+                    <a
+                      href="https://github.com/sudarshanmane/Wheather-app"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>Code</div>
+                        <img src={require("./Images/github.png")} alt="" />
+                      </div>
+                    </a>
+
+                    <a
+                      href="https://resonant-narwhal-1c8386.netlify.app/"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>Link</div>
+                        <img src={require("./Images/link.png")} alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src={require("./Images/Star.png")} alt="" />
+                <div id="prdetails">
+                  <h1>Star Wars search bar</h1>
+                  <p>
+                    You can search any characters related to the star wars. It
+                    will show you the details ralated to the character with his
+                    age and the gender just after putting the first letter his
+                    of name.
+                  </p>
+
+                  <p>A mini project, build within 3 days</p>
+                  <p>HTML | CSS | JavaScript </p>
+
+                  <div id="details">
+                    <a
+                      href="https://github.com/sudarshanmane/Star-Wars"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>Code</div>
+                        <img src={require("./Images/github.png")} alt="" />
+                      </div>
+                    </a>
+
+                    <a
+                      href="https://golden-pudding-2b5ec7.netlify.app/"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>Link</div>
+                        <img src={require("./Images/link.png")} alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
               <div>
                 <img
                   style={{
@@ -493,7 +610,6 @@ function App() {
                   </div>
                 </div>
               </div>
-
               {/* Student Management System */}
               <div>
                 <img
@@ -502,7 +618,6 @@ function App() {
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "auto",
-                    height: "100%",
                   }}
                   src={require("./Images/studentMangement.webp")}
                   alt=""
@@ -548,116 +663,6 @@ function App() {
                   </div>
                 </div>
               </div>
-
-              <div>
-                <img src={require("./Images/nyk.png")} alt="" />
-                <div id="prdetails">
-                  <h1>Nykaa clone</h1>
-                  <p>
-                    This website is the clone of the Nykaa. which is one of the
-                    famous E-commerce website in India and we tried to make this
-                    website similar to the original website as much as possible.
-                  </p>
-                  <p>
-                    A collaborative project, built in 6 days by a team of 6
-                    members.
-                  </p>
-                  <p>HTML | CSS | JavaScript </p>
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/NykaaClone"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
-                      </div>
-                    </a>
-
-                    <a href="https://lnkd.in/dZHGrysM" target="_blank">
-                      <div>
-                        <div>Link</div>
-                        <img src={require("./Images/link.png")} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <img src={require("./Images/Wheather.png")} alt="" />
-
-                <div id="prdetails">
-                  <h1>Weather App</h1>
-                  <p>
-                    You can search weather condition at your city just by
-                    submitting the name of your city. Which will show you the
-                    temprature of your city, max temprature, min temprature,
-                    humidity, etc. and the map of your city also.{" "}
-                  </p>
-                  <p>A mini project, built within 4 days</p>
-                  <p>HTML | CSS | JavaScript </p>
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Wheather-app"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
-                      </div>
-                    </a>
-
-                    <a
-                      href="https://resonant-narwhal-1c8386.netlify.app/"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Link</div>
-                        <img src={require("./Images/link.png")} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <img src={require("./Images/Star.png")} alt="" />
-                <div id="prdetails">
-                  <h1>Star Wars search bar</h1>
-                  <p>
-                    You can search any characters related to the star wars. It
-                    will show you the details ralated to the character with his
-                    age and the gender just after putting the first letter his
-                    of name.
-                  </p>
-
-                  <p>A mini project, build within 3 days</p>
-                  <p>HTML | CSS | JavaScript </p>
-
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Star-Wars"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
-                      </div>
-                    </a>
-
-                    <a
-                      href="https://golden-pudding-2b5ec7.netlify.app/"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Link</div>
-                        <img src={require("./Images/link.png")} alt="" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
               <div>
                 <img src={require("./Images/h.png")} alt="" />
                 <div id="prdetails">
@@ -691,6 +696,65 @@ function App() {
                       <div>
                         <div>Link</div>
                         <img src={require("./Images/link.png")} alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <video
+                  controls
+                  poster={require("./Images/tender.png")}
+                  style={{
+                    display: "flexl",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: "2.4%",
+                    width: "100%",
+                  }}
+                >
+                  {" "}
+                  <source
+                    src="Images/TenderManagement.mp4"
+                    type="video/mp4"
+                  />{" "}
+                </video>
+
+                <div id="prdetails">
+                  <h1>Tender Management System</h1>
+                  <p>
+                    Whenever a company requires a service/merchandise , a tender
+                    is floated. Company maintains an empaneled list of Vendors.
+                    The company will then select the most suitable bid and
+                    places the order to that vendor.
+                  </p>
+
+                  <h3 style={{ marginTop: 7 }}>Features:</h3>
+
+                  <ul
+                    type="circle"
+                    style={{ fontWeight: "lighter", marginLeft: 17 }}
+                  >
+                    <li>Login/Signup system</li>
+                    <li> Creating the tenders </li>
+                    <li> Assigning the tender to the vendor</li>
+                  </ul>
+
+                  <h4 style={{ marginTop: 7 }}>
+                    A mini project, built within 5 days
+                  </h4>
+                  <h4 style={{ marginTop: 7 }}>
+                    Java | MySQL | JDBC | Spring Boot{" "}
+                  </h4>
+
+                  <div id="details">
+                    <a
+                      href="https://github.com/sudarshanmane/Tender_Management_System"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>Code</div>
+                        <img src={require("./Images/github.png")} alt="" />
                       </div>
                     </a>
                   </div>

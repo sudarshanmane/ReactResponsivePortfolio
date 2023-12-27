@@ -108,6 +108,7 @@ nav ul li a:hover::after {
 #header-text {
   display: flex;
   flex-direction: row;
+  
 }
 #header-text > div:first-child {
   margin-top: -5%;
@@ -323,8 +324,14 @@ nav ul li a:hover::after {
   color: white;
 }
 
+/* 
+  .skills-list > div {
+    width: 100%;
+  } */
+
+
 .skills-list > div > img {
-  width: 100px;
+  width: 90%;
   height: 100px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -353,7 +360,10 @@ nav ul li a:hover::after {
 /* Projects */
 
 .projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: -20px;
+  gap: 20px 20px;
 }
 
 #projs {
@@ -363,23 +373,23 @@ nav ul li a:hover::after {
 .sub-title {
   margin-top: 7%;
   margin-bottom: 8%;
+
 }
 
 .projects-list > div {
-  display: grid;
-  grid-template-columns: 40% 55%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  /* grid-template-columns: 40% 55%; */
   gap: 20px 20px;
   margin-top: 50px;
   transition: backgroud 0.5s, transform 0.5 s, red;
-  /* border: 1px solid white; */
   border-radius: 10px;
   color: black;
-  /* box-shadow: 0 0 10px 5px rgb(110, 110, 238);. */
-  /* box-shadow: 5px 5px 10px rgb(10, 35, 5); */
-  /* box-shadow: 0px 4px 17px 3px rgba(118,98,245,0.81); */
-  /* box-shadow: 0px 6px 13px 1px rgba(179,103,245,1); */
   box-shadow: 0px 5px 17px 5px rgba(179, 103, 245, 0.81);
-  background: linear-gradient(to right, #d1d2d3, #23e639);
+  /* background: linear-gradient(to right, #cefaa2, #d1e657); */
+    background: radial-gradient(circle, #c877ce, #86c584, #80d8c5,#a9ef39);
+
 }
 .projects-list > div p,
 .projects-list > div ul {
@@ -389,7 +399,9 @@ nav ul li a:hover::after {
 .projects-list > div > img {
   transition: backgroud 0.5s;
   width: 100%;
-  height: 100%;
+  height: 300px;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 .projects-list > div:hover {
@@ -605,6 +617,10 @@ nav ul li a:hover::after {
     font-size: 14px !important;
   }
 
+  .projects-list  {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .projects-list > div {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -635,6 +651,36 @@ nav ul li a:hover::after {
   .projects-list > div {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  #header-text >div:nth-child(2){
+    display: none;
+  }
+
+  .tab-content{
+    display: none;
+  }
+  #myImage{
+    margin-top: 10px;
+  }
+
+  #aboute_me_title{
+    margin-top: -30px !important;
+  }
+
+  #aboute_me_title+p{
+    margin-bottom: 10px;
+    
+  }
+
+  #header-text{
+    width: 100%;
+  }
+  #header-text>div{
+    width: 100% !important;
+    margin-top: 10px !important;
+    border: 1px solid black;
+  }
+
 
   .navbar a {
     float: left;
@@ -884,6 +930,14 @@ nav ul li a:hover::after {
     font-size: 10px !important;
   }
 
+  .projects-list  {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+ .tab-content{
+    display: none;
+  }
+
   .projects-list > div {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1076,10 +1130,6 @@ nav ul li a:hover::after {
     gap: 50px 20px;
   }
 
-  .skills-list > div {
-    width: 100%;
-  }
-
   /* projects */
 
   .projects-list > div > img {
@@ -1161,6 +1211,10 @@ nav ul li a:hover::after {
     margin-top: 0% !important;
   }
 
+.projects-list {
+  grid-template-columns: repeat(1, 1fr);
+ 
+}
   #header-text h1 {
     font-size: 20px !important;
   }
