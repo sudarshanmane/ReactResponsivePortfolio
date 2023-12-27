@@ -338,7 +338,6 @@ function App() {
                     expertise.
                   </p>
                   <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
-
                   <ul
                     type="circle"
                     style={{ fontWeight: "lighter", marginLeft: 17 }}
@@ -360,7 +359,6 @@ function App() {
                       barcode reading
                     </li>
                   </ul>
-
                   <h4 style={{ marginTop: 7 }}>
                     Project Duration: 08/2023 - present
                   </h4>
@@ -368,18 +366,6 @@ function App() {
                     ReactJs | React Router | Redux | Redux Saga | Ant Design |
                     HTML | CSS | JavaScript | NPM | Github
                   </h4>
-
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Tender_Management_System"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
-                      </div>
-                    </a>
-                  </div>
                 </div>
               </div>
 
