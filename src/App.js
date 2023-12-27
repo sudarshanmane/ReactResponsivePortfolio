@@ -102,10 +102,7 @@ function App() {
             </a>
           </div>
           <div>
-            <img
-              src="https://github.com/sudarshanmane/sudarshanmane/blob/main/anim1.gif?raw=true"
-              alt=""
-            />
+            <img src={require("./Images/anim1.gif")} alt="Animated GIF" />
           </div>
         </div>
 
