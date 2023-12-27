@@ -803,7 +803,10 @@ function App() {
         </div>
         <div className="github-calender">
           <strong className="github-title">My GitHub Calender</strong>
-          <div className="github-calender__github-calender">
+          <div
+            className="github-calender__github-calender"
+            style={{ border: "1px solid yellow", background: "white" }}
+          >
             <GitHubCalendar className="calender" username="sudarshanmane" />
           </div>
         </div>
