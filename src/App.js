@@ -770,7 +770,7 @@ function App() {
 
               <div id="staData">
                 <div id="circle">
-                  <h2>20+</h2>
+                  <h2>9+</h2>
                 </div>
                 <h3>Projects</h3>
                 <p>Completed</p>
