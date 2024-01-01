@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Oswald&family=Roboto+Slab&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -94,6 +95,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+
 .logo > img {
   width: 100%;
 }
@@ -101,6 +103,7 @@ nav ul li a:hover::after {
 .logo {
   width: 6%;
 }
+
 .header-text {
   margin-top: 5%;
 }
@@ -108,13 +111,14 @@ nav ul li a:hover::after {
 #header-text {
   display: flex;
   flex-direction: row;
-  
 }
+
 #header-text > div:first-child {
   margin-top: -5%;
 
   width: 40%;
 }
+
 #header-text > div:last-child {
   margin-top: -8%;
   width: 38%;
@@ -275,6 +279,7 @@ nav ul li a:hover::after {
   color: #b54;
   font-size: 18px;
 }
+
 /* Services */
 
 #skills {
@@ -293,12 +298,24 @@ nav ul li a:hover::after {
   margin-top: 50px;
   margin-bottom: 100px;
   color: #c4e22c;
-  text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5),
-    3px 0 3px #ff002b, 5px 0 3px #800015, 6px 2px 3px rgba(77, 0, 13, 0.5),
-    6px 0 9px #f8ad88, 8px 0 9px #802a00, 9px 2px 9px rgba(77, 25, 0, 0.5),
-    9px 0 18px #ffd500, 11px 0 18px #806a00, 12px 2px 18px rgba(77, 66, 0, 0.5),
-    12px 0 30px #d4ff00, 14px 0 30px #6a8000, 15px 2px 30px rgba(64, 77, 0, 0.5),
-    15px 0 45px #80ff00, 17px 0 45px #408000, 17px 2px 45px rgba(38, 77, 0, 0.5);
+  text-shadow:
+    2px 0 0px #800040,
+    3px 2px 0px rgba(77, 0, 38, 0.5),
+    3px 0 3px #ff002b,
+    5px 0 3px #800015,
+    6px 2px 3px rgba(77, 0, 13, 0.5),
+    6px 0 9px #f8ad88,
+    8px 0 9px #802a00,
+    9px 2px 9px rgba(77, 25, 0, 0.5),
+    9px 0 18px #ffd500,
+    11px 0 18px #806a00,
+    12px 2px 18px rgba(77, 66, 0, 0.5),
+    12px 0 30px #d4ff00,
+    14px 0 30px #6a8000,
+    15px 2px 30px rgba(64, 77, 0, 0.5),
+    15px 0 45px #80ff00,
+    17px 0 45px #408000,
+    17px 2px 45px rgba(38, 77, 0, 0.5);
 }
 
 .skills-list {
@@ -306,7 +323,6 @@ nav ul li a:hover::after {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   gap: 25px 3%;
-  /* border: 1px solid wheat; */
   width: 100%;
   margin-top: -3%;
 }
@@ -316,7 +332,9 @@ nav ul li a:hover::after {
   align-items: center;
   flex-direction: column;
   /* border: 1px solid wheat; */
-  transition: backgroud 0.5s, transform 0.5 s;
+  transition:
+    backgroud 0.5s,
+    transform 0.5 s;
   background-color: rgb(98, 56, 99);
   opacity: 0.8;
   border-radius: 20px;
@@ -329,13 +347,14 @@ nav ul li a:hover::after {
     width: 100%;
   } */
 
-
 .skills-list > div > img {
   width: 90%;
   height: 100px;
   margin-bottom: 10px;
   border-radius: 10px;
-  transition: backgroud 0.5s, transform 0.5 s;
+  transition:
+    backgroud 0.5s,
+    transform 0.5 s;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -370,10 +389,10 @@ nav ul li a:hover::after {
   margin-top: -10%;
   padding-top: 3%;
 }
+
 .sub-title {
   margin-top: 7%;
   margin-bottom: 8%;
-
 }
 
 .projects-list > div {
@@ -383,14 +402,17 @@ nav ul li a:hover::after {
   /* grid-template-columns: 40% 55%; */
   gap: 20px 20px;
   margin-top: 50px;
-  transition: backgroud 0.5s, transform 0.5 s, red;
+  transition:
+    backgroud 0.5s,
+    transform 0.5 s,
+    red;
   border-radius: 10px;
   color: black;
   box-shadow: 0px 5px 17px 5px rgba(179, 103, 245, 0.81);
   /* background: linear-gradient(to right, #cefaa2, #d1e657); */
-    background: radial-gradient(circle, #c877ce, #86c584, #80d8c5,#a9ef39);
-
+  background: radial-gradient(circle, #c877ce, #86c584, #80d8c5, #a9ef39);
 }
+
 .projects-list > div p,
 .projects-list > div ul {
   font-size: 14px;
@@ -425,9 +447,11 @@ nav ul li a:hover::after {
   border-bottom-left-radius: 10px;
   /* border: 2px solid red; */
 }
+
 #prdetails {
   margin-top: 15px;
 }
+
 #prdetails > h1 {
   border-bottom: 1px solid #800040;
 }
@@ -449,7 +473,9 @@ nav ul li a:hover::after {
   text-decoration: none;
   background-color: rgb(29, 243, 243);
   cursor: pointer;
-  transition: backgroud 0.5s, transform 0.5 s;
+  transition:
+    backgroud 0.5s,
+    transform 0.5 s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -511,7 +537,10 @@ nav ul li a:hover::after {
   /* box-shadow: 0px 5px 17px 5px rgba(179,103,245,0.81); */
   background-color: rgb(146, 249, 249);
   margin-bottom: 10%;
-  transition: backgroud 0.5s, transform 0.5 s, red;
+  transition:
+    backgroud 0.5s,
+    transform 0.5 s,
+    red;
   /* border: 1px solid black;; */
   color: rgba(94, 70, 233, 0.81);
   /* box-shadow: 0px 5px 17px 5px rgba(75, 15, 254, 0.81); */
@@ -525,7 +554,10 @@ nav ul li a:hover::after {
 
 #staData {
   background-color: #abdc50;
-  transition: backgroud 0.5s, transform 0.5 s, red;
+  transition:
+    backgroud 0.5s,
+    transform 0.5 s,
+    red;
   border-radius: 12%;
 
   box-shadow: 0px 5px 17px 5px rgba(54, 189, 242, 0.81);
@@ -617,7 +649,7 @@ nav ul li a:hover::after {
     font-size: 14px !important;
   }
 
-  .projects-list  {
+  .projects-list {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -652,35 +684,35 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  #header-text >div:nth-child(2){
+  #header-text > div:nth-child(2) {
     display: none;
   }
 
-  .tab-content{
+  .tab-content {
     display: none;
   }
-  #myImage{
+
+  #myImage {
     margin-top: 10px;
   }
 
-  #aboute_me_title{
+  #aboute_me_title {
     margin-top: -30px !important;
   }
 
-  #aboute_me_title+p{
+  #aboute_me_title + p {
     margin-bottom: 10px;
-    
   }
 
-  #header-text{
+  #header-text {
     width: 100%;
   }
-  #header-text>div{
+
+  #header-text > div {
     width: 100% !important;
     margin-top: 10px !important;
     border: 1px solid black;
   }
-
 
   .navbar a {
     float: left;
@@ -719,6 +751,7 @@ nav ul li a:hover::after {
   .dropdown .dropbtn > img {
     width: 50%;
   }
+
   .navbar a:hover,
   .dropdown:hover .dropbtn {
     background-color: rgb(141, 105, 240);
@@ -800,6 +833,7 @@ nav ul li a:hover::after {
   .tab-content {
     margin-left: 20px;
   }
+
   .row {
     justify-content: center;
     flex-direction: column;
@@ -878,7 +912,10 @@ nav ul li a:hover::after {
 
   #staData {
     background-color: #e9db5d;
-    transition: backgroud 0.5s, transform 0.5 s, red;
+    transition:
+      backgroud 0.5s,
+      transform 0.5 s,
+      red;
     border-radius: 12%;
   }
 
@@ -930,11 +967,11 @@ nav ul li a:hover::after {
     font-size: 10px !important;
   }
 
-  .projects-list  {
+  .projects-list {
     grid-template-columns: repeat(1, 1fr);
   }
 
- .tab-content{
+  .tab-content {
     display: none;
   }
 
@@ -997,6 +1034,7 @@ nav ul li a:hover::after {
   .dropdown .dropbtn > img {
     width: 50%;
   }
+
   .navbar a:hover,
   .dropdown:hover .dropbtn {
     background-color: rgb(141, 105, 240);
@@ -1044,6 +1082,7 @@ nav ul li a:hover::after {
     width: 55%;
     height: 35px;
   }
+
   /*   menu Bar */
   nav > div:last-child {
     display: block;
@@ -1060,6 +1099,7 @@ nav ul li a:hover::after {
   .container {
     padding: 10px 4%;
   }
+
   .header-text {
     padding-top: -100px !important;
   }
@@ -1090,6 +1130,7 @@ nav ul li a:hover::after {
   .tab-content {
     margin-left: 20px;
   }
+
   .row {
     justify-content: center;
     flex-direction: column;
@@ -1168,7 +1209,10 @@ nav ul li a:hover::after {
 
   #staData {
     background-color: #e9db5d;
-    transition: backgroud 0.5s, transform 0.5 s, red;
+    transition:
+      backgroud 0.5s,
+      transform 0.5 s,
+      red;
     border-radius: 12%;
   }
 
@@ -1211,10 +1255,10 @@ nav ul li a:hover::after {
     margin-top: 0% !important;
   }
 
-.projects-list {
-  grid-template-columns: repeat(1, 1fr);
- 
-}
+  .projects-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   #header-text h1 {
     font-size: 20px !important;
   }
@@ -1332,7 +1376,7 @@ nav ul li a:hover::after {
   }
 }
 
-@media all and (min-width: 1171px) and (max-width: 2048px) {
+@media all and (min-width: 1171px) and (max-width: 2900px) {
   .github-calender {
     width: 800px;
   }
@@ -1340,6 +1384,12 @@ nav ul li a:hover::after {
   .github-calender__github-calender {
     width: 930px !important;
   }
+}
+
+.projects-list > div > img {
+  height: 400px;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 .hello-sections {
@@ -1357,10 +1407,22 @@ nav ul li a:hover::after {
   margin-bottom: 30px;
   font-size: 25px;
   color: #c4e22c;
-  text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5),
-    3px 0 3px #ff002b, 5px 0 3px #800015, 6px 2px 3px rgba(77, 0, 13, 0.5),
-    6px 0 9px #f8ad88, 8px 0 9px #802a00, 9px 2px 9px rgba(77, 25, 0, 0.5),
-    9px 0 18px #ffd500, 11px 0 18px #806a00, 12px 2px 18px rgba(77, 66, 0, 0.5),
-    12px 0 30px #d4ff00, 14px 0 30px #6a8000, 15px 2px 30px rgba(64, 77, 0, 0.5),
-    15px 0 45px #80ff00, 17px 0 45px #408000, 17px 2px 45px rgba(38, 77, 0, 0.5);
+  text-shadow:
+    2px 0 0px #800040,
+    3px 2px 0px rgba(77, 0, 38, 0.5),
+    3px 0 3px #ff002b,
+    5px 0 3px #800015,
+    6px 2px 3px rgba(77, 0, 13, 0.5),
+    6px 0 9px #f8ad88,
+    8px 0 9px #802a00,
+    9px 2px 9px rgba(77, 25, 0, 0.5),
+    9px 0 18px #ffd500,
+    11px 0 18px #806a00,
+    12px 2px 18px rgba(77, 66, 0, 0.5),
+    12px 0 30px #d4ff00,
+    14px 0 30px #6a8000,
+    15px 2px 30px rgba(64, 77, 0, 0.5),
+    15px 0 45px #80ff00,
+    17px 0 45px #408000,
+    17px 2px 45px rgba(38, 77, 0, 0.5);
 }

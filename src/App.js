@@ -796,6 +796,29 @@ function App() {
           </div>
         </div>
 
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "90%",
+            margin: "auto",
+          }}
+        >
+          <img
+            style={{
+              marginTop: "50px",
+
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              background: "white",
+            }}
+            src="https://github-readme-activity-graph.vercel.app/graph?username=sudarshanmane&theme=github-compact"
+            alt=""
+          />
+        </div>
+
         {/* contact */}
 
         <div id="Projects">
