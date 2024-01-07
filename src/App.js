@@ -796,7 +796,7 @@ function App() {
           </div>
         </div>
 
-        <div
+        {/* <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -817,7 +817,7 @@ function App() {
             src="https://github-readme-activity-graph.vercel.app/graph?username=sudarshanmane&theme=github-compact"
             alt=""
           />
-        </div>
+        </div> */}
 
         {/* contact */}
 
