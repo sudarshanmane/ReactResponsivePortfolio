@@ -8,21 +8,7 @@
 }
 
 body {
-  background: linear-gradient(
-    to top,
-    #bae0ff,
-    #b5f5ec,
-    #d9f7be,
-    #ffbb96,
-    #ffffb8,
-    #f0f5ff,
-    #69c0ff,
-    #ffe58f,
-    #87e8de,
-    #d3f261,
-    #bae0ff,
-    #bae7ff
-  );
+  background:  rgb(200, 225, 241);
   background-repeat: repeat;
   background-size: contain;
 }
@@ -56,7 +42,7 @@ html {
 }
 
 nav {
-  background: linear-gradient(to right, #e9c0c8, #bbc6fa);
+  background: linear-gradient(to right, #c0e9c6, #bbc6fa);
 
   display: flex;
   align-items: center;
@@ -206,8 +192,8 @@ nav ul li a:hover::after {
   justify-content: space-between;
   padding: 2%;
   border-radius: 7px;
-  box-shadow: 0 0 10px 5px rgba(179, 103, 245, 0.81);
-  background: linear-gradient(to right, #bcc5d4, #f1c76c) !important;
+  box-shadow: 0 0 10px 5px rgba(188, 144, 226, 0.81);
+  background: linear-gradient(to right, #a2b7d8, #99bfd5) !important;
 }
 
 .row > div {
@@ -331,7 +317,6 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* border: 1px solid wheat; */
   transition:
     backgroud 0.5s,
     transform 0.5 s;
@@ -408,9 +393,9 @@ nav ul li a:hover::after {
     red;
   border-radius: 10px;
   color: black;
-  box-shadow: 0px 5px 17px 5px rgba(179, 103, 245, 0.81);
-  /* background: linear-gradient(to right, #cefaa2, #d1e657); */
-  background: radial-gradient(circle, #c877ce, #86c584, #80d8c5, #a9ef39);
+  box-shadow: 0px 5px 17px 5px rgba(190, 171, 208, 0.81);
+  background: linear-gradient(to right, #d8dcf6, rgb(150, 171, 196));
+  /* background: radial-gradient(circle, #c877ce, #86c584, #80d8c5, #a9ef39); */
 }
 
 .projects-list > div p,
@@ -445,7 +430,6 @@ nav ul li a:hover::after {
   width: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  /* border: 2px solid red; */
 }
 
 #prdetails {
@@ -468,19 +452,23 @@ nav ul li a:hover::after {
 
 #details > a {
   margin-right: 20px;
-  padding: 7px 7px 7px 7px;
+  padding: 10px 0px !important;
   border-radius: 7px;
   text-decoration: none;
   background-color: rgb(29, 243, 243);
   cursor: pointer;
   transition:
     backgroud 0.5s,
-    transform 0.5 s;
+    transform 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 24%;
 }
+#details > a:first-child{
+  margin-left: auto;
+}
+
 
 #details > a > div {
   display: flex;
@@ -533,23 +521,14 @@ nav ul li a:hover::after {
   border-radius: 50%;
   height: 140px;
   width: 140px;
-  /* border: 8px solid rgb(145, 190, 54); */
-  /* box-shadow: 0px 5px 17px 5px rgba(179,103,245,0.81); */
-  background-color: rgb(146, 249, 249);
   margin-bottom: 10%;
   transition:
     backgroud 0.5s,
     transform 0.5 s,
     red;
-  /* border: 1px solid black;; */
-  color: rgba(94, 70, 233, 0.81);
-  /* box-shadow: 0px 5px 17px 5px rgba(75, 15, 254, 0.81); */
   margin-top: 12px;
-
   background-color: rgb(205, 214, 153);
   color: rgba(31, 47, 49, 0.81);
-  border-radius: 12%;
-  border-radius: 50%;
 }
 
 #staData {
@@ -591,7 +570,6 @@ nav ul li a:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(9, 11, 15);
   border-radius: 15px;
   box-shadow: 0 10px 6px -6px rgba(133, 11, 239, 0.81);
   margin-bottom: 30px;
@@ -602,7 +580,6 @@ nav ul li a:hover::after {
 
 #contact > h2:first-child {
   text-align: center;
-
   margin-top: 10px;
   padding: 10px;
   color: rgb(47, 10, 82);
@@ -992,8 +969,7 @@ nav ul li a:hover::after {
     background-color: rgb(202, 105, 105);
     width: 10%;
     height: 100%;
-    /* border: 1px solid black; */
-    background-color: rgb(36, 35, 34);
+     background-color: rgb(36, 35, 34);
     border-radius: 7px;
   }
 
@@ -1045,11 +1021,9 @@ nav ul li a:hover::after {
     position: absolute;
     background-color: white;
     min-width: 100%;
-    /* margin-right: 100px ; */
     z-index: 1;
     margin-left: -85%;
     border-radius: 10px;
-    /* padding-right: 80%; */
     box-shadow: rgba(84, 9, 243, 0.24) 0px 3px 8px;
   }
 

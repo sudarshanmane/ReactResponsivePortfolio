@@ -3,8 +3,8 @@ import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
 import "./style.scss";
-import Typewriter from "typewriter-effect";
-import { Divider, Tabs } from "antd";
+import { Tabs } from "antd";
+import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
 
 function App() {
   return (
@@ -73,32 +73,14 @@ function App() {
           <div>
             <h1>
               <span>Hi,</span> I am <span>Sudarshan</span>
-              <br /> Full Stack Web Developer
-              <br />
-              <Typewriter
-                className="typewriter"
-                options={{
-                  strings: [
-                    `<div class="wrapper">
-                <b>
-                  Exploring DSA as a stepping  stone into the world Software development. 
-                  <br /> 
-                </b>
-              </div>`,
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  changeDelay: 20,
-                  delay: 20,
-                }}
-              />
+              <div style={{ marginTop: "" }}>Full Stack Web Developer </div>
             </h1>
             <a
               id="resume"
               href="https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view?usp=sharing"
               target="_blank"
             >
-              Resume
+              <div style={{ marginRight: "5px" }}></div> Resume
             </a>
           </div>
           <div>
@@ -164,14 +146,12 @@ function App() {
                         label: <span>Education</span>,
                         key: 1,
                         children: (
-                          <>
-                            <ul style={{ paddingLeft: "10%" }}>
-                              <li>
-                                Bachelor's of Engineering. Pune University -
-                                07/2017- 07/2021
-                              </li>
-                            </ul>
-                          </>
+                          <ul style={{ paddingLeft: "10%" }}>
+                            <li>
+                              Bachelor's of Engineering. Pune University -
+                              07/2017- 07/2021
+                            </li>
+                          </ul>
                         ),
                       },
                       {
@@ -419,7 +399,7 @@ function App() {
                     >
                       <div>
                         <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
+                        <GithubOutlined />{" "}
                       </div>
                     </a>
                     <a
@@ -428,7 +408,7 @@ function App() {
                     >
                       <div>
                         <div>Link</div>
-                        <img src={require("./Images/link.png")} alt="" />
+                        <LinkOutlined />{" "}
                       </div>
                     </a>
                   </div>
@@ -455,7 +435,7 @@ function App() {
                     >
                       <div>
                         <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
+                        <GithubOutlined />{" "}
                       </div>
                     </a>
                   </div>
@@ -482,7 +462,7 @@ function App() {
                     >
                       <div>
                         <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
+                        <GithubOutlined />{" "}
                       </div>
                     </a>
 
@@ -492,7 +472,7 @@ function App() {
                     >
                       <div>
                         <div>Link</div>
-                        <img src={require("./Images/link.png")} alt="" />
+                        <LinkOutlined />{" "}
                       </div>
                     </a>
                   </div>
@@ -519,7 +499,7 @@ function App() {
                     >
                       <div>
                         <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
+                        <GithubOutlined />{" "}
                       </div>
                     </a>
 
@@ -529,7 +509,7 @@ function App() {
                     >
                       <div>
                         <div>Link</div>
-                        <img src={require("./Images/link.png")} alt="" />
+                        <LinkOutlined />{" "}
                       </div>
                     </a>
                   </div>
@@ -586,7 +566,7 @@ function App() {
                     >
                       <div>
                         <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
+                        <GithubOutlined />{" "}
                       </div>
                     </a>
                   </div>
@@ -639,7 +619,7 @@ function App() {
                     >
                       <div>
                         <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
+                        <GithubOutlined />{" "}
                       </div>
                     </a>
                   </div>
@@ -665,9 +645,7 @@ function App() {
                     >
                       <div>
                         <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
-
-                        <img src="Images/github.png" alt="" />
+                        <GithubOutlined />
                       </div>
                     </a>
 
@@ -677,7 +655,7 @@ function App() {
                     >
                       <div>
                         <div>Link</div>
-                        <img src={require("./Images/link.png")} alt="" />
+                        <LinkOutlined />{" "}
                       </div>
                     </a>
                   </div>
@@ -736,7 +714,7 @@ function App() {
                     >
                       <div>
                         <div>Code</div>
-                        <img src={require("./Images/github.png")} alt="" />
+                        <GithubOutlined />{" "}
                       </div>
                     </a>
                   </div>
@@ -796,7 +774,7 @@ function App() {
           </div>
         </div>
 
-        <div
+        {/* <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -817,7 +795,7 @@ function App() {
             src="https://github-readme-activity-graph.vercel.app/graph?username=sudarshanmane&theme=github-compact"
             alt=""
           />
-        </div>
+        </div> */}
 
         {/* contact */}
 
@@ -834,7 +812,7 @@ function App() {
                 >
                   <div>
                     <img src={require("./Images/in.png")} alt="" />
-                    <p>Likedin</p>
+                    <p>Linkedin</p>
                   </div>
                 </a>
 
