@@ -193,7 +193,7 @@ nav ul li a:hover::after {
   padding: 2%;
   border-radius: 7px;
   box-shadow: 0 0 10px 5px rgba(188, 144, 226, 0.81);
-  background: linear-gradient(to right, #a2b7d8, #99bfd5) !important;
+  background: linear-gradient(to right, #619ec7, #a2ea8f) !important;
 }
 
 .row > div {
@@ -815,7 +815,6 @@ nav ul li a:hover::after {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* font-size: 18px; */
   }
 
   .row > div:first-child {
@@ -828,7 +827,6 @@ nav ul li a:hover::after {
     width: 90%;
     display: flex;
     flex-direction: column;
-    /* padding-top: 10px; */
     align-items: center;
     font-size: 18px;
   }
@@ -872,7 +870,6 @@ nav ul li a:hover::after {
     flex-direction: column;
     width: 90%;
     justify-content: center;
-    /* border: 1px solid black; */
     margin-left: 5%;
     margin-bottom: 2%;
     font-size: 15px;
@@ -939,6 +936,11 @@ nav ul li a:hover::after {
   #header-text div {
     margin-top: 5% !important;
   }
+    #header-text div:first-child div:nth-child(3){
+      margin-top: -0px !important;
+      margin-bottom: 7px;
+    }
+
 
   #header-text h1 {
     font-size: 10px !important;
@@ -966,7 +968,6 @@ nav ul li a:hover::after {
 
   .navbar {
     overflow: hidden;
-    background-color: rgb(202, 105, 105);
     width: 10%;
     height: 100%;
      background-color: rgb(36, 35, 34);
