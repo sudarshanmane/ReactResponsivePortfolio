@@ -250,7 +250,6 @@ function App() {
             <div
               style={{
                 color: "rgb(74, 5, 74)",
-                fontFamily: "cursive",
                 fontWeight: "bolder",
               }}
             >
