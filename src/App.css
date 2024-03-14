@@ -422,7 +422,6 @@ nav ul li a:hover::after {
   padding: 15px;
   /* grid-template-columns: 40% 55%; */
   gap: 20px 20px;
-  margin-top: 50px;
   transition:
     backgroud 0.5s,
     transform 0.5 s,
@@ -531,7 +530,7 @@ nav ul li a:hover::after {
 
 /* statistics */
 #Statistics {
-  margin-top: -5%;
+  margin-top: -2%;
 }
 
 #Statistics .container .sub-title {
@@ -658,6 +657,10 @@ nav ul li a:hover::after {
 }
 
 @media all and (min-width: 250px) and (max-width: 299.9px) {
+  
+  .profile-description{
+    font-size: 14px !important;
+  }
   /*  menu */
   #header-text h1 {
     font-size: 14px !important;

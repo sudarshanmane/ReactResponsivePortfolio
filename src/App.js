@@ -252,6 +252,7 @@ function App() {
                 color: "rgb(74, 5, 74)",
                 fontWeight: "bolder",
               }}
+              className="profile-description"
             >
               Results-oriented Full Stack Developer with a year of expertise
               crafting impactful and innovative web applications. Proficient in
@@ -849,7 +850,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="github-calender" style={{ marginTop: "100px" }}>
+        <div className="github-calender" style={{ marginTop: "120px" }}>
           <strong className="github-title">My GitHub Calender</strong>
           <div
             className="github-calender__github-calender"
