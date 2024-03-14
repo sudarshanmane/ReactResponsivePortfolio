@@ -3,10 +3,168 @@ import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
 import "./style.scss";
-import { Tabs } from "antd";
+import { Tabs, Button } from "antd";
 import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
+import Marquee from "react-fast-marquee";
 
 function App() {
+  const skillsDataFrontend = [
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/html.png")}
+          />
+          <h1 className="text-center font-semibold">HTML</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/css.png")}
+          />
+          <h1 className="text-center font-semibold">CSS</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/bootstrap.png")}
+          />
+          <h1 className="text-center font-semibold">Bootstrap</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/tailwind.png")}
+          />
+          <h1 className="text-center font-semibold">Tailwind</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/javaScript.png")}
+          />
+          <h1 className="text-center font-semibold">JavaScript</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/react.png")}
+          />
+          <h1 className="text-center font-semibold">React</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/redux.png")}
+          />
+          <h1 className="text-center font-semibold">Redux</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/react-router.png")}
+          />
+          <h1 className="text-center font-semibold">React Router</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/antd_.png")}
+          />
+          <h1 className="text-center font-semibold">Ant Design</h1>
+        </>
+      ),
+    },
+    {
+      img: <div className="h-24 w-28 bg-transparent" />,
+      transparent: true,
+    },
+  ];
+
+  const tools = [
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/vscode.png")}
+          />
+          <h1 className="text-center font-semibold">vs code</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/github.png")}
+          />
+          <h1 className="text-center font-semibold">GitHub</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./images_1/npm.png")}
+          />
+          <h1 className="text-center font-semibold">NPM</h1>
+        </>
+      ),
+    },
+    {
+      img: <div className="h-24 w-28 bg-transparent" />,
+      transparent: true,
+    },
+  ];
   return (
     <div>
       <div id="header">
@@ -69,48 +227,61 @@ function App() {
       </div>
 
       <div id="b">
-        <div className="header-text" id="header-text">
-          <div>
+        <div className="header-text" id="header-text" style={{}}>
+          <div style={{}}>
             <h1>
-              <span>Hi,</span> I am <span>Sudarshan</span>
-              <div style={{ marginTop: "" }}>Full Stack Web Developer </div>
+              Hi{" "}
+              <img
+                src={require("./Images/HiImage.gif")}
+                style={{
+                  width: "35px",
+                  marginTop: "10px",
+                  marginRight: "5px",
+                }}
+                alt=""
+              />
+              <br></br> I'm Sudarshan Mane
             </h1>
+            <div style={{ color: "rgb(74, 5, 74)", fontFamily: "cursive" }}>
+              Full Stack Web Developer
+            </div>
+            <div style={{ marginBottom: "5px" }}></div>
+
+            <div style={{ color: "rgb(74, 5, 74)", fontFamily: "cursive" }}>
+              Results-oriented Full Stack Developer with a year of expertise
+              crafting impactful and innovative web applications. Proficient in
+              React.js and modern front-end technologies, I am dedicated to
+              optimizing applications for speed, and functionality. My focus
+              lies in creating seamless and responsive interfaces.
+            </div>
+            <div style={{ marginBottom: "10px" }}></div>
             <a
-              id="resume"
-              href="https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view?usp=sharing"
+              href={
+                "https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view"
+              }
               target="_blank"
             >
-              <div style={{ marginRight: "5px" }}></div> Resume
+              <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
+                Resume
+              </Button>
+            </a>
+            <span style={{ marginLeft: "10px" }}></span>
+
+            <a href={"https://github.com/sudarshanmane"} target="_blank">
+              <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
+                ⭐ Star Me On Github
+              </Button>
             </a>
           </div>
-          <div>
-            <img src={require("./Images/anim1.gif")} alt="Animated GIF" />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <img src={require("./Images/seatedImage.png")} alt="" />
           </div>
         </div>
-
-        {/* <Carousel>
-            <div>
-              <img
-                style={{ width: "50px" }}
-                src={require("./Images/newLogo.png")}
-              />
-              <p className="legend">Legend 1</p>
-            </div>
-            <div>
-              <img
-                style={{ width: "50px" }}
-                src={require("./Images/newLogo.png")}
-              />{" "}
-              <p className="legend">Legend 2</p>
-            </div>
-            <div>
-              <img
-                style={{ width: "400px" }}
-                src={require("./Images/Sudarshan_Mane_NB.png")}
-              />{" "}
-              <p className="legend">Legend 3</p>
-            </div>
-          </Carousel> */}
 
         {/* -----------about---------  */}
 
@@ -192,97 +363,65 @@ function App() {
         {/* Skills */}
         <div id="skills">
           <div className="container">
-            <h1 className="sub-title">Skills</h1>
-            <div className="skills-list">
-              <div>
-                <img src={require("./Images/HTML.png")} alt="" />
-                <p>HTML5</p>
-              </div>
+            <h1 className="sub-title" style={{ marginBottom: "40px" }}>
+              Skills
+            </h1>
+          </div>
 
-              <div>
-                <img src={require("./Images/css.png")} alt="" />
-                <p>CSS3</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/bootstrap.jpg")} alt="" />
-                <p>Bootstrap 5</p>
-              </div>
-              <div>
-                <img src={require("./Images/tailwind.png")} alt="" />
-                <p>Tailwind CSS</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/js.png")} alt="" />
-                <p>JavaScript</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/reactJs.png")} alt="" />
-                <p>ReactJs</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/Redux.jpeg")} alt="" />
-                <p>Redux</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/reduxSaga.jpg")} alt="" />
-                <p>Redux-Saga</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/router.png")} alt="" />
-                <p>Redux Router</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/Antd.png")} alt="" />
-                <p>Ant Design</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/java.png")} alt="" />
-                <p>JAVA</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/sql.png")} alt="" />
-                <p>MySQL</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/JDBC.png")} alt="" />
-                <p>JDBC</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/Hiber.png")} alt="" />
-                <p>Hibernate</p>
-              </div>
-
-              <div>
-                <img src={require("./Images/maven.jpg")} alt="" />
-                <p>Maven</p>
-              </div>
-              <div>
-                <img src={require("./Images/spring.jpg")} alt="" />
-                <p>Spring</p>
-              </div>
-              <div>
-                <img src={require("./Images/sb.png")} alt="" />
-                <p>Spring Boot</p>
-              </div>
-            </div>
+          <div className="skills-header">Front End Skills</div>
+          <div style={{ width: "90%", margin: "auto" }}>
+            <Marquee
+              speed={80}
+              pauseOnHover={true}
+              pauseOnClick={true}
+              delay={0}
+              play={true}
+              direction="left"
+              autoFill={true}
+            >
+              {skillsDataFrontend.map((skill, id) => (
+                <div
+                  className={`p-2 rounded-lg ml-3 ${
+                    skill?.transparent ? "bg-transparent" : "bg-yellow-500"
+                  }`}
+                  id="marque-image-container"
+                  key="1"
+                >
+                  {skill.img}
+                </div>
+              ))}
+            </Marquee>
+          </div>
+          <div className="skills-header another-skill-header">Tools</div>
+          <div style={{ width: "90%", margin: "auto" }}>
+            <Marquee
+              speed={80}
+              pauseOnHover={true}
+              pauseOnClick={true}
+              delay={0}
+              play={true}
+              direction="right"
+              autoFill={true}
+            >
+              {tools.map((skill, id) => (
+                <div
+                  className={`p-2 rounded-lg ml-3 ${
+                    skill?.transparent ? "bg-transparent" : "bg-orange-300"
+                  }`}
+                  id="marque-image-container"
+                  key="1"
+                >
+                  {skill.img}
+                </div>
+              ))}
+            </Marquee>
           </div>
         </div>
 
-        <div id="projs">
+        <div id="projs" style={{ marginTop: "-100px", width: "100%" }}>
           <div className="container">
             <h1 className="sub-title">Projects</h1>
-            <div className="projects-list">
+            <div className="projects-list" style={{ marginTop: "-70px" }}>
               <div>
                 <img
                   style={{
@@ -291,7 +430,7 @@ function App() {
                     justifyContent: "center",
                     margin: "auto",
                   }}
-                  src={require("./Images/FMS.png")}
+                  src={require("./Images/fmsImage1.png")}
                   alt=""
                 />
                 <div id="prdetails">
@@ -661,65 +800,6 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div>
-                <video
-                  controls
-                  poster={require("./Images/tender.png")}
-                  style={{
-                    display: "flexl",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginTop: "2.4%",
-                    width: "100%",
-                  }}
-                >
-                  {" "}
-                  <source
-                    src="Images/TenderManagement.mp4"
-                    type="video/mp4"
-                  />{" "}
-                </video>
-
-                <div id="prdetails">
-                  <h1>Tender Management System</h1>
-                  <p>
-                    Whenever a company requires a service/merchandise , a tender
-                    is floated. Company maintains an empaneled list of Vendors.
-                    The company will then select the most suitable bid and
-                    places the order to that vendor.
-                  </p>
-
-                  <h3 style={{ marginTop: 7 }}>Features:</h3>
-
-                  <ul
-                    type="circle"
-                    style={{ fontWeight: "lighter", marginLeft: 17 }}
-                  >
-                    <li>Login/Signup system</li>
-                    <li> Creating the tenders </li>
-                    <li> Assigning the tender to the vendor</li>
-                  </ul>
-
-                  <h4 style={{ marginTop: 7 }}>
-                    A mini project, built within 5 days
-                  </h4>
-                  <h4 style={{ marginTop: 7 }}>
-                    Java | MySQL | JDBC | Spring Boot{" "}
-                  </h4>
-
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Tender_Management_System"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -764,7 +844,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="github-calender">
+        <div className="github-calender" style={{ marginTop: "100px" }}>
           <strong className="github-title">My GitHub Calender</strong>
           <div
             className="github-calender__github-calender"
