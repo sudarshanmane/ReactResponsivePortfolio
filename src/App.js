@@ -247,7 +247,13 @@ function App() {
             </div>
             <div style={{ marginBottom: "5px" }}></div>
 
-            <div style={{ color: "rgb(74, 5, 74)", fontFamily: "cursive" }}>
+            <div
+              style={{
+                color: "rgb(74, 5, 74)",
+                fontFamily: "cursive",
+                fontWeight: "bolder",
+              }}
+            >
               Results-oriented Full Stack Developer with a year of expertise
               crafting impactful and innovative web applications. Proficient in
               React.js and modern front-end technologies, I am dedicated to
