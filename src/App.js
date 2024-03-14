@@ -424,10 +424,10 @@ function App() {
           </div>
         </div>
 
-        <div id="projs" style={{ marginTop: "-100px", width: "100%" }}>
+        <div id="projs" style={{ width: "100%" }}>
           <div className="container">
             <h1 className="sub-title">Projects</h1>
-            <div className="projects-list" style={{ marginTop: "-70px" }}>
+            <div className="projects-list" style={{ marginTop: "10px" }}>
               <div>
                 <img
                   style={{
@@ -850,7 +850,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="github-calender" style={{ marginTop: "120px" }}>
+        <div className="github-calender" style={{ marginTop: "80px" }}>
           <strong className="github-title">My GitHub Calender</strong>
           <div
             className="github-calender__github-calender"
@@ -860,32 +860,9 @@ function App() {
           </div>
         </div>
 
-        {/* <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "90%",
-            margin: "auto",
-          }}
-        >
-          <img
-            style={{
-              marginTop: "50px",
-
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              background: "white",
-            }}
-            src="https://github-readme-activity-graph.vercel.app/graph?username=sudarshanmane&theme=github-compact"
-            alt=""
-          />
-        </div> */}
-
         {/* contact */}
 
-        <div id="Projects">
+        <div id="Projects" style={{ marginTop: "30px" }}>
           <div className="container">
             <h1 className="sub-title">Contact</h1>
             <div id="contact">
