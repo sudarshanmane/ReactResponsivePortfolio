@@ -481,11 +481,7 @@ function App() {
                 Led end-to-end development of a React JS-based File Management
                 System, optimizing map data digitization. Solely managed
                 project, delivering user-friendly system, enhancing
-                accessibility, and meeting all deadlines.Led end-to-end
-                development of a React JS-based File Management System,
-                optimizing map data digitization. Solely managed project,
-                delivering user-friendly system, enhancing accessibility, and
-                meeting all deadlines.
+                accessibility, and meeting all deadlines.
               </h3>
               <div style={{ marginTop: "10px" }}>
                 <span className="text-lg font-semibold"> Skills: </span>
@@ -938,8 +934,17 @@ function App() {
             <GitHubCalendar className="calender" username="sudarshanmane" />
           </div>
         </div>
-        {/* contact */}
-        <div id="Projects" style={{ marginTop: "30px" }}>
+
+        <div style={{ marginTop: "80px" }}>
+          <NewSection
+            img={<img src={require("./images_1/blogs.png")} alt=""></img>}
+            desc={
+              "🌟 Explore the latest insights and tutorials on ReactJS on my Medium blog! 📚 Dive into the world of web development with expert tips and tricks. Click here to visit:"
+            }
+            title={"Blogs"}
+          ></NewSection>
+        </div>
+        <div id="Projects" style={{ marginTop: "-50px" }}>
           <div className="container">
             <h1 className="sub-title">Contact</h1>
             <div id="contact">
