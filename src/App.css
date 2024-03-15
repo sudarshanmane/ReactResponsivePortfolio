@@ -30,7 +30,6 @@ html {
   box-shadow: rgba(84, 9, 243, 0.24) 0px 3px 8px;
   box-shadow: 0px 4px 17px 3px rgba(118, 98, 245, 0.81);
   z-index: 10;
-
 }
 
 .container {
@@ -38,14 +37,13 @@ html {
 }
 
 .header-text {
-  padding-top: 15%;
+  padding-top: 5%;
   display: flex;
   font-size: 20px
 }
 
 nav {
   background: linear-gradient(to right, #c0e9c6, #bbc6fa);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -102,21 +100,15 @@ nav ul li a:hover::after {
 }
 
 #header-text > div:first-child {
-  margin-top: -5%;
-
-  width: 40%;
+  width: 45%;
 }
 
 #header-text > div:last-child {
-  margin-top: -8%;
   width: 38%;
 }
 
 #header-text img {
   width: 100%;
-  background: transparent;
-  margin-top: -5%;
-  border-radius: 15px;
 }
 
 .header-text > h1 {
@@ -429,7 +421,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   color: black;
   box-shadow: 0px 5px 17px 5px rgba(190, 171, 208, 0.81);
-  background: linear-gradient(to right, #d8dcf6, rgb(150, 171, 196));
+  background: linear-gradient(to right, #c7dba1, rgb(169, 170, 214));
   /* background: radial-gradient(circle, #c877ce, #86c584, #80d8c5, #a9ef39); */
 }
 
@@ -725,10 +717,6 @@ nav ul li a:hover::after {
     width: 100%;
   }
 
-  #header-text > div {
-    width: 100% !important;
-    margin-top: 10px !important;
-  }
 
   .navbar a {
     float: left;

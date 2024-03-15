@@ -1,0 +1,45 @@
+.section_container {
+  display: flex;
+  margin: auto !important;
+  padding: 0px !important;
+  margin-bottom: 110px !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.section_container > div:first-child {
+    width: 60%;
+}
+
+
+.section_container > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section_container > div:first-child h3 {
+  margin-top: -20px;
+  color: rgb(100, 24, 100);
+}
+
+.section_container img {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .section_container {
+    flex-direction: column;
+  }
+
+  .section_container > div:first-child {
+    width: 90%;
+}
+
+}
+
+.vertical-timeline-element-content{
+    background-color: rgb(168, 204, 183) !important;
+}

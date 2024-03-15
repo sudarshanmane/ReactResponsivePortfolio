@@ -1,4 +1,3 @@
-import { Carousel } from "react-responsive-carousel";
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
@@ -6,6 +5,13 @@ import "./style.scss";
 import { Tabs, Button } from "antd";
 import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
 import Marquee from "react-fast-marquee";
+import "./sectionContainer.css";
+import NewSection from "./NewSection";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 function App() {
   const skillsDataFrontend = [
@@ -228,7 +234,7 @@ function App() {
 
       <div id="b">
         <div className="header-text" id="header-text" style={{}}>
-          <div style={{}}>
+          <div>
             <h1>
               Hi{" "}
               <img
@@ -240,7 +246,7 @@ function App() {
                 }}
                 alt=""
               />
-              <br></br> I'm Sudarshan Mane
+              <br></br> I'm Sudarshan
             </h1>
             <div style={{ color: "rgb(74, 5, 74)", fontFamily: "cursive" }}>
               Full Stack Web Developer
@@ -288,9 +294,7 @@ function App() {
             <img src={require("./Images/seatedImage.png")} alt="" />
           </div>
         </div>
-
         {/* -----------about---------  */}
-
         <div id="about">
           <div className="container">
             <div className="row">
@@ -367,15 +371,19 @@ function App() {
           </div>
         </div>
         {/* Skills */}
+        <NewSection
+          img={<img src={require("./images_1/skill.png")} alt=""></img>}
+          title="Skills"
+          desc="Versatile with modern technology tools for frontend and backend development."
+        ></NewSection>
         <div id="skills">
-          <div className="container">
-            <h1 className="sub-title" style={{ marginBottom: "40px" }}>
-              Skills
-            </h1>
-          </div>
-
           <div className="skills-header">Front End Skills</div>
-          <div style={{ width: "90%", margin: "auto" }}>
+          <div
+            style={{
+              width: "90%",
+              margin: "auto",
+            }}
+          >
             <Marquee
               speed={80}
               pauseOnHover={true}
@@ -399,7 +407,13 @@ function App() {
             </Marquee>
           </div>
           <div className="skills-header another-skill-header">Tools</div>
-          <div style={{ width: "90%", margin: "auto" }}>
+          <div
+            style={{
+              width: "90%",
+              margin: "auto",
+              overflow: "auto",
+            }}
+          >
             <Marquee
               speed={80}
               pauseOnHover={true}
@@ -423,11 +437,79 @@ function App() {
             </Marquee>
           </div>
         </div>
+        <NewSection
+          img={
+            <img src={require("./images_1/experience-image.png")} alt=""></img>
+          }
+          title="Experience"
+          desc="I have worked with startup as Frontend Developer."
+        ></NewSection>
 
+        <div
+          style={{
+            width: "100%",
+            overflow: "auto",
+            zIndex: "0",
+            marginTop: "-120px",
+          }}
+        >
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "rgb(33, 150, 243)",
+                color: "#330066",
+              }}
+              contentArrowStyle={{
+                borderRight: "7px solid  rgb(33, 150, 243)",
+              }}
+              date="02/2023 - Present"
+              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              icon={<div />}
+            >
+              <h3 className="vertical-timeline-element-title text-2xl ">
+                Metamind System Private Limited
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
+                Software Developer
+              </h4>
+
+              <h3
+                className="text-lgm text-blue-800"
+                style={{ marginTop: "10px" }}
+              >
+                Led end-to-end development of a React JS-based File Management
+                System, optimizing map data digitization. Solely managed
+                project, delivering user-friendly system, enhancing
+                accessibility, and meeting all deadlines.Led end-to-end
+                development of a React JS-based File Management System,
+                optimizing map data digitization. Solely managed project,
+                delivering user-friendly system, enhancing accessibility, and
+                meeting all deadlines.
+              </h3>
+              <div style={{ marginTop: "10px" }}>
+                <span className="text-lg font-semibold"> Skills: </span>
+                <span
+                  className="text-md font-semibold"
+                  style={{ marginTop: "10px" }}
+                >
+                  HTML5 · CSS · Bootstrap · JavaScript · ReactJs · React-Router
+                  · Redux.js · Redux-Saga · GitHub · Ant Design
+                </span>
+              </div>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+        </div>
+
+        <NewSection
+          img={<img src={require("./images_1/projects.png")} alt=""></img>}
+          title="Projects"
+          desc="In my projects, I utilize a broad range of state-of-the-art technology tools for both frontend and backend development. I specialize in creating and deploying web and mobile view applications."
+        ></NewSection>
+        <div style={{ height: "50px" }}></div>
         <div id="projs" style={{ width: "100%" }}>
           <div className="container">
-            <h1 className="sub-title">Projects</h1>
-            <div className="projects-list" style={{ marginTop: "10px" }}>
+            <div className="projects-list">
               <div>
                 <img
                   style={{
@@ -450,7 +532,6 @@ function App() {
                       textAlign: "end",
                       width: "100%",
                       color: "lightyellow",
-                      paddingRight: "10%",
                     }}
                   >
                     Organization: Metamind System
@@ -809,9 +890,7 @@ function App() {
             </div>
           </div>
         </div>
-
         {/* Ṣtatistics */}
-
         <div id="Statistics">
           <div className="container">
             <h1 className="sub-title">Statistics</h1>
@@ -859,9 +938,7 @@ function App() {
             <GitHubCalendar className="calender" username="sudarshanmane" />
           </div>
         </div>
-
         {/* contact */}
-
         <div id="Projects" style={{ marginTop: "30px" }}>
           <div className="container">
             <h1 className="sub-title">Contact</h1>
