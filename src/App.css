@@ -959,7 +959,7 @@ nav ul li a:hover::after {
   }
 }
 
-@media all and (min-width: 300px) and (max-width: 640.99px) {
+@media all and (min-width: 300px) and (max-width: 750.99px) {
   #header-text div:first-child {
     margin-top: 5% !important;
     margin-bottom: 10% !important;
@@ -1256,7 +1256,7 @@ nav ul li a:hover::after {
 }
 
 
-@media all and (min-width: 641px) and (max-width: 1170px) {
+@media all and (min-width: 751px) and (max-width: 1170px) {
   #header-text div {
     margin-top: 0% !important;
   }
