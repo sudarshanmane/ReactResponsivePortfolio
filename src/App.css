@@ -648,8 +648,21 @@ nav ul li a:hover::after {
   color: black;
 }
 
+.dropdown-content{
+  font-size: 17px;
+  background: linear-gradient(to right,  #bbc6fa, #c0e9c6);
+  color: rgb(101, 20, 101) !important;
+}
+
+  .dropdown-content a:hover {
+    border-radius: 1px !important;
+    background: #9caaea;
+    color: #800015;
+    padding: 10px;
+  }
+
+
 @media all and (min-width: 250px) and (max-width: 299.9px) {
-  
   .profile-description{
     font-size: 14px !important;
   }
@@ -735,7 +748,6 @@ nav ul li a:hover::after {
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
     background-color: inherit;
     margin: 0;
     display: flex;
@@ -756,38 +768,26 @@ nav ul li a:hover::after {
     width: 50%;
   }
 
-  .navbar a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: rgb(141, 105, 240);
-  }
+
 
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
     min-width: 100%;
-    /* margin-right: 100px ; */
     z-index: 1;
     margin-left: -90%;
     border-radius: 10px;
-    /* padding-right: 80%; */
     box-shadow: rgba(84, 9, 243, 0.24) 0px 3px 8px;
   }
 
   .dropdown-content a {
     float: none;
-    color: black;
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-decoration: none;
     display: block;
     text-align: left;
-    font-size: 14px;
   }
 
-  .dropdown-content a:hover {
-    background-color: white;
-    border-radius: 10px;
-  }
 
   .dropdown:hover .dropdown-content {
     display: block;
@@ -922,7 +922,6 @@ nav ul li a:hover::after {
 
   #staData:hover {
     background-color: #030514;
-    color: #80ff00;
     box-shadow: 0px 5px 17px 5px rgba(242, 183, 54, 0.81);
     color: rgba(242, 183, 54, 0.81);
     border-radius: 12%;
@@ -1003,14 +1002,12 @@ nav ul li a:hover::after {
   .dropdown {
     float: left;
     overflow: hidden;
-    /* padding: 12px 16px; */
   }
 
   .dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
     background-color: inherit;
     margin: 0;
     display: flex;
@@ -1031,11 +1028,6 @@ nav ul li a:hover::after {
     width: 50%;
   }
 
-  .navbar a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: rgb(141, 105, 240);
-  }
-
   .dropdown-content {
     display: none;
     position: absolute;
@@ -1049,24 +1041,18 @@ nav ul li a:hover::after {
 
   .dropdown-content a {
     float: none;
-    color: black;
     padding: 5px 10px;
     text-decoration: none;
     display: block;
     text-align: left;
-    font-size: 14px;
-  }
-
-  .dropdown-content a:hover {
-    background-color: white;
-    border-radius: 10px;
+    color: rgb(94, 17, 94);
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
+  
   }
 
-  /*  */
 
   #header ul {
     display: none;
@@ -1241,6 +1227,7 @@ nav ul li a:hover::after {
     font-size: 10px;
   }
 }
+
 @media all and  (max-width: 1000px) {
 
    #header-text {
@@ -1254,7 +1241,6 @@ nav ul li a:hover::after {
   }
 
 }
-
 
 @media all and (min-width: 751px) and (max-width: 1170px) {
   #header-text div {
