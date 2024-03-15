@@ -401,7 +401,7 @@ function App() {
             >
               {skillsDataFrontend.map((skill, id) => (
                 <div
-                  className={`p-2 rounded-lg ml-3 ${
+                  className={`${
                     skill?.transparent ? "bg-transparent" : "bg-yellow-500"
                   }`}
                   id="marque-image-container"

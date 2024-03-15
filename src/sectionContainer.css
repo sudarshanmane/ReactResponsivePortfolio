@@ -42,3 +42,20 @@
 .vertical-timeline-element-content{
     background-color: rgb(168, 204, 183) !important;
 }
+
+
+@media screen and (max-width: 1800px) {
+  #marque-image-container{
+    height: 90px !important;
+    width: 90px !important;
+    font-size: 6px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #marque-image-container{
+    height: 80px !important;
+    width: 80px !important;
+    font-size: 5px !important;
+  }
+}
