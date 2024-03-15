@@ -190,6 +190,10 @@ function App() {
               <a href="#skills">Skills</a>
             </li>
             <li>
+              <a href="#experience">Experience</a>
+            </li>
+
+            <li>
               <a href="#projs">Projects</a>
             </li>
             <li>
@@ -217,6 +221,7 @@ function App() {
                 <a href="#b">Home</a>
                 <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
                 <a href="#projs">Projects</a>
                 <a href="#Statistics">Statistics</a>
                 <a href="#Projects">Contact</a>
@@ -371,12 +376,13 @@ function App() {
           </div>
         </div>
         {/* Skills */}
-        <NewSection
-          img={<img src={require("./images_1/skill.png")} alt=""></img>}
-          title="Skills"
-          desc="Versatile with modern technology tools for frontend and backend development."
-        ></NewSection>
+
         <div id="skills">
+          <NewSection
+            img={<img src={require("./images_1/skill.png")} alt=""></img>}
+            title="Skills"
+            desc="Versatile with modern technology tools for frontend and backend development."
+          ></NewSection>
           <div className="skills-header">Front End Skills</div>
           <div
             style={{
@@ -437,13 +443,19 @@ function App() {
             </Marquee>
           </div>
         </div>
-        <NewSection
-          img={
-            <img src={require("./images_1/experience-image.png")} alt=""></img>
-          }
-          title="Experience"
-          desc="I have worked with startup as Frontend Developer."
-        ></NewSection>
+
+        <div id="experience">
+          <NewSection
+            img={
+              <img
+                src={require("./images_1/experience-image.png")}
+                alt=""
+              ></img>
+            }
+            title="Experience"
+            desc="I have worked with startup as Frontend Developer."
+          ></NewSection>
+        </div>
 
         <div
           style={{
@@ -497,13 +509,13 @@ function App() {
           </VerticalTimeline>
         </div>
 
-        <NewSection
-          img={<img src={require("./images_1/projects.png")} alt=""></img>}
-          title="Projects"
-          desc="In my projects, I utilize a broad range of state-of-the-art technology tools for both frontend and backend development. I specialize in creating and deploying web and mobile view applications."
-        ></NewSection>
         <div style={{ height: "50px" }}></div>
         <div id="projs" style={{ width: "100%" }}>
+          <NewSection
+            img={<img src={require("./images_1/projects.png")} alt=""></img>}
+            title="Projects"
+            desc="In my projects, I utilize a broad range of state-of-the-art technology tools for both frontend and backend development. I specialize in creating and deploying web and mobile view applications."
+          ></NewSection>
           <div className="container">
             <div className="projects-list">
               <div>
@@ -935,17 +947,33 @@ function App() {
           </div>
         </div>
 
-        <div style={{ marginTop: "80px" }}>
-          <NewSection
-            img={<img src={require("./images_1/blogs.png")} alt=""></img>}
-            desc={
-              "🌟 Explore the latest insights and tutorials on ReactJS on my Medium blog! 📚 Dive into the world of web development with expert tips and tricks. Click here to visit:"
-            }
-            title={"Blogs"}
-          ></NewSection>
-        </div>
-        <div id="Projects" style={{ marginTop: "-50px" }}>
-          <div className="container">
+        <div id="Projects" style={{ marginTop: "80px", marginBottom: "-70px" }}>
+          <div>
+            <NewSection
+              img={<img src={require("./images_1/blogs.png")} alt=""></img>}
+              desc={
+                <>
+                  🌟 Explore the latest insights and tutorials on ReactJS on my
+                  Medium blog! 📚 Dive into the world of web development with
+                  expert tips and tricks. Click here to visit:
+                  <div style={{ marginTop: "10px" }}>
+                    <a
+                      href={"https://medium.com/@sudarshanmane2110"}
+                      target="_blank"
+                    >
+                      <Button
+                        style={{ background: "rgb(0, 5, 78)", color: "white" }}
+                      >
+                        Visit My Blogs Site
+                      </Button>
+                    </a>
+                  </div>
+                </>
+              }
+              title={"Blogs"}
+            ></NewSection>
+          </div>
+          <div style={{ marginTop: "-80px" }} className="container">
             <h1 className="sub-title">Contact</h1>
             <div id="contact">
               <h2>Get In Touch</h2>
