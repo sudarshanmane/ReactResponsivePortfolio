@@ -12,7 +12,6 @@
     width: 60%;
 }
 
-
 .section_container > div {
   display: flex;
   flex-direction: column;
@@ -33,7 +32,7 @@
   .section_container {
     flex-direction: column;
   }
-
+  
   .section_container > div:first-child {
     width: 90%;
   }
@@ -42,7 +41,6 @@
 .vertical-timeline-element-content{
     background-color: rgb(168, 204, 183) !important;
 }
-
 
 @media screen and (max-width: 1800px) {
   #marque-image-container{
