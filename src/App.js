@@ -362,7 +362,7 @@ function App() {
                             <ul style={{ paddingLeft: "10%" }}>
                               <li>
                                 Metamind System Private Limited - 02/2023 -
-                                11/2023
+                                present
                               </li>
                             </ul>
                           </>
