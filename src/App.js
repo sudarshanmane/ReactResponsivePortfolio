@@ -204,7 +204,7 @@ function App() {
             </li>
             <li>
               <a
-                href="https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
                 target="_blank"
               >
                 Resume
@@ -226,7 +226,7 @@ function App() {
                 <a href="#Statistics">Statistics</a>
                 <a href="#Projects">Contact</a>
                 <a
-                  href="https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
                   target="_blank"
                 >
                   Resume
@@ -241,7 +241,7 @@ function App() {
         <div className="header-text" id="header-text" style={{}}>
           <div>
             <h1>
-              Hi{" "}
+              Hi
               <img
                 src={require("./Images/HiImage.gif")}
                 style={{
@@ -265,16 +265,16 @@ function App() {
               }}
               className="profile-description"
             >
-              Results-oriented Full Stack Developer with a year of expertise
+              Results-oriented React Developer with nearly 2 years of expertise
               crafting impactful and innovative web applications. Proficient in
-              React.js and modern front-end technologies, I am dedicated to
-              optimizing applications for speed, and functionality. My focus
-              lies in creating seamless and responsive interfaces.
+              ReactJs and modern front-end technologies, am dedicated to
+              optimizing applications for speed and functionality. focus lies in
+              creating seamless and responsive interfaces
             </div>
             <div style={{ marginBottom: "10px" }}></div>
             <a
               href={
-                "https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view"
+                "https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
               }
               target="_blank"
             >
@@ -580,6 +580,82 @@ function App() {
                     ReactJs | React Router | Redux | Redux Saga | Ant Design |
                     HTML | CSS | JavaScript | NPM | Github
                   </h4>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "auto",
+                  }}
+                  src={require("./images_1/Screenshot 2024-06-17 154948.png")}
+                  alt=""
+                />
+                <div id="prdetails">
+                  <h1>
+                    Metamind System Website
+                    <br />
+                  </h1>
+                  <div
+                    style={{
+                      fontSize: "17px",
+                      textAlign: "end",
+                      width: "100%",
+                      color: "lightyellow",
+                    }}
+                  >
+                    Organization: Metamind System
+                  </div>
+                  <p>
+                    Crafted a standalone website for MetaMind System Pvt. Ltd.
+                    using React.js, focusing on user engagement and responsive
+                    design. Delivered a polished digital platform to boost
+                    MetaMind's online presence.
+                  </p>
+                  <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
+                  <ul
+                    type="circle"
+                    style={{ fontWeight: "lighter", marginLeft: 17 }}
+                  >
+                    <li>
+                      Led the design and development process for the MetaMind
+                      System Pvt. Ltd. website.
+                    </li>
+                    <li>
+                      Designed the user interface and user experience to ensure
+                      optimal engagement and ease of navigation.
+                    </li>
+                    <li>
+                      Developed frontend components and features using React.js
+                      to create a dynamic and interactive website.
+                    </li>
+                    <li>
+                      Ensured responsiveness across various devices and screen
+                      sizes.
+                    </li>
+                  </ul>
+                  <h4 style={{ marginTop: 7 }}>
+                    Project Duration: 04/2024 - 06/2024
+                  </h4>
+                  <h4 style={{ marginTop: 7 }}>
+                    ReactJs | React Router | Redux | Redux Saga | Ant Design |
+                    HTML | CSS | JavaScript | NPM | Github
+                  </h4>
+                </div>
+
+                <div id="details">
+                  <a
+                    href="https://www.metamindsystem.com/home/main"
+                    target="_blank"
+                  >
+                    <div>
+                      <div>Link</div>
+                      <LinkOutlined />{" "}
+                    </div>
+                  </a>
                 </div>
               </div>
               <div>
