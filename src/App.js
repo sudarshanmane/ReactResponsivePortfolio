@@ -12,6 +12,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import MainContent from "./components/MainContent.jsx";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   const skillsDataFrontend = [
@@ -171,6 +173,50 @@ function App() {
       transparent: true,
     },
   ];
+
+  const backedn = [
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./Images/nodejs.png")}
+          />
+          <h1 className="text-center font-semibold">Node.js</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./Images/express.png")}
+          />
+          <h1 className="text-center font-semibold">Express.js</h1>
+        </>
+      ),
+    },
+    {
+      img: (
+        <>
+          <img
+            className="h-24 w-28"
+            alt=""
+            src={require("./Images/mongodb.png")}
+          />
+          <h1 className="text-center font-semibold">Mongo DB</h1>
+        </>
+      ),
+    },
+    {
+      img: <div className="h-24 w-28 bg-transparent" />,
+      transparent: true,
+    },
+  ];
+
   return (
     <div>
       <div id="header">
@@ -239,57 +285,7 @@ function App() {
 
       <div id="b">
         <div className="header-text" id="header-text" style={{}}>
-          <div>
-            <h1>
-              Hi
-              <img
-                src={require("./Images/HiImage.gif")}
-                style={{
-                  width: "35px",
-                  marginTop: "10px",
-                  marginRight: "5px",
-                }}
-                alt=""
-              />
-              <br></br> I'm Sudarshan
-            </h1>
-            <div style={{ color: "rgb(74, 5, 74)", fontFamily: "cursive" }}>
-              Full Stack Web Developer
-            </div>
-            <div style={{ marginBottom: "5px" }}></div>
-
-            <div
-              style={{
-                color: "rgb(74, 5, 74)",
-                fontWeight: "bolder",
-              }}
-              className="profile-description"
-            >
-              Results-oriented React Developer with nearly 2 years of expertise
-              crafting impactful and innovative web applications. Proficient in
-              ReactJs and modern front-end technologies, am dedicated to
-              optimizing applications for speed and functionality. focus lies in
-              creating seamless and responsive interfaces
-            </div>
-            <div style={{ marginBottom: "10px" }}></div>
-            <a
-              href={
-                "https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
-              }
-              target="_blank"
-            >
-              <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
-                Resume
-              </Button>
-            </a>
-            <span style={{ marginLeft: "10px" }}></span>
-
-            <a href={"https://github.com/sudarshanmane"} target="_blank">
-              <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
-                ⭐ Star Me On Github
-              </Button>
-            </a>
-          </div>
+          <MainContent></MainContent>
           <div
             style={{
               display: "flex",
@@ -300,81 +296,7 @@ function App() {
           </div>
         </div>
         {/* -----------about---------  */}
-        <div id="about">
-          <div className="container">
-            <div className="row">
-              <div className="about-col-1">
-                <img
-                  id="myImage"
-                  src={require("./Images/Sudarshan_Mane_NB.png")}
-                  alt=""
-                />
-              </div>
-              <div className="about-col-2">
-                <h1 className="sub-title" id="aboute_me_title">
-                  About Me
-                </h1>
-                <p>
-                  Self-motivated ReactJS Developer with over One years of
-                  experience, showcasing proven problem-solving skills and a
-                  strong aptitude for collaborative work. Actively seeking a
-                  position in an organization to leverage my ReactJS expertise,
-                  enhance skills, and contribute to both personal and
-                  organizational growth through innovative solutions and
-                  efficient development practices.
-                </p>
-
-                <div className="tab-content" style={{ marginTop: "3%" }}>
-                  <Tabs
-                    type="card"
-                    items={[
-                      {
-                        label: <span>Education</span>,
-                        key: 1,
-                        children: (
-                          <ul style={{ paddingLeft: "10%" }}>
-                            <li>
-                              Bachelor's of Engineering. Pune University -
-                              07/2017- 07/2021
-                            </li>
-                          </ul>
-                        ),
-                      },
-                      {
-                        label: <span>Certification</span>,
-                        key: 2,
-                        children: (
-                          <>
-                            <ul style={{ paddingLeft: "10%" }}>
-                              <li>
-                                Masai School: Full Stack Web Development -
-                                02/2022 - 11/2022
-                              </li>
-                            </ul>
-                          </>
-                        ),
-                      },
-                      {
-                        label: <span>Organizations</span>,
-                        key: 3,
-                        children: (
-                          <>
-                            <ul style={{ paddingLeft: "10%" }}>
-                              <li>
-                                Metamind System Private Limited - 02/2023 -
-                                present
-                              </li>
-                            </ul>
-                          </>
-                        ),
-                      },
-                    ]}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <AboutMe></AboutMe>
         {/* Skills */}
 
         <div id="skills">
@@ -412,7 +334,9 @@ function App() {
               ))}
             </Marquee>
           </div>
-          <div className="skills-header another-skill-header">Tools</div>
+          <div className="skills-header another-skill-header">
+            Backend Skills
+          </div>
           <div
             style={{
               width: "90%",
@@ -429,11 +353,40 @@ function App() {
               direction="right"
               autoFill={true}
             >
+              {backedn.map((skill, id) => (
+                <div
+                  className={`p-2 rounded-lg ml-3 
+                    ${skill?.transparent ? "bg-transparent" : "bg-orange-300"}`}
+                  id="marque-image-container"
+                  key="1"
+                >
+                  {skill.img}
+                </div>
+              ))}
+            </Marquee>
+          </div>
+
+          <div className="skills-header another-skill-header">Tools</div>
+          <div
+            style={{
+              width: "90%",
+              margin: "auto",
+              overflow: "auto",
+            }}
+          >
+            <Marquee
+              speed={80}
+              pauseOnHover={true}
+              pauseOnClick={true}
+              delay={0}
+              play={true}
+              direction="left"
+              autoFill={true}
+            >
               {tools.map((skill, id) => (
                 <div
-                  className={`p-2 rounded-lg ml-3 ${
-                    skill?.transparent ? "bg-transparent" : "bg-orange-300"
-                  }`}
+                  className={`p-2 rounded-lg ml-3 
+                    ${skill?.transparent ? "bg-transparent" : "bg-orange-300"}`}
                   id="marque-image-container"
                   key="1"
                 >
@@ -453,7 +406,7 @@ function App() {
               ></img>
             }
             title="Experience"
-            desc="I have worked with startup as Frontend Developer."
+            desc="Experience working with startups as a MERN Stack Developer, delivering responsive and scalable web applications from frontend to backend."
           ></NewSection>
         </div>
 
@@ -469,41 +422,93 @@ function App() {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{
-                background: "rgb(33, 150, 243)",
+                // background: "rgb(33, 150, 243)",
                 color: "#330066",
               }}
               contentArrowStyle={{
                 borderRight: "7px solid  rgb(33, 150, 243)",
               }}
-              date="02/2023 - Present"
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              date="Feb 2023 - Aug 2024"
+              iconStyle={{
+                background: "rgb(193, 215, 234)",
+                color: "#fff",
+              }}
               icon={<div />}
             >
               <h3 className="vertical-timeline-element-title text-2xl ">
                 Metamind System Private Limited
               </h3>
               <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
-                Software Developer
+                Mern Stack Developer
               </h4>
 
-              <h3
-                className="text-lgm text-blue-800"
+              <div
+                className="text-sm text-blue-800"
                 style={{ marginTop: "10px" }}
               >
-                Led end-to-end development of a React JS-based File Management
-                System, optimizing map data digitization. Solely managed
-                project, delivering user-friendly system, enhancing
-                accessibility, and meeting all deadlines.
+                <ul className="text-sm">
+                  <li>
+                    {" "}
+                    Designed admin and operator dashboards for large-scale map
+                    data digitization
+                  </li>
+                  <li>
+                    Built multi-step workflows (Upload → Digitize → QC → Shape
+                    files)
+                  </li>
+                  <li>
+                    <ol>
+                      Also led the deployment of the company’s website with
+                      responsive and SEO-friendly design
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                // background: "rgb(33, 150, 243)",
+                color: "#330066",
+              }}
+              contentArrowStyle={{
+                borderRight: "7px solid  rgb(33, 150, 243)",
+              }}
+              date="Aug 2023 - Present"
+              iconStyle={{
+                background: "rgb(193, 215, 234)",
+                color: "#fff",
+              }}
+              icon={<div />}
+            >
+              <h3 className="vertical-timeline-element-title text-2xl ">
+                Shaleemar IT Solutions Private Limited
               </h3>
-              <div style={{ marginTop: "10px" }}>
-                <span className="text-lg font-semibold"> Skills: </span>
-                <span
-                  className="text-md font-semibold"
-                  style={{ marginTop: "10px" }}
-                >
-                  HTML5 · CSS · Bootstrap · JavaScript · ReactJs · React-Router
-                  · Redux.js · Redux-Saga · GitHub · Ant Design
-                </span>
+              <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
+                Mern Stack Developer
+              </h4>
+
+              <div
+                className="text-sm text-blue-800"
+                style={{ marginTop: "10px" }}
+              >
+                <ul className="text-sm">
+                  <li>
+                    {" "}
+                    Independently led the complete full-stack development of the
+                    Digital Lost & Found System for Maha Kumbh Mela 2025
+                  </li>
+                  <li>
+                    Integrated multilingual text-to-speech and AI face-matching
+                    APIs
+                  </li>
+                  <li>
+                    <ol>
+                      Contributed to performance tuning and edge case handling
+                      in production
+                    </ol>
+                  </li>
+                </ul>
               </div>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -539,7 +544,7 @@ function App() {
                       fontSize: "17px",
                       textAlign: "end",
                       width: "100%",
-                      color: "lightyellow",
+                      color: "violet",
                     }}
                   >
                     Organization: Metamind System
@@ -604,7 +609,7 @@ function App() {
                       fontSize: "17px",
                       textAlign: "end",
                       width: "100%",
-                      color: "lightyellow",
+                      color: "violet",
                     }}
                   >
                     Organization: Metamind System
@@ -658,6 +663,68 @@ function App() {
                   </a>
                 </div>
               </div>
+
+              <div>
+                <img src={require("./Images/lostandfound.png")} alt="" />
+                <div id="prdetails">
+                  <h1>Digital Lost And Found System</h1>
+                  <div
+                    style={{
+                      fontSize: "17px",
+                      textAlign: "end",
+                      width: "100%",
+                      color: "violet",
+                    }}
+                  >
+                    Organization: Shaleemar IT Solutions
+                  </div>
+                  <p>
+                    The Digital Lost and Found System developed for the
+                    Prayagraj Maha Kumbh Mela 2025 is a robust, full-stack web
+                    application designed to address the challenges of reuniting
+                    lost individuals and items in a large-scale event setting.
+                  </p>
+                  <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
+                  <ul
+                    type="circle"
+                    style={{ fontWeight: "lighter", marginLeft: 17 }}
+                  >
+                    <li>
+                      Independently led the complete full-stack development of
+                      the Digital Lost & Found System for Maha Kumbh Mela 2025
+                    </li>
+                    <li>
+                      Integrated multilingual text-to-speech and AI
+                      face-matching APIs
+                    </li>
+                    <li>
+                      •Contributed to performance tuning and edge case handling
+                      in production
+                    </li>
+                  </ul>
+
+                  <h4 style={{ marginTop: 7 }}>
+                    Project Duration: 08/2024 - Present
+                  </h4>
+
+                  <h4>
+                    React.js | Redux| Tailwind CSS | Node.js | Express.js |
+                    MongoDB
+                  </h4>
+                  <div id="details">
+                    <a
+                      href="https://github.com/sudarshanmane/NykaaClone"
+                      target="_blank"
+                    >
+                      <div>
+                        <div>Code</div>
+                        <GithubOutlined />{" "}
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               <div>
                 <img
                   style={{
@@ -724,33 +791,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div>
-                <img src={require("./Images/nyk.png")} alt="" />
-                <div id="prdetails">
-                  <h1>Nykaa clone</h1>
-                  <p>
-                    This website is the clone of the Nykaa. which is one of the
-                    famous E-commerce website in India and we tried to make this
-                    website similar to the original website as much as possible.
-                  </p>
-                  <p>
-                    A collaborative project, built in 6 days by a team of 6
-                    members.
-                  </p>
-                  <p>HTML | CSS | JavaScript </p>
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/NykaaClone"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+
               {/* Emplpoyee Management System */}
               <div>
                 <img src={require("./Images/Wheather.png")} alt="" />
@@ -788,7 +829,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <img src={require("./Images/Star.png")} alt="" />
                 <div id="prdetails">
                   <h1>Star Wars search bar</h1>
@@ -824,7 +865,7 @@ function App() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div>
                 <img
                   style={{
@@ -883,7 +924,7 @@ function App() {
                 </div>
               </div>
               {/* Student Management System */}
-              <div>
+              {/* <div>
                 <img
                   style={{
                     display: "flex",
@@ -934,8 +975,8 @@ function App() {
                     </a>
                   </div>
                 </div>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <img src={require("./Images/h.png")} alt="" />
                 <div id="prdetails">
                   <h1>Hotstar</h1>
@@ -970,12 +1011,12 @@ function App() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
         {/* Ṣtatistics */}
-        <div id="Statistics">
+        {/* <div id="Statistics">
           <div className="container">
             <h1 className="sub-title">Statistics</h1>
             <div id="adjSta">
@@ -1012,7 +1053,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="github-calender" style={{ marginTop: "80px" }}>
           <strong className="github-title">My GitHub Calender</strong>
           <div

@@ -8,7 +8,7 @@
 }
 
 body {
-  background:  rgb(200, 225, 241);
+  background: #e6effa;
   background-repeat: repeat;
   background-size: contain;
 }
@@ -192,7 +192,7 @@ nav ul li a:hover::after {
   flex-direction: column;
   font-size: 10px;
   align-items: center;
-  background: #76d465;
+  /* background: #76d465; */
 }
 
 #marque-image-container img{
@@ -218,7 +218,7 @@ nav ul li a:hover::after {
   padding: 2%;
   border-radius: 7px;
   box-shadow: 0 0 10px 5px rgba(188, 144, 226, 0.81);
-  background: linear-gradient(to right, #619ec7, #a2ea8f) !important;
+  /* background: linear-gradient(to right, #619ec7, #a2ea8f) !important; */
   margin-bottom: 15px;
 
 }
@@ -421,7 +421,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   color: black;
   box-shadow: 0px 5px 17px 5px rgba(190, 171, 208, 0.81);
-  background: linear-gradient(to right, #c7dba1, rgb(169, 170, 214));
+  background: linear-gradient(to right, #d5e9ec, rgb(236, 236, 248));
   /* background: radial-gradient(circle, #c877ce, #86c584, #80d8c5, #a9ef39); */
 }
 
@@ -433,7 +433,6 @@ nav ul li a:hover::after {
 .projects-list > div > img {
   transition: backgroud 0.5s;
   width: 100%;
-  height: 300px;
   padding: 0px !important;
   margin: 0px !important;
 }
@@ -960,7 +959,7 @@ nav ul li a:hover::after {
 @media all and (min-width: 300px) and (max-width: 750.99px) {
   #header-text div:first-child {
     margin-top: 5% !important;
-    margin-bottom: 10% !important;
+    /* margin-bottom: 10% !important; */
   }
 
   .projects-list {
@@ -1078,7 +1077,7 @@ nav ul li a:hover::after {
   }
 
   .header-text {
-    padding-top: -100px !important;
+    /* padding-top: -100px !important; */
   }
 
   .header-text > h1 {
@@ -1378,7 +1377,7 @@ nav ul li a:hover::after {
 }
 
 .projects-list > div > img {
-  height: 400px;
+  /* height: 400px; */
   padding: 0px !important;
   margin: 0px !important;
 }
