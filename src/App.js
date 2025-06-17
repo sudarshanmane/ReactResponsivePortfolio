@@ -224,7 +224,6 @@ function App() {
           <div className="logo">
             <img src={require("./Images/newLogo.png")} alt="" />
           </div>
-
           <ul>
             <li>
               <a href="#b">Home</a>
@@ -245,9 +244,9 @@ function App() {
             <li>
               <a href="#Statistics">Statistics</a>
             </li>
-            <li>
-              <a href="#blogs">blogs</a>
-            </li>
+            {/* <li>
+              <a href="#blogs">Blogs</a>
+            </li> */}
             <li>
               <a href="#contact-details">Contact</a>
             </li>
