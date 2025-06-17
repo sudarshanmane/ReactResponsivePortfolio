@@ -246,7 +246,10 @@ function App() {
               <a href="#Statistics">Statistics</a>
             </li>
             <li>
-              <a href="#Projects">Contact</a>
+              <a href="#blogs">blogs</a>
+            </li>
+            <li>
+              <a href="#contact-details">Contact</a>
             </li>
             <li>
               <a
@@ -397,7 +400,7 @@ function App() {
           </div>
         </div>
 
-        <div id="experience">
+        <div id="experience" style={{}}>
           <NewSection
             img={
               <img
@@ -415,7 +418,7 @@ function App() {
             width: "100%",
             overflow: "auto",
             zIndex: "0",
-            marginTop: "-120px",
+            paddingTop: "-300px",
           }}
         >
           <VerticalTimeline>
@@ -514,14 +517,14 @@ function App() {
           </VerticalTimeline>
         </div>
 
-        <div style={{ height: "50px" }}></div>
-        <div id="projs" style={{ width: "100%" }}>
+        <div id="projs" style={{ width: "100%", paddingTop: "150px" }}>
           <NewSection
             img={<img src={require("./images_1/projects.png")} alt=""></img>}
             title="Projects"
             desc="In my projects, I utilize a broad range of state-of-the-art technology tools for both frontend and backend development. I specialize in creating and deploying web and mobile view applications."
           ></NewSection>
-          <div className="container">
+
+          <div className="container" style={{ padding: "0px 70px" }}>
             <div className="projects-list">
               <div>
                 <img
@@ -1054,7 +1057,11 @@ function App() {
             </div>
           </div>
         </div> */}
-        <div className="github-calender" style={{ marginTop: "80px" }}>
+        <div
+          className="github-calender"
+          id="Statistics"
+          style={{ paddingTop: "100px" }}
+        >
           <strong className="github-title">My GitHub Calender</strong>
           <div
             className="github-calender__github-calender"
@@ -1064,8 +1071,8 @@ function App() {
           </div>
         </div>
 
-        <div id="Projects" style={{ marginTop: "80px", marginBottom: "-70px" }}>
-          <div>
+        <div id="Projects" style={{ marginBottom: "-70px" }}>
+          <div id="blogs" style={{ paddingTop: "80px" }}>
             <NewSection
               img={<img src={require("./images_1/blogs.png")} alt=""></img>}
               desc={
@@ -1090,42 +1097,48 @@ function App() {
               title={"Blogs"}
             ></NewSection>
           </div>
-          <div style={{ marginTop: "-80px" }} className="container">
-            <h1 className="sub-title">Contact</h1>
-            <div id="contact">
-              <h2>Get In Touch</h2>
-              <h2>Sudarshan Mane</h2>
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/sudarshan-mane-065823236/"
-                  target="_blank"
-                >
-                  <div>
-                    <img src={require("./Images/in.png")} alt="" />
-                    <p>Linkedin</p>
-                  </div>
-                </a>
 
-                <a href="https://github.com/sudarshanmane" target="_blank">
-                  <div>
-                    <img src={require("./Images/github.png")} alt="" />
-                    <p>GitHub</p>
-                  </div>
-                </a>
+          <div
+            style={{ marginTop: "-300px", paddingTop: "200px" }}
+            id="contact-details"
+          >
+            <div className="container">
+              <h1 className="sub-title">Contact</h1>
+              <div id="contact">
+                <h2>Get In Touch</h2>
+                <h2>Sudarshan Mane</h2>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/sudarshan-mane-065823236/"
+                    target="_blank"
+                  >
+                    <div>
+                      <img src={require("./Images/in.png")} alt="" />
+                      <p>Linkedin</p>
+                    </div>
+                  </a>
 
-                <a href="mailto:sudarshanmane2110@gmail.com">
-                  <div>
-                    <img src={require("./Images/gmail.png")} alt="" />
-                    <p>Email</p>
-                  </div>
-                </a>
+                  <a href="https://github.com/sudarshanmane" target="_blank">
+                    <div>
+                      <img src={require("./Images/github.png")} alt="" />
+                      <p>GitHub</p>
+                    </div>
+                  </a>
 
-                <a href="tel:9370105149">
-                  <div>
-                    <img src={require("./Images/cont.png")} alt="" />
-                    <p>phone</p>
-                  </div>
-                </a>
+                  <a href="mailto:sudarshanmane2110@gmail.com">
+                    <div>
+                      <img src={require("./Images/gmail.png")} alt="" />
+                      <p>Email</p>
+                    </div>
+                  </a>
+
+                  <a href="tel:9370105149">
+                    <div>
+                      <img src={require("./Images/cont.png")} alt="" />
+                      <p>phone</p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
