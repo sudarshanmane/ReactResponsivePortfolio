@@ -318,7 +318,7 @@ function App() {
               pauseOnClick={true}
               delay={0}
               play={true}
-              direction="left"
+              direction="right"
               autoFill={true}
             >
               {skillsDataFrontend.map((skill, id) => (
@@ -350,7 +350,7 @@ function App() {
               pauseOnClick={true}
               delay={0}
               play={true}
-              direction="right"
+              direction="left"
               autoFill={true}
             >
               {backedn.map((skill, id) => (
@@ -380,7 +380,7 @@ function App() {
               pauseOnClick={true}
               delay={0}
               play={true}
-              direction="left"
+              direction="right"
               autoFill={true}
             >
               {tools.map((skill, id) => (
@@ -428,6 +428,52 @@ function App() {
               contentArrowStyle={{
                 borderRight: "7px solid  rgb(33, 150, 243)",
               }}
+              date="Aug 2024 - Present"
+              iconStyle={{
+                background: "rgb(193, 215, 234)",
+                color: "#fff",
+              }}
+              icon={<div />}
+            >
+              <h3 className="vertical-timeline-element-title text-2xl ">
+                Shaleemar IT Solutions Private Limited
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
+                Mern Stack Developer
+              </h4>
+
+              <div
+                className="text-sm text-blue-800"
+                style={{ marginTop: "10px" }}
+              >
+                <ul className="text-sm">
+                  <li>
+                    {" "}
+                    Independently led the complete full-stack development of the
+                    Digital Lost & Found System for Maha Kumbh Mela 2025
+                  </li>
+                  <li>
+                    Integrated multilingual text-to-speech and AI face-matching
+                    APIs
+                  </li>
+                  <li>
+                    <ol>
+                      Contributed to performance tuning and edge case handling
+                      in production
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                // background: "rgb(33, 150, 243)",
+                color: "#330066",
+              }}
+              contentArrowStyle={{
+                borderRight: "7px solid  rgb(33, 150, 243)",
+              }}
               date="Feb 2023 - Aug 2024"
               iconStyle={{
                 background: "rgb(193, 215, 234)",
@@ -460,52 +506,6 @@ function App() {
                     <ol>
                       Also led the deployment of the company’s website with
                       responsive and SEO-friendly design
-                    </ol>
-                  </li>
-                </ul>
-              </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              contentStyle={{
-                // background: "rgb(33, 150, 243)",
-                color: "#330066",
-              }}
-              contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
-              }}
-              date="Aug 2023 - Present"
-              iconStyle={{
-                background: "rgb(193, 215, 234)",
-                color: "#fff",
-              }}
-              icon={<div />}
-            >
-              <h3 className="vertical-timeline-element-title text-2xl ">
-                Shaleemar IT Solutions Private Limited
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
-                Mern Stack Developer
-              </h4>
-
-              <div
-                className="text-sm text-blue-800"
-                style={{ marginTop: "10px" }}
-              >
-                <ul className="text-sm">
-                  <li>
-                    {" "}
-                    Independently led the complete full-stack development of the
-                    Digital Lost & Found System for Maha Kumbh Mela 2025
-                  </li>
-                  <li>
-                    Integrated multilingual text-to-speech and AI face-matching
-                    APIs
-                  </li>
-                  <li>
-                    <ol>
-                      Contributed to performance tuning and edge case handling
-                      in production
                     </ol>
                   </li>
                 </ul>
@@ -579,7 +579,7 @@ function App() {
                     </li>
                   </ul>
                   <h4 style={{ marginTop: 7 }}>
-                    Project Duration: 08/2023 - present
+                    Project Duration: Feb 2023- present
                   </h4>
                   <h4 style={{ marginTop: 7 }}>
                     ReactJs | React Router | Redux | Redux Saga | Ant Design |
@@ -643,7 +643,7 @@ function App() {
                     </li>
                   </ul>
                   <h4 style={{ marginTop: 7 }}>
-                    Project Duration: 04/2024 - 06/2024
+                    Project Duration: Aug 2024 - Jul 2024
                   </h4>
                   <h4 style={{ marginTop: 7 }}>
                     ReactJs | React Router | Redux | Redux Saga | Ant Design |
@@ -704,7 +704,7 @@ function App() {
                   </ul>
 
                   <h4 style={{ marginTop: 7 }}>
-                    Project Duration: 08/2024 - Present
+                    Project Duration: Aug2024 - Present
                   </h4>
 
                   <h4>
@@ -874,7 +874,7 @@ function App() {
                     justifyContent: "center",
                     margin: "auto",
                   }}
-                  src={require("./Images/employeeManament.jpg")}
+                  src={require("./Images/image_1.png")}
                   alt=""
                 />
 
@@ -882,10 +882,9 @@ function App() {
 
                 <div id="prdetails">
                   <h1>Employee Management System</h1>
-
                   <p>
                     It is an Employee Management System with the help of this
-                    appliocation, you can manage the details of the employee in
+                    application, you can manage the details of the employee in
                     your company.
                   </p>
 
@@ -906,6 +905,7 @@ function App() {
                   <h4 style={{ marginTop: 7 }}>
                     A mini project, built within 5 days
                   </h4>
+
                   <h4 style={{ marginTop: 7 }}>
                     Java | MySQL | Hibernate | Spring | Spring Boot | Swagger
                   </h4>
