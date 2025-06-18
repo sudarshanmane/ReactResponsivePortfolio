@@ -747,17 +747,7 @@ function App() {
                     React.js | Redux| Tailwind CSS | Node.js | Express.js |
                     MongoDB
                   </h4>
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/NykaaClone"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
+                
                 </div>
               </div>
 
