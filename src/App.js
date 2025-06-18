@@ -1,4 +1,3 @@
-import AOS from "aos";
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
@@ -15,9 +14,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import MainContent from "./components/MainContent.jsx";
 import AboutMe from "./components/AboutMe";
-import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 function App() {
   const skillsDataFrontend = [
@@ -220,31 +216,6 @@ function App() {
       transparent: true,
     },
   ];
-
-  const location = useLocation();
-  const [windowPosition, setWindowPosition] = useState(true);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    AOS.init({
-      once: true,
-      duration: 2000,
-    });
-  }, [location.pathname]);
-
-  useEffect(() => {
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-      if (document.documentElement.scrollTop === 0) {
-        setWindowPosition(true);
-      } else {
-        setWindowPosition(false);
-      }
-    }
-  }, []);
 
   return (
     <div>
