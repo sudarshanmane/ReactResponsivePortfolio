@@ -2,7 +2,7 @@ import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
 import "./style.scss";
-import { Tabs, Button } from "antd";
+import { Button } from "antd";
 import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
 import Marquee from "react-fast-marquee";
 import "./sectionContainer.css";
@@ -446,7 +446,7 @@ function App() {
 
               <div
                 className="text-sm text-blue-800"
-                style={{ marginTop: "10px" }}
+                style={{ marginTop: "10px", paddingLeft: "15px" }}
               >
                 <ul className="text-sm">
                   <li>
@@ -492,7 +492,7 @@ function App() {
 
               <div
                 className="text-sm text-blue-800"
-                style={{ marginTop: "10px" }}
+                style={{ marginTop: "10px", paddingLeft: "15px" }}
               >
                 <ul className="text-sm">
                   <li>
@@ -523,7 +523,7 @@ function App() {
             desc="In my projects, I utilize a broad range of state-of-the-art technology tools for both frontend and backend development. I specialize in creating and deploying web and mobile view applications."
           ></NewSection>
 
-          <div className="container" style={{ padding: "0px 70px" }}>
+          <div className="container proj-container">
             <div className="projects-list">
               <div>
                 <img
@@ -542,6 +542,7 @@ function App() {
                     <br />
                   </h1>
                   <div
+                    className="project-organization"
                     style={{
                       fontSize: "17px",
                       textAlign: "end",
@@ -558,7 +559,13 @@ function App() {
                     demonstrating strong individual initiative and technical
                     expertise.
                   </p>
-                  <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
+                  <h3
+                    className="pixel16"
+                    style={{ marginTop: 7 }}
+                    className="pixel16"
+                  >
+                    Responsibilities:
+                  </h3>
                   <ul
                     type="circle"
                     style={{ fontWeight: "lighter", marginLeft: 17 }}
@@ -580,10 +587,10 @@ function App() {
                       barcode reading
                     </li>
                   </ul>
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     Project Duration: Feb 2023- present
                   </h4>
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     ReactJs | React Router | Redux | Redux Saga | Ant Design |
                     HTML | CSS | JavaScript | NPM | Github
                   </h4>
@@ -607,6 +614,7 @@ function App() {
                     <br />
                   </h1>
                   <div
+                    className="project-organization"
                     style={{
                       fontSize: "17px",
                       textAlign: "end",
@@ -622,7 +630,13 @@ function App() {
                     design. Delivered a polished digital platform to boost
                     MetaMind's online presence.
                   </p>
-                  <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
+                  <h3
+                    className="pixel16"
+                    style={{ marginTop: 7 }}
+                    className="pixel16"
+                  >
+                    Responsibilities:
+                  </h3>
                   <ul
                     type="circle"
                     style={{ fontWeight: "lighter", marginLeft: 17 }}
@@ -644,10 +658,10 @@ function App() {
                       sizes.
                     </li>
                   </ul>
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     Project Duration: Aug 2024 - Jul 2024
                   </h4>
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     ReactJs | React Router | Redux | Redux Saga | Ant Design |
                     HTML | CSS | JavaScript | NPM | Github
                   </h4>
@@ -671,6 +685,7 @@ function App() {
                 <div id="prdetails">
                   <h1>Digital Lost And Found System</h1>
                   <div
+                    className="project-organization"
                     style={{
                       fontSize: "17px",
                       textAlign: "end",
@@ -686,7 +701,13 @@ function App() {
                     application designed to address the challenges of reuniting
                     lost individuals and items in a large-scale event setting.
                   </p>
-                  <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
+                  <h3
+                    className="pixel16"
+                    style={{ marginTop: 7 }}
+                    className="pixel16"
+                  >
+                    Responsibilities:
+                  </h3>
                   <ul
                     type="circle"
                     style={{ fontWeight: "lighter", marginLeft: 17 }}
@@ -705,7 +726,7 @@ function App() {
                     </li>
                   </ul>
 
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     Project Duration: Aug2024 - Present
                   </h4>
 
@@ -744,7 +765,13 @@ function App() {
                     <br />
                   </h1>
                   <p>It is a quiz application</p>
-                  <h3 style={{ marginTop: 7 }}>Responsibilities:</h3>
+                  <h3
+                    className="pixel16"
+                    style={{ marginTop: 7 }}
+                    className="pixel16"
+                  >
+                    Responsibilities:
+                  </h3>
 
                   <ul
                     type="circle"
@@ -766,8 +793,10 @@ function App() {
                     <li>After Finishing the quiz they can restart the quiz.</li>
                   </ul>
 
-                  <h4 style={{ marginTop: 7 }}>Project Duration: One Day</h4>
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
+                    Project Duration: One Day
+                  </h4>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     HTML | CSS | JavaScript | Github
                   </h4>
 
@@ -890,7 +919,9 @@ function App() {
                     your company.
                   </p>
 
-                  <h3 style={{ marginTop: 7 }}>Features:</h3>
+                  <h3 className="pixel16" style={{ marginTop: 7 }}>
+                    Features:
+                  </h3>
 
                   <ul
                     type="circle"
@@ -904,11 +935,11 @@ function App() {
                     <li>Exception Handling</li>
                   </ul>
 
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     A mini project, built within 5 days
                   </h4>
 
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     Java | MySQL | Hibernate | Spring | Spring Boot | Swagger
                   </h4>
 
@@ -947,7 +978,7 @@ function App() {
                     your organization.
                   </p>
 
-                  <h3 style={{ marginTop: 7 }}>Features:</h3>
+                  <h3 className="pixel16" style={{ marginTop: 7 }}>Features:</h3>
 
                   <ul
                     type="circle"
@@ -961,7 +992,7 @@ function App() {
                     <li>Exception Handling</li>
                   </ul>
 
-                  <h4 style={{ marginTop: 7 }}>
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
                     Java | MySQL | Hibernate | Spring | Spring Boot | Swagger
                   </h4>
 
@@ -1066,7 +1097,7 @@ function App() {
             className="github-calender__github-calender"
             style={{ border: "1px solid yellow", background: "white" }}
           >
-            <GitHubCalendar className="calender" username="sudarshanmane" />
+            <GitHubCalendar colorScheme='light' username="sudarshanmane" />
           </div>
         </div>
 
@@ -1104,8 +1135,10 @@ function App() {
             <div className="container">
               <h1 className="sub-title">Contact</h1>
               <div id="contact">
-                <h2>Get In Touch</h2>
-                <h2>Sudarshan Mane</h2>
+                <h2 className="cursive">Get In Touch</h2>
+                <h2 className="" style={{ fontFamily: "cursive" }}>
+                  Sudarshan Mane
+                </h2>
                 <div>
                   <a
                     href="https://www.linkedin.com/in/sudarshan-mane-065823236/"
@@ -1134,7 +1167,7 @@ function App() {
                   <a href="tel:9370105149">
                     <div>
                       <img src={require("./Images/cont.png")} alt="" />
-                      <p>phone</p>
+                      <p>Phone</p>
                     </div>
                   </a>
                 </div>
