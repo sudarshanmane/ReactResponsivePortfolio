@@ -1,3 +1,4 @@
+import AOS from "aos";
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import GitHubCalendar from "react-github-calendar";
@@ -14,6 +15,9 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import MainContent from "./components/MainContent.jsx";
 import AboutMe from "./components/AboutMe";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
   const skillsDataFrontend = [
@@ -217,9 +221,34 @@ function App() {
     },
   ];
 
+  const location = useLocation();
+  const [windowPosition, setWindowPosition] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init({
+      once: true,
+      duration: 2000,
+    });
+  }, [location.pathname]);
+
+  useEffect(() => {
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.documentElement.scrollTop === 0) {
+        setWindowPosition(true);
+      } else {
+        setWindowPosition(false);
+      }
+    }
+  }, []);
+
   return (
     <div>
-      <div id="header">
+      <div id="header" data-aos="fade-down">
         <nav>
           <div className="logo">
             <img src={require("./Images/newLogo.png")} alt="" />
@@ -289,6 +318,7 @@ function App() {
         <div className="header-text" id="header-text" style={{}}>
           <MainContent></MainContent>
           <div
+            data-aos={"fade-left"}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -307,8 +337,11 @@ function App() {
             title="Skills"
             desc="Versatile with modern technology tools for frontend and backend development."
           ></NewSection>
-          <div className="skills-header">Front End Skills</div>
+          <div className="skills-header" data-aos="flip-left">
+            Front End Skills
+          </div>
           <div
+            data-aos="fade-left"
             style={{
               width: "90%",
               margin: "auto",
@@ -336,10 +369,14 @@ function App() {
               ))}
             </Marquee>
           </div>
-          <div className="skills-header another-skill-header">
+          <div
+            className="skills-header another-skill-header"
+            data-aos="flip-right"
+          >
             Backend Skills
           </div>
           <div
+            data-aos="fade-left"
             style={{
               width: "90%",
               margin: "auto",
@@ -368,8 +405,14 @@ function App() {
             </Marquee>
           </div>
 
-          <div className="skills-header another-skill-header">Tools</div>
           <div
+            className="skills-header another-skill-header"
+            data-aos="flip-left"
+          >
+            Tools
+          </div>
+          <div
+            data-aos="fade-right"
             style={{
               width: "90%",
               margin: "auto",
@@ -525,7 +568,7 @@ function App() {
 
           <div className="container proj-container">
             <div className="projects-list">
-              <div>
+              <div data-aos="fade-right">
                 <img
                   style={{
                     display: "flex",
@@ -597,7 +640,7 @@ function App() {
                 </div>
               </div>
 
-              <div>
+              <div data-aos="fade-left">
                 <img
                   style={{
                     display: "flex",
@@ -666,7 +709,6 @@ function App() {
                     HTML | CSS | JavaScript | NPM | Github
                   </h4>
                 </div>
-
                 <div id="details">
                   <a
                     href="https://www.metamindsystem.com/home/main"
@@ -680,7 +722,7 @@ function App() {
                 </div>
               </div>
 
-              <div>
+              <div data-aos="fade-right">
                 <img src={require("./Images/lostandfound.png")} alt="" />
                 <div id="prdetails">
                   <h1>Digital Lost And Found System</h1>
@@ -748,7 +790,7 @@ function App() {
                 </div>
               </div>
 
-              <div>
+              <div data-aos="fade-left">
                 <img
                   style={{
                     display: "flex",
@@ -824,7 +866,7 @@ function App() {
               </div>
 
               {/* Emplpoyee Management System */}
-              <div>
+              <div data-aos="fade-right">
                 <img src={require("./Images/Wheather.png")} alt="" />
 
                 <div id="prdetails">
@@ -897,7 +939,7 @@ function App() {
                   </div>
                 </div>
               </div> */}
-              <div>
+              <div data-aos="fade-left">
                 <img
                   style={{
                     display: "flex",
@@ -1092,12 +1134,15 @@ function App() {
           id="Statistics"
           style={{ paddingTop: "100px" }}
         >
-          <strong className="github-title">My GitHub Calender</strong>
+          <strong className="github-title" data-aos="fade-down">
+            My GitHub Calender
+          </strong>
           <div
+            data-aos="fade-up"
             className="github-calender__github-calender"
             style={{ border: "1px solid yellow", background: "white" }}
           >
-            <GitHubCalendar colorScheme='light' username="sudarshanmane" />
+            <GitHubCalendar colorScheme="light" username="sudarshanmane" />
           </div>
         </div>
 
@@ -1133,8 +1178,10 @@ function App() {
             id="contact-details"
           >
             <div className="container">
-              <h1 className="sub-title">Contact</h1>
-              <div id="contact">
+              <h1 className="sub-title" data-aos="flip-left">
+                Contact
+              </h1>
+              <div id="contact" data-aos="fade-up">
                 <h2 className="cursive">Get In Touch</h2>
                 <h2 className="" style={{ fontFamily: "cursive" }}>
                   Sudarshan Mane

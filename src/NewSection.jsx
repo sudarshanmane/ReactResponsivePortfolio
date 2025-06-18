@@ -5,10 +5,12 @@ const NewSection = ({ img, title, desc }) => {
   return (
     <div className="section_container">
       <div>
-        <h1 className="sub-title">{title}</h1>
-        <h3>{desc}</h3>
+        <h1 className="sub-title" data-aos="flip-left">
+          {title}
+        </h1>
+        <h3 data-aos="fade-up">{desc}</h3>
       </div>
-      <div>{img} </div>
+      <div data-aos="fade-left">{img} </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from "react";
 
 const MainContent = () => {
   return (
-    <div>
+    <div data-aos="fade-right">
       <b>
         <div>
           <h2>
@@ -30,7 +30,9 @@ const MainContent = () => {
           MERN Stack Developer
           <br />
           <img
-            style={{  width: "250px" }}
+            data-aos="flip-left"
+            data-aos-duration="2000"
+            style={{ width: "250px" }}
             src={require("./../Images/mernn.png")}
             alt=""
           />

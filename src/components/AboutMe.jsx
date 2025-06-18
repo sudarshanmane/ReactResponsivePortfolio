@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div id="about">
+    <div id="about" data-aos="fade-down">
       <div className="container">
         <div className="row">
           <div className="about-col-1">
