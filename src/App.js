@@ -747,7 +747,6 @@ function App() {
                     React.js | Redux| Tailwind CSS | Node.js | Express.js |
                     MongoDB
                   </h4>
-                
                 </div>
               </div>
 
@@ -900,65 +899,7 @@ function App() {
                   </div>
                 </div>
               </div> */}
-              <div data-aos="fade-left">
-                <img
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "auto",
-                  }}
-                  src={require("./Images/image_1.png")}
-                  alt=""
-                />
 
-                {/* <img src="Images/nyk.png" alt="">    */}
-
-                <div id="prdetails">
-                  <h1>Employee Management System</h1>
-                  <p>
-                    It is an Employee Management System with the help of this
-                    application, you can manage the details of the employee in
-                    your company.
-                  </p>
-
-                  <h3 className="pixel16" style={{ marginTop: 7 }}>
-                    Features:
-                  </h3>
-
-                  <ul
-                    type="circle"
-                    style={{ fontWeight: "lighter", marginLeft: 17 }}
-                  >
-                    <li>Registration of employees</li>
-                    <li>Deleting employee</li>
-                    <li>Updating details of employee</li>
-                    <li>Getting the details of employee</li>
-                    <li>Data Validation</li>
-                    <li>Exception Handling</li>
-                  </ul>
-
-                  <h4 className="pixel16" style={{ marginTop: 7 }}>
-                    A mini project, built within 5 days
-                  </h4>
-
-                  <h4 className="pixel16" style={{ marginTop: 7 }}>
-                    Java | MySQL | Hibernate | Spring | Spring Boot | Swagger
-                  </h4>
-
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Tender_Management_System"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
               {/* Student Management System */}
               {/* <div>
                 <img
