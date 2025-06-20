@@ -14,6 +14,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import MainContent from "./components/MainContent.jsx";
 import AboutMe from "./components/AboutMe";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 function App() {
   const skillsDataFrontend = [
@@ -540,6 +542,11 @@ function App() {
           <div className="container proj-container">
             <div className="projects-list">
               <div data-aos="fade-right">
+                <PhotoProvider>
+                  <PhotoView src={require("./Images/fmsImage1.png")}>
+                    <img src={require("./Images/fmsImage1.png")} alt="" />
+                  </PhotoView>
+                </PhotoProvider>
                 <img
                   style={{
                     display: "flex",
@@ -547,7 +554,6 @@ function App() {
                     justifyContent: "center",
                     margin: "auto",
                   }}
-                  src={require("./Images/fmsImage1.png")}
                   alt=""
                 />
                 <div id="prdetails">
@@ -619,9 +625,18 @@ function App() {
                     justifyContent: "center",
                     margin: "auto",
                   }}
-                  src={require("./images_1/Screenshot 2024-06-17 154948.png")}
                   alt=""
                 />
+                <PhotoProvider>
+                  <PhotoView
+                    src={require("./images_1/Screenshot 2024-06-17 154948.png")}
+                  >
+                    <img
+                      src={require("./images_1/Screenshot 2024-06-17 154948.png")}
+                      alt=""
+                    />
+                  </PhotoView>
+                </PhotoProvider>
                 <div id="prdetails">
                   <h1>
                     Metamind System Website
@@ -694,7 +709,11 @@ function App() {
               </div>
 
               <div data-aos="fade-right">
-                <img src={require("./Images/lostandfound.png")} alt="" />
+                <PhotoProvider>
+                  <PhotoView src={require("./Images/lostandfound.png")}>
+                    <img src={require("./Images/lostandfound.png")} alt="" />
+                  </PhotoView>
+                </PhotoProvider>
                 <div id="prdetails">
                   <h1>Digital Lost And Found System</h1>
                   <div
@@ -751,16 +770,26 @@ function App() {
               </div>
 
               <div data-aos="fade-left">
-                <img
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "auto",
-                  }}
-                  src={require("./Images/QuizzApp.png")}
-                  alt=""
-                />
+                {/* <PhotoProvider>
+                  <PhotoView>
+                    <img
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        margin: "auto",
+                      }}
+                      alt=""
+                    />{" "}
+                  </PhotoView>
+                </PhotoProvider> */}
+
+                <PhotoProvider>
+                  <PhotoView src={require("./Images/QuizzApp.png")}>
+                    <img src={require("./Images/QuizzApp.png")} alt="" />
+                  </PhotoView>
+                </PhotoProvider>
+
                 <div id="prdetails">
                   <h1>
                     Quiz App
@@ -827,7 +856,11 @@ function App() {
 
               {/* Emplpoyee Management System */}
               <div data-aos="fade-right">
-                <img src={require("./Images/Wheather.png")} alt="" />
+                <PhotoProvider>
+                  <PhotoView src={require("./Images/Wheather.png")}>
+                    <img src={require("./Images/Wheather.png")} alt="" />
+                  </PhotoView>
+                </PhotoProvider>
 
                 <div id="prdetails">
                   <h1>Weather App</h1>
