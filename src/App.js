@@ -618,15 +618,6 @@ function App() {
               </div>
 
               <div data-aos="fade-left">
-                <img
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "auto",
-                  }}
-                  alt=""
-                />
                 <PhotoProvider>
                   <PhotoView
                     src={require("./images_1/Screenshot 2024-06-17 154948.png")}
