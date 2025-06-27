@@ -304,232 +304,234 @@ function App() {
         <AboutMe></AboutMe>
         {/* Skills */}
 
-        <div id="skills">
+        <div id="skills" style={{ marginTop: "-60px" }}>
           <NewSection
             img={<img src={require("./images_1/skill.png")} alt=""></img>}
             title="Skills"
             desc="Versatile with modern technology tools for frontend and backend development."
           ></NewSection>
-          <div className="skills-header" data-aos="flip-left">
-            Front End Skills
-          </div>
-          <div
-            data-aos="fade-left"
-            style={{
-              width: "90%",
-              margin: "auto",
-            }}
-          >
-            <Marquee
-              speed={80}
-              pauseOnHover={true}
-              pauseOnClick={true}
-              delay={0}
-              play={true}
-              direction="right"
-              autoFill={true}
-            >
-              {skillsDataFrontend.map((skill, id) => (
-                <div
-                  className={`${
-                    skill?.transparent ? "bg-transparent" : "bg-yellow-500"
-                  }`}
-                  id="marque-image-container"
-                  key="1"
-                >
-                  {skill.img}
-                </div>
-              ))}
-            </Marquee>
-          </div>
-          <div
-            className="skills-header another-skill-header"
-            data-aos="flip-right"
-          >
-            Backend Skills
-          </div>
-          <div
-            data-aos="fade-left"
-            style={{
-              width: "90%",
-              margin: "auto",
-              overflow: "auto",
-            }}
-          >
-            <Marquee
-              speed={80}
-              pauseOnHover={true}
-              pauseOnClick={true}
-              delay={0}
-              play={true}
-              direction="left"
-              autoFill={true}
-            >
-              {backedn.map((skill, id) => (
-                <div
-                  className={`p-2 rounded-lg ml-3 
-                    ${skill?.transparent ? "bg-transparent" : "bg-orange-300"}`}
-                  id="marque-image-container"
-                  key="1"
-                >
-                  {skill.img}
-                </div>
-              ))}
-            </Marquee>
-          </div>
-
-          <div
-            className="skills-header another-skill-header"
-            data-aos="flip-left"
-          >
-            Tools
-          </div>
-          <div
-            data-aos="fade-right"
-            style={{
-              width: "90%",
-              margin: "auto",
-              overflow: "auto",
-            }}
-          >
-            <Marquee
-              speed={80}
-              pauseOnHover={true}
-              pauseOnClick={true}
-              delay={0}
-              play={true}
-              direction="right"
-              autoFill={true}
-            >
-              {tools.map((skill, id) => (
-                <div
-                  className={`p-2 rounded-lg ml-3 
-                    ${skill?.transparent ? "bg-transparent" : "bg-orange-300"}`}
-                  id="marque-image-container"
-                  key="1"
-                >
-                  {skill.img}
-                </div>
-              ))}
-            </Marquee>
-          </div>
-        </div>
-
-        <div id="experience" style={{}}>
-          <NewSection
-            img={
-              <img
-                src={require("./images_1/experience-image.png")}
-                alt=""
-              ></img>
-            }
-            title="Experience"
-            desc="Experience working with startups as a MERN Stack Developer, delivering responsive and scalable web applications from frontend to backend."
-          ></NewSection>
-        </div>
-
-        <div
-          style={{
-            width: "100%",
-            overflow: "auto",
-            zIndex: "0",
-            paddingTop: "-300px",
-          }}
-        >
-          <VerticalTimeline>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              contentStyle={{
-                // background: "rgb(33, 150, 243)",
-                color: "#330066",
+          <div style={{ marginBottom: "70px", marginTop: "-40px" }}>
+            <div className="skills-header" data-aos="flip-left">
+              Front End Skills
+            </div>
+            <div
+              data-aos="fade-left"
+              style={{
+                width: "90%",
+                margin: "auto",
               }}
-              contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
-              }}
-              date="Aug 2024 - Present"
-              iconStyle={{
-                background: "rgb(193, 215, 234)",
-                color: "#fff",
-              }}
-              icon={<div />}
             >
-              <h3 className="vertical-timeline-element-title text-2xl ">
-                Shaleemar IT Solutions Private Limited
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
-                Mern Stack Developer
-              </h4>
-
-              <div
-                className="text-sm text-blue-800"
-                style={{ marginTop: "10px", paddingLeft: "15px" }}
+              <Marquee
+                speed={80}
+                pauseOnHover={true}
+                pauseOnClick={true}
+                delay={0}
+                play={true}
+                direction="right"
+                autoFill={true}
               >
-                <ul className="text-sm">
-                  <li>
-                    {" "}
-                    Independently led the complete full-stack development of the
-                    Digital Lost & Found System for Maha Kumbh Mela 2025
-                  </li>
-                  <li>
-                    Integrated multilingual text-to-speech and AI face-matching
-                    APIs
-                  </li>
-                  <li>
-                    <ol>
-                      Contributed to performance tuning and edge case handling
-                      in production
-                    </ol>
-                  </li>
-                </ul>
-              </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              contentStyle={{
-                // background: "rgb(33, 150, 243)",
-                color: "#330066",
-              }}
-              contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
-              }}
-              date="Feb 2023 - Aug 2024"
-              iconStyle={{
-                background: "rgb(193, 215, 234)",
-                color: "#fff",
-              }}
-              icon={<div />}
+                {skillsDataFrontend.map((skill, id) => (
+                  <div
+                    className={`${
+                      skill?.transparent ? "bg-transparent" : "bg-yellow-500"
+                    }`}
+                    id="marque-image-container"
+                    key="1"
+                  >
+                    {skill.img}
+                  </div>
+                ))}
+              </Marquee>
+            </div>
+            <div
+              className="skills-header another-skill-header"
+              data-aos="flip-right"
             >
-              <h3 className="vertical-timeline-element-title text-2xl ">
-                Metamind System Private Limited
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
-                Mern Stack Developer
-              </h4>
-
-              <div
-                className="text-sm text-blue-800"
-                style={{ marginTop: "10px", paddingLeft: "15px" }}
+              Backend Skills
+            </div>
+            <div
+              data-aos="fade-left"
+              style={{
+                width: "90%",
+                margin: "auto",
+                overflow: "auto",
+              }}
+            >
+              <Marquee
+                speed={80}
+                pauseOnHover={true}
+                pauseOnClick={true}
+                delay={0}
+                play={true}
+                direction="left"
+                autoFill={true}
               >
-                <ul className="text-sm">
-                  <li>
-                    {" "}
-                    Designed admin and operator dashboards for large-scale map
-                    data digitization
-                  </li>
-                  <li>
-                    Built multi-step workflows (Upload → Digitize → QC → Shape
-                    files)
-                  </li>
-                  <li>
-                    <ol>
-                      Also led the deployment of the company’s website with
-                      responsive and SEO-friendly design
-                    </ol>
-                  </li>
-                </ul>
-              </div>
-            </VerticalTimelineElement>
-          </VerticalTimeline>
+                {backedn.map((skill, id) => (
+                  <div
+                    className={`p-2 rounded-lg ml-3 
+                    ${skill?.transparent ? "bg-transparent" : "bg-orange-300"}`}
+                    id="marque-image-container"
+                    key="1"
+                  >
+                    {skill.img}
+                  </div>
+                ))}
+              </Marquee>
+            </div>
+
+            <div
+              className="skills-header another-skill-header"
+              data-aos="flip-left"
+            >
+              Tools
+            </div>
+            <div
+              data-aos="fade-right"
+              style={{
+                width: "90%",
+                margin: "auto",
+                overflow: "auto",
+              }}
+            >
+              <Marquee
+                speed={80}
+                pauseOnHover={true}
+                pauseOnClick={true}
+                delay={0}
+                play={true}
+                direction="right"
+                autoFill={true}
+              >
+                {tools.map((skill, id) => (
+                  <div
+                    className={`p-2 rounded-lg ml-3 bg-black
+                    ${skill?.transparent ? "bg-transparent" : "bg-orange-300"}`}
+                    id="marque-image-container"
+                    key="1"
+                  >
+                    {skill.img}
+                  </div>
+                ))}
+              </Marquee>
+            </div>
+          </div>
+
+          <div id="experience" style={{}}>
+            <NewSection
+              img={
+                <img
+                  src={require("./images_1/experience-image.png")}
+                  alt=""
+                ></img>
+              }
+              title="Experience"
+              desc="Experience working with startups as a MERN Stack Developer, delivering responsive and scalable web applications from frontend to backend."
+            ></NewSection>
+          </div>
+
+          <div
+            style={{
+              width: "100%",
+              overflow: "auto",
+              zIndex: "0",
+              paddingTop: "-300px",
+            }}
+          >
+            <VerticalTimeline>
+              <VerticalTimelineElement
+                className=" "
+                contentStyle={{
+                  // background: "rgb(33, 150, 243)",
+                  color: "#330066",
+                }}
+                contentArrowStyle={{
+                  borderRight: "7px solid  rgb(33, 150, 243)",
+                }}
+                date="Aug 2024 - Present"
+                iconStyle={{
+                  background: "rgb(193, 215, 234)",
+                  color: "#fff",
+                }}
+                icon={<div />}
+              >
+                <h3 className="vertical-timeline-element-title text-2xl ">
+                  Shaleemar IT Solutions Private Limited
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
+                  Mern Stack Developer
+                </h4>
+
+                <div
+                  className="text-sm text-blue-800"
+                  style={{ marginTop: "10px", paddingLeft: "15px" }}
+                >
+                  <ul className="text-sm">
+                    <li>
+                      {" "}
+                      Independently led the complete full-stack development of
+                      the Digital Lost & Found System for Maha Kumbh Mela 2025
+                    </li>
+                    <li>
+                      Integrated multilingual text-to-speech and AI
+                      face-matching APIs
+                    </li>
+                    <li>
+                      <ol>
+                        Contributed to performance tuning and edge case handling
+                        in production
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{
+                  // background: "rgb(33, 150, 243)",
+                  color: "#330066",
+                }}
+                contentArrowStyle={{
+                  borderRight: "7px solid  rgb(33, 150, 243)",
+                }}
+                date="Feb 2023 - Aug 2024"
+                iconStyle={{
+                  background: "rgb(193, 215, 234)",
+                  color: "#fff",
+                }}
+                icon={<div />}
+              >
+                <h3 className="vertical-timeline-element-title text-2xl ">
+                  Metamind System Private Limited
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
+                  Mern Stack Developer
+                </h4>
+
+                <div
+                  className="text-sm text-blue-800"
+                  style={{ marginTop: "10px", paddingLeft: "15px" }}
+                >
+                  <ul className="text-sm">
+                    <li>
+                      {" "}
+                      Designed admin and operator dashboards for large-scale map
+                      data digitization
+                    </li>
+                    <li>
+                      Built multi-step workflows (Upload → Digitize → QC → Shape
+                      files)
+                    </li>
+                    <li>
+                      <ol>
+                        Also led the deployment of the company’s website with
+                        responsive and SEO-friendly design
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+              </VerticalTimelineElement>
+            </VerticalTimeline>
+          </div>
         </div>
 
         <div id="projs" style={{ width: "100%", paddingTop: "150px" }}>

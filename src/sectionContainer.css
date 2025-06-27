@@ -39,7 +39,9 @@
 }
 
 .vertical-timeline-element-content{
-    background-color: rgb(168, 204, 183) !important;
+    /* background-color: rgb(168, 204, 183) !important; */
+  border: 2px solid #75c2b5 !important;
+  border-radius: 10px !important;
 }
 
 @media screen and (max-width: 1800px) {
