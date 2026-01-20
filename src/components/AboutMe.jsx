@@ -17,13 +17,31 @@ const AboutMe = () => {
             <h1 className="sub-title" id="aboute_me_title">
               About Me
             </h1>
-            <p style={{ marginTop: "-25px" }}>
-              MERN Stack Developer with over 2.6 years of experience building
-              scalable, responsive, and user-centric web applications. Skilled
-              in both frontend and backend development using technologies such
-              as React.js, Node.js, Express.js, and MongoDB. Adept at building
-              full-stack solutions from scratch, integrating third-party APIs,
-              and optimizing application performance.
+            <p
+              style={{ marginTop: "-25px", fontWeight: "600" }}
+            >
+              <ul>
+                <li>
+                  MERN Stack Developer with 3 years of full-time experience
+                  delivering enterprise-grade and government-scale digital
+                  platforms across marketing technology & public-sector systems.
+                </li>
+                <li>
+                  Proven track record in full-stack ownership, with secure API
+                  development, performance optimization, real-time data workflow
+                  across React, Node.js, and MongoDB ecosystems.
+                </li>{" "}
+                <li>
+                  Recognized for executing mission-critical systems like the
+                  Digital Lost and Found Platform for Maha Kumbh Mela 2025,
+                  backing large-scale public operations & real-world outcomes.
+                </li>
+                <li>
+                  Strong collaborator in Agile environments, combining technical
+                  depth with structured communication across engineering,
+                  product, and design teams.
+                </li>
+              </ul>
             </p>
 
             <div className="tab-content" style={{ marginTop: "3%" }}>

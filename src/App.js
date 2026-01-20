@@ -455,6 +455,71 @@ function App() {
                 icon={<div />}
               >
                 <h3 className="vertical-timeline-element-title text-2xl ">
+                  Successive Digital
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
+                  Senior Associate Engineer
+                </h4>
+
+                <div
+                  className="text-sm text-blue-800"
+                  style={{ marginTop: "10px", paddingLeft: "15px" }}
+                >
+                  <ul className="text-sm">
+                    <li>
+                      {" "}
+                      Developing and maintaining an enterprise audience
+                      management platform supporting large-scale marketing
+                      operations and real-time audience intelligence
+                    </li>
+                    <li>
+                      Integrating RESTful APIs to enable data ingestion,
+                      processing, and visualization for business users.
+                    </li>
+                    <li>
+                      Resolving high-priority production issues across frontend
+                      and backend layers to ensure platform stability and
+                      uptime.
+                    </li>
+                    <li>
+                      Resolving high-priority production issues across frontend
+                      and backend layers to ensure platform stability and
+                      uptime.
+                    </li>
+                    <li>
+                      Building a multi-publisher deployment feature enabling
+                      simultaneous audience activation across Amazon, Facebook,
+                      Google, and Twitter.
+                    </li>
+                    <li>
+                      Collaborating in Agile/Scrum delivery cycles, contributing
+                      to sprint planning, code reviews, and cross-team technical
+                      discussions.
+                    </li>
+                    <li>
+                      Working with UX/UI teams to improve dashboard usability,
+                      navigation flow, and overall user experience.
+                    </li>
+                  </ul>
+                </div>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{
+                  // background: "rgb(33, 150, 243)",
+                  color: "#330066",
+                }}
+                contentArrowStyle={{
+                  borderRight: "7px solid  rgb(33, 150, 243)",
+                }}
+                date="Feb 2023 - Aug 2024"
+                iconStyle={{
+                  background: "rgb(193, 215, 234)",
+                  color: "#fff",
+                }}
+                icon={<div />}
+              >
+                <h3 className="vertical-timeline-element-title text-2xl ">
                   Shaleemar IT Solutions Private Limited
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle text-lg text-teal-950">
@@ -468,18 +533,32 @@ function App() {
                   <ul className="text-sm">
                     <li>
                       {" "}
-                      Independently led the complete full-stack development of
-                      the Digital Lost & Found System for Maha Kumbh Mela 2025
+                      Led the end-to-end full-stack development of a
+                      mission-critical Digital Lost & Found System used during
+                      one of India’s largest public events.
                     </li>
                     <li>
-                      Integrated multilingual text-to-speech and AI
-                      face-matching APIs
+                      Implemented AI-based face matching and multilingual
+                      text-to-speech features to accelerate person
+                      identification workflow.
                     </li>
                     <li>
-                      <ol>
-                        Contributed to performance tuning and edge case handling
-                        in production
-                      </ol>
+                      Built secure real-time data synchronization and advanced
+                      search functionality for rapid record retrieval.
+                    </li>
+                    <li>
+                      Automated daily reporting and handover logs, cutting
+                      manual effort by 70% and saving 4+ hours per day for the
+                      operations team.
+                    </li>
+                    <li>
+                      Coordinated with IIT Kanpur for application security
+                      testing and validation.
+                    </li>
+                    <li>
+                      Increased same-day reunion success rate by 28% via
+                      deployment of real-time alerts and AI- based
+                      identification workflow.
                     </li>
                   </ul>
                 </div>
@@ -513,19 +592,30 @@ function App() {
                 >
                   <ul className="text-sm">
                     <li>
-                      {" "}
-                      Designed admin and operator dashboards for large-scale map
-                      data digitization
+                      Led the redesign and redevelopment of the official
+                      corporate website. Improved page load performance by 40%
+                      via optimized React rendering and asset management.
                     </li>
                     <li>
                       Built multi-step workflows (Upload → Digitize → QC → Shape
                       files)
                     </li>
                     <li>
-                      <ol>
-                        Also led the deployment of the company’s website with
-                        responsive and SEO-friendly design
-                      </ol>
+                      Enhanced user engagement on the redesigned corporate
+                      website following performance and UX optimization
+                      initiatives.
+                    </li>
+                    <li>
+                      Developed and enhanced a React-based front-end for
+                      digitizing and managing large-scale map data.
+                    </li>
+                    <li>
+                      Built multi-step workflow covering upload, digitization,
+                      quality control, and shapefile generation.
+                    </li>
+                    <li>
+                      Strengthened platform security by applying secure
+                      authentication flows & access controls.
                     </li>
                   </ul>
                 </div>
@@ -608,13 +698,17 @@ function App() {
                       Added support for PDF creation, Excel file generation, and
                       barcode reading
                     </li>
+                    <li>
+                      {" "}
+                      <li>
+                        Improved audience campaign execution efficiency via the
+                        introduction of a multi-platform publishing feature.
+                      </li>
+                    </li>
                   </ul>
                   <h4 className="pixel16" style={{ marginTop: 7 }}>
-                    Project Duration: Feb 2023- present
-                  </h4>
-                  <h4 className="pixel16" style={{ marginTop: 7 }}>
-                    ReactJs | React Router | Redux | Redux Saga | Ant Design |
-                    HTML | CSS | JavaScript | NPM | Github
+                    React.Js | Node.Js| Express.Js | MongoDB | Redux | Ant
+                    Design | HTML | CSS | JavaScript | NPM | Github
                   </h4>
                 </div>
               </div>
@@ -652,11 +746,7 @@ function App() {
                     design. Delivered a polished digital platform to boost
                     MetaMind's online presence.
                   </p>
-                  <h3
-                    className="pixel16"
-                    style={{ marginTop: 7 }}
-                    className="pixel16"
-                  >
+                  <h3 className="pixel16" style={{ marginTop: 7 }}>
                     Responsibilities:
                   </h3>
                   <ul
@@ -751,13 +841,79 @@ function App() {
                     </li>
                   </ul>
 
-                  <h4 className="pixel16" style={{ marginTop: 7 }}>
-                    Project Duration: Aug2024 - Present
-                  </h4>
-
                   <h4>
-                    React.js | Redux| Tailwind CSS | Node.js | Express.js |
-                    MongoDB
+                    React.Js | Node.Js| Express.Js | MongoDB | Redux | Ant
+                    Design | HTML | CSS | JavaScript | NPM | Github
+                  </h4>
+                </div>
+              </div>
+
+              <div data-aos="fade-right">
+                <PhotoProvider>
+                  <PhotoView src={require("./Images/dentsu.png")}>
+                    <img src={require("./Images/dentsu.png")} alt="" />
+                  </PhotoView>
+                </PhotoProvider>
+                <img
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "auto",
+                  }}
+                  alt=""
+                />
+                <div id="prdetails">
+                  <h1>
+                    Dentsu Audience Builder
+                    <br />
+                  </h1>
+                  <div
+                    className="project-organization"
+                    style={{
+                      fontSize: "17px",
+                      textAlign: "end",
+                      width: "100%",
+                      color: "violet",
+                    }}
+                  >
+                    Organization: Succeessive Digital
+                  </div>
+                  <p>
+                    Developing and maintaining an enterprise audience management
+                    platform supporting large-scale marketing operations and
+                    real-time audience intelligence.
+                  </p>
+                  <h3 className="pixel16" style={{ marginTop: 7 }}>
+                    Responsibilities:
+                  </h3>
+                  <ul
+                    type="circle"
+                    style={{ fontWeight: "lighter", marginLeft: 17 }}
+                  >
+                    <li>
+                      Integrating RESTful APIs to enable data ingestion,
+                      processing, and visualization for business users.
+                    </li>
+                    <li>
+                      Resolving high-priority production issues across frontend
+                      and backend layers to ensure platform stability and
+                      uptime.
+                    </li>
+                    <li>
+                      Implementing Merkury Codebooks integration and rendering
+                      audience snapshots for enriched front-end analytics.
+                    </li>
+                    <li>
+                      Building a multi-publisher deployment feature enabling
+                      simultaneous audience activation across Amazon, Facebook,
+                      Google, and Twitter.
+                    </li>
+                  </ul>
+
+                  <h4 className="pixel16" style={{ marginTop: 7 }}>
+                    ReactJs | React Router | Redux | Redux Saga | Ant Design |
+                    HTML | CSS | JavaScript | NPM | Github
                   </h4>
                 </div>
               </div>
@@ -817,9 +973,6 @@ function App() {
                     <li>After Finishing the quiz they can restart the quiz.</li>
                   </ul>
 
-                  <h4 className="pixel16" style={{ marginTop: 7 }}>
-                    Project Duration: One Day
-                  </h4>
                   <h4 className="pixel16" style={{ marginTop: 7 }}>
                     HTML | CSS | JavaScript | Github
                   </h4>
