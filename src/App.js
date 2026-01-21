@@ -671,11 +671,7 @@ function App() {
                     demonstrating strong individual initiative and technical
                     expertise.
                   </p>
-                  <h3
-                    className="pixel16"
-                    style={{ marginTop: 7 }}
-                    className="pixel16"
-                  >
+                  <h3 className="pixel16" style={{ marginTop: 7 }}>
                     Responsibilities:
                   </h3>
                   <ul
@@ -816,11 +812,7 @@ function App() {
                     application designed to address the challenges of reuniting
                     lost individuals and items in a large-scale event setting.
                   </p>
-                  <h3
-                    className="pixel16"
-                    style={{ marginTop: 7 }}
-                    className="pixel16"
-                  >
+                  <h3 className="pixel16" style={{ marginTop: 7 }}>
                     Responsibilities:
                   </h3>
                   <ul
@@ -945,11 +937,7 @@ function App() {
                     <br />
                   </h1>
                   <p>It is a quiz application</p>
-                  <h3
-                    className="pixel16"
-                    style={{ marginTop: 7 }}
-                    className="pixel16"
-                  >
+                  <h3 className="pixel16" style={{ marginTop: 7 }}>
                     Responsibilities:
                   </h3>
 

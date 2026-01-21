@@ -40,26 +40,13 @@ const MainContent = () => {
       </b>
       {/* <div style={{ marginBottom: "5px" }}></div> */}
 
-      {/* <div
-        style={{
-          color: "rgb(74, 5, 74)",
-          fontWeight: "bolder",
-        }}
-        className="profile-description"
-      >
-        MERN Stack Developer with over 2.6 years of experience building
-        scalable, responsive, and user-centric web applications. Skilled in both
-        frontend and backend development using technologies such as React.js,
-        Node.js, Express.js, and MongoDB. Adept at building full-stack solutions
-        from scratch, integrating third-party APIs, and optimizing application
-        performance.
-      </div> */}
       <div style={{ marginBottom: "10px" }}></div>
       <a
         href={
           "https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
         }
         target="_blank"
+        rel="noopener noreferrer"
       >
         <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
           Resume
@@ -67,7 +54,11 @@ const MainContent = () => {
       </a>
       <span style={{ marginLeft: "10px" }}></span>
 
-      <a href={"https://github.com/sudarshanmane"} target="_blank">
+      <a
+        href={"https://github.com/sudarshanmane"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
           ⭐ Star Me On Github
         </Button>
