@@ -1,6 +1,6 @@
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import GitHubCalendar from "react-github-calendar";
+// import GitHubCalendar from "react-github-calendar";
 import "./style.scss";
 import { Button } from "antd";
 import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
@@ -911,20 +911,6 @@ function App() {
               </div>
 
               <div data-aos="fade-left">
-                {/* <PhotoProvider>
-                  <PhotoView>
-                    <img
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        margin: "auto",
-                      }}
-                      alt=""
-                    />{" "}
-                  </PhotoView>
-                </PhotoProvider> */}
-
                 <PhotoProvider>
                   <PhotoView src={require("./Images/QuizzApp.png")}>
                     <img src={require("./Images/QuizzApp.png")} alt="" />
@@ -969,6 +955,7 @@ function App() {
                     <a
                       href="https://github.com/sudarshanmane/QuizApp"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div>
                         <div>Code</div>
@@ -978,6 +965,7 @@ function App() {
                     <a
                       href="https://quiz-app-six-ruby.vercel.app/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div>
                         <div>Link</div>
@@ -1010,6 +998,7 @@ function App() {
                     <a
                       href="https://github.com/sudarshanmane/Wheather-app"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div>
                         <div>Code</div>
@@ -1020,6 +1009,7 @@ function App() {
                     <a
                       href="https://resonant-narwhal-1c8386.netlify.app/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div>
                         <div>Link</div>
@@ -1198,7 +1188,7 @@ function App() {
             </div>
           </div>
         </div> */}
-        <div
+        {/* <div
           className="github-calender"
           id="Statistics"
           style={{ paddingTop: "100px" }}
@@ -1213,7 +1203,7 @@ function App() {
           >
             <GitHubCalendar colorScheme="light" username="sudarshanmane" />
           </div>
-        </div>
+        </div> */}
 
         <div id="Projects" style={{ marginBottom: "-70px" }}>
           <div id="blogs" style={{ paddingTop: "80px" }}>
@@ -1228,6 +1218,7 @@ function App() {
                     <a
                       href={"https://medium.com/@sudarshanmane2110"}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Button
                         style={{ background: "rgb(0, 5, 78)", color: "white" }}
@@ -1259,6 +1250,7 @@ function App() {
                   <a
                     href="https://www.linkedin.com/in/sudarshan-mane-065823236/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <div>
                       <img src={require("./Images/in.png")} alt="" />
@@ -1266,7 +1258,11 @@ function App() {
                     </div>
                   </a>
 
-                  <a href="https://github.com/sudarshanmane" target="_blank">
+                  <a
+                    href="https://github.com/sudarshanmane"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div>
                       <img src={require("./Images/github.png")} alt="" />
                       <p>GitHub</p>
