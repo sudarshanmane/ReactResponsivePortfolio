@@ -45,7 +45,6 @@ const MainContent = () => {
         href={
           "https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
         }
-        target="_blank"
         rel="noopener noreferrer"
       >
         <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
@@ -54,11 +53,7 @@ const MainContent = () => {
       </a>
       <span style={{ marginLeft: "10px" }}></span>
 
-      <a
-        href={"https://github.com/sudarshanmane"}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href={"https://github.com/sudarshanmane"} rel="noopener noreferrer">
         <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
           ⭐ Star Me On Github
         </Button>

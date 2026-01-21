@@ -253,10 +253,7 @@ function App() {
               <a href="#contact-details">Contact</a>
             </li>
             <li>
-              <a
-                href="https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
-                target="_blank"
-              >
+              <a href="https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing">
                 Resume
               </a>
             </li>
@@ -275,10 +272,7 @@ function App() {
                 <a href="#projs">Projects</a>
                 <a href="#Statistics">Statistics</a>
                 <a href="#Projects">Contact</a>
-                <a
-                  href="https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
-                  target="_blank"
-                >
+                <a href="https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing">
                   Resume
                 </a>
               </div>
@@ -775,10 +769,7 @@ function App() {
                   </h4>
                 </div>
                 <div id="details">
-                  <a
-                    href="https://www.metamindsystem.com/home/main"
-                    target="_blank"
-                  >
+                  <a href="https://www.metamindsystem.com/home/main">
                     <div>
                       <div>Link</div>
                       <LinkOutlined />{" "}
@@ -954,7 +945,6 @@ function App() {
                   <div id="details">
                     <a
                       href="https://github.com/sudarshanmane/QuizApp"
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       <div>
@@ -964,7 +954,6 @@ function App() {
                     </a>
                     <a
                       href="https://quiz-app-six-ruby.vercel.app/"
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       <div>
@@ -997,7 +986,6 @@ function App() {
                   <div id="details">
                     <a
                       href="https://github.com/sudarshanmane/Wheather-app"
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       <div>
@@ -1008,7 +996,6 @@ function App() {
 
                     <a
                       href="https://resonant-narwhal-1c8386.netlify.app/"
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       <div>
@@ -1036,7 +1023,7 @@ function App() {
                   <div id="details">
                     <a
                       href="https://github.com/sudarshanmane/Star-Wars"
-                      target="_blank"
+                      
                     >
                       <div>
                         <div>Code</div>
@@ -1046,7 +1033,7 @@ function App() {
 
                     <a
                       href="https://golden-pudding-2b5ec7.netlify.app/"
-                      target="_blank"
+                      
                     >
                       <div>
                         <div>Link</div>
@@ -1100,7 +1087,7 @@ function App() {
                   <div id="details">
                     <a
                       href="https://github.com/sudarshanmane/Student_Managemet_System_A_Spring_Boot_Project"
-                      target="_blank"
+                      
                     >
                       <div>
                         <div>Code</div>
@@ -1126,7 +1113,7 @@ function App() {
                   <div id="details">
                     <a
                       href="https://github.com/sudarshanmane/Hotstar"
-                      target="_blank"
+                      
                     >
                       <div>
                         <div>Code</div>
@@ -1136,7 +1123,7 @@ function App() {
 
                     <a
                       href="https://unrivaled-cat-71c60d.netlify.app/"
-                      target="_blank"
+                      
                     >
                       <div>
                         <div>Link</div>
@@ -1217,7 +1204,6 @@ function App() {
                   <div style={{ marginTop: "10px" }}>
                     <a
                       href={"https://medium.com/@sudarshanmane2110"}
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Button
@@ -1249,7 +1235,6 @@ function App() {
                 <div>
                   <a
                     href="https://www.linkedin.com/in/sudarshan-mane-065823236/"
-                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div>
@@ -1260,7 +1245,6 @@ function App() {
 
                   <a
                     href="https://github.com/sudarshanmane"
-                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div>
