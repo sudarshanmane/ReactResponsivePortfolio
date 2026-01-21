@@ -1,6 +1,6 @@
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import GitHubCalendar from "react-github-calendar";
+import GitHubCalendar from "react-github-calendar";
 import "./style.scss";
 import { Button } from "antd";
 import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
@@ -1175,7 +1175,7 @@ function App() {
             </div>
           </div>
         </div> */}
-        {/* <div
+        <div
           className="github-calender"
           id="Statistics"
           style={{ paddingTop: "100px" }}
@@ -1190,7 +1190,7 @@ function App() {
           >
             <GitHubCalendar colorScheme="light" username="sudarshanmane" />
           </div>
-        </div> */}
+        </div>
 
         <div id="Projects" style={{ marginBottom: "-70px" }}>
           <div id="blogs" style={{ paddingTop: "80px" }}>
