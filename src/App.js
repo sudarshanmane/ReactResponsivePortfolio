@@ -256,6 +256,7 @@ function App() {
               <a
                 href="https://drive.google.com/file/d/1-4CWsixeZoY4lfimOuxTIfLLCPuXnR64/view?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 Resume
               </a>
@@ -278,6 +279,7 @@ function App() {
                 <a
                   href="https://drive.google.com/file/d/1-4CWsixeZoY4lfimOuxTIfLLCPuXnR64/view?usp=sharing"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Resume
                 </a>

@@ -42,6 +42,7 @@ const MainContent = () => {
       <a
         href="https://drive.google.com/file/d/1-4CWsixeZoY4lfimOuxTIfLLCPuXnR64/view?usp=sharing"
         target="_blank"
+        rel="noreferrer"
       >
         <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
           Resume
