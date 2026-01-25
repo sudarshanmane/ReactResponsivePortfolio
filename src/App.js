@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { GitHubCalendar } from "react-github-calendar";
 import "./style.scss";
 import { Button } from "antd";
-import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
+import { LinkOutlined } from "@ant-design/icons";
 import Marquee from "react-fast-marquee";
 import "./sectionContainer.css";
 import NewSection from "./NewSection";
