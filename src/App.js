@@ -727,7 +727,11 @@ function App() {
                   </h4>
                 </div>
                 <div id="details">
-                  <a href="https://www.metamindsystem.com/" target="_blank">
+                  <a
+                    href="https://www.metamindsystem.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div>
                       <div>Link</div>
                       <LinkOutlined />{" "}
