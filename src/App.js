@@ -1,6 +1,6 @@
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import GitHubCalendar from "react-github-calendar";
+import { GitHubCalendar } from "react-github-calendar";
 import "./style.scss";
 import { Button } from "antd";
 import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
@@ -253,7 +253,10 @@ function App() {
               <a href="#contact-details">Contact</a>
             </li>
             <li>
-              <a href="" target="_blank">
+              <a
+                href="https://drive.google.com/file/d/1-4CWsixeZoY4lfimOuxTIfLLCPuXnR64/view?usp=sharing"
+                target="_blank"
+              >
                 Resume
               </a>
             </li>
@@ -272,7 +275,10 @@ function App() {
                 <a href="#projs">Projects</a>
                 {/* <a href="#Statistics">Statistics</a> */}
                 <a href="#Projects">Contact</a>
-                <a href="" target="_blank">
+                <a
+                  href="https://drive.google.com/file/d/1-4CWsixeZoY4lfimOuxTIfLLCPuXnR64/view?usp=sharing"
+                  target="_blank"
+                >
                   Resume
                 </a>
               </div>
@@ -467,32 +473,9 @@ function App() {
                       operations and real-time audience intelligence
                     </li>
                     <li>
-                      Integrating RESTful APIs to enable data ingestion,
-                      processing, and visualization for business users.
-                    </li>
-                    <li>
-                      Resolving high-priority production issues across frontend
-                      and backend layers to ensure platform stability and
-                      uptime.
-                    </li>
-                    <li>
-                      Resolving high-priority production issues across frontend
-                      and backend layers to ensure platform stability and
-                      uptime.
-                    </li>
-                    <li>
-                      Building a multi-publisher deployment feature enabling
-                      simultaneous audience activation across Amazon, Facebook,
-                      Google, and Twitter.
-                    </li>
-                    <li>
                       Collaborating in Agile/Scrum delivery cycles, contributing
                       to sprint planning, code reviews, and cross-team technical
                       discussions.
-                    </li>
-                    <li>
-                      Working with UX/UI teams to improve dashboard usability,
-                      navigation flow, and overall user experience.
                     </li>
                   </ul>
                 </div>
@@ -532,27 +515,12 @@ function App() {
                       one of India’s largest public events.
                     </li>
                     <li>
-                      Implemented AI-based face matching and multilingual
-                      text-to-speech features to accelerate person
-                      identification workflow.
-                    </li>
-                    <li>
                       Built secure real-time data synchronization and advanced
                       search functionality for rapid record retrieval.
                     </li>
                     <li>
-                      Automated daily reporting and handover logs, cutting
-                      manual effort by 70% and saving 4+ hours per day for the
-                      operations team.
-                    </li>
-                    <li>
                       Coordinated with IIT Kanpur for application security
                       testing and validation.
-                    </li>
-                    <li>
-                      Increased same-day reunion success rate by 28% via
-                      deployment of real-time alerts and AI- based
-                      identification workflow.
                     </li>
                   </ul>
                 </div>
@@ -598,18 +566,6 @@ function App() {
                       Enhanced user engagement on the redesigned corporate
                       website following performance and UX optimization
                       initiatives.
-                    </li>
-                    <li>
-                      Developed and enhanced a React-based front-end for
-                      digitizing and managing large-scale map data.
-                    </li>
-                    <li>
-                      Built multi-step workflow covering upload, digitization,
-                      quality control, and shapefile generation.
-                    </li>
-                    <li>
-                      Strengthened platform security by applying secure
-                      authentication flows & access controls.
                     </li>
                   </ul>
                 </div>
@@ -769,10 +725,7 @@ function App() {
                   </h4>
                 </div>
                 <div id="details">
-                  <a
-                    href="https://www.metamindsystem.com/home/main"
-                    target="_blank"
-                  >
+                  <a href="https://www.metamindsystem.com/" target="_blank">
                     <div>
                       <div>Link</div>
                       <LinkOutlined />{" "}
@@ -903,286 +856,11 @@ function App() {
                   </h4>
                 </div>
               </div>
-
-              <div data-aos="fade-left">
-                <PhotoProvider>
-                  <PhotoView src={require("./Images/QuizzApp.png")}>
-                    <img src={require("./Images/QuizzApp.png")} alt="" />
-                  </PhotoView>
-                </PhotoProvider>
-
-                <div id="prdetails">
-                  <h1>
-                    Quiz App
-                    <br />
-                  </h1>
-                  <p>It is a quiz application</p>
-                  <h3 className="pixel16" style={{ marginTop: 7 }}>
-                    Responsibilities:
-                  </h3>
-
-                  <ul
-                    type="circle"
-                    style={{ fontWeight: "lighter", marginLeft: 17 }}
-                  >
-                    <li>
-                      Student can select the answers until there answer will not
-                      come true.
-                    </li>
-                    <li>
-                      If selected wrong answer then he will get notified by red
-                      color.
-                    </li>
-                    <li>
-                      If selected Correct answer then he will get notified by
-                      green color.
-                    </li>
-                    <li>They can show the total score.</li>
-                    <li>After Finishing the quiz they can restart the quiz.</li>
-                  </ul>
-
-                  <h4 className="pixel16" style={{ marginTop: 7 }}>
-                    HTML | CSS | JavaScript | Github
-                  </h4>
-
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/QuizApp"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />{" "}
-                      </div>
-                    </a>
-                    <a
-                      href="https://quiz-app-six-ruby.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div>
-                        <div>Link</div>
-                        <LinkOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Emplpoyee Management System */}
-              <div data-aos="fade-right">
-                <PhotoProvider>
-                  <PhotoView src={require("./Images/Wheather.png")}>
-                    <img src={require("./Images/Wheather.png")} alt="" />
-                  </PhotoView>
-                </PhotoProvider>
-
-                <div id="prdetails">
-                  <h1>Weather App</h1>
-                  <p>
-                    You can search weather condition at your city just by
-                    submitting the name of your city. Which will show you the
-                    temprature of your city, max temprature, min temprature,
-                    humidity, etc. and the map of your city also.{" "}
-                  </p>
-                  <p>A mini project, built within 4 days</p>
-                  <p>HTML | CSS | JavaScript </p>
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Wheather-app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />{" "}
-                      </div>
-                    </a>
-
-                    <a
-                      href="https://resonant-narwhal-1c8386.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div>
-                        <div>Link</div>
-                        <LinkOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* <div>
-                <img src={require("./Images/Star.png")} alt="" />
-                <div id="prdetails">
-                  <h1>Star Wars search bar</h1>
-                  <p>
-                    You can search any characters related to the star wars. It
-                    will show you the details ralated to the character with his
-                    age and the gender just after putting the first letter his
-                    of name.
-                  </p>
-
-                  <p>A mini project, build within 3 days</p>
-                  <p>HTML | CSS | JavaScript </p>
-
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Star-Wars"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />{" "}
-                      </div>
-                    </a>
-
-                    <a
-                      href="https://golden-pudding-2b5ec7.netlify.app/"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Link</div>
-                        <LinkOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div> */}
-
-              {/* Student Management System */}
-              {/* <div>
-                <img
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "auto",
-                  }}
-                  src={require("./Images/studentMangement.webp")}
-                  alt=""
-                />
-
-                <div id="prdetails">
-                  <h1>Student Management System</h1>
-
-                  <p>
-                    It is an Student Management System with the help of this
-                    application, you can manage the details of the Student in
-                    your organization.
-                  </p>
-
-                  <h3 className="pixel16" style={{ marginTop: 7 }}>Features:</h3>
-
-                  <ul
-                    type="circle"
-                    style={{ fontWeight: "lighter", marginLeft: 17 }}
-                  >
-                    <li>Registration of student</li>
-                    <li>Deleting Student details</li>
-                    <li>Updating details of student</li>
-                    <li>Getting the details of student</li>
-                    <li>Data Validation</li>
-                    <li>Exception Handling</li>
-                  </ul>
-
-                  <h4 className="pixel16" style={{ marginTop: 7 }}>
-                    Java | MySQL | Hibernate | Spring | Spring Boot | Swagger
-                  </h4>
-
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Student_Managemet_System_A_Spring_Boot_Project"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div> */}
-              {/* <div>
-                <img src={require("./Images/h.png")} alt="" />
-                <div id="prdetails">
-                  <h1>Hotstar</h1>
-                  <p>
-                    You can search any movie and you will get the results within
-                    5 seconds. Which will show the movie details like full movie
-                    name, published year and type.
-                  </p>
-
-                  <p>A mini project, built within 3 days</p>
-                  <p>HTML | CSS | JavaScript </p>
-
-                  <div id="details">
-                    <a
-                      href="https://github.com/sudarshanmane/Hotstar"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Code</div>
-                        <GithubOutlined />
-                      </div>
-                    </a>
-
-                    <a
-                      href="https://unrivaled-cat-71c60d.netlify.app/"
-                      target="_blank"
-                    >
-                      <div>
-                        <div>Link</div>
-                        <LinkOutlined />{" "}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
-        {/* Ṣtatistics */}
-        {/* <div id="Statistics">
-          <div className="container">
-            <h1 className="sub-title">Statistics</h1>
-            <div id="adjSta">
-              <div id="staData">
-                <div id="circle">
-                  <h2>7000+</h2>
-                </div>
-                <h3>Hours</h3>
-                <p>of coading</p>
-              </div>
 
-              <div id="staData">
-                <div id="circle">
-                  <h2>400+</h2>
-                </div>
-                <h3>GitHub</h3>
-                <p>Contributions</p>
-              </div>
-
-              <div id="staData">
-                <div id="circle">
-                  <h2>9+</h2>
-                </div>
-                <h3>Projects</h3>
-                <p>Completed</p>
-              </div>
-
-              <div id="staData">
-                <div id="circle">
-                  <h2>100+</h2>
-                </div>
-                <h3>Hours</h3>
-                <p>of soft skills </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* <div
+        <div
           className="github-calender"
           id="Statistics"
           style={{ paddingTop: "100px" }}
@@ -1197,7 +875,7 @@ function App() {
           >
             <GitHubCalendar colorScheme="light" username="sudarshanmane" />
           </div>
-        </div> */}
+        </div>
 
         <div id="Projects" style={{ marginBottom: "-70px" }}>
           <div id="blogs" style={{ paddingTop: "80px" }}>

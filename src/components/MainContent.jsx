@@ -38,14 +38,10 @@ const MainContent = () => {
           />
         </div>
       </b>
-      {/* <div style={{ marginBottom: "5px" }}></div> */}
-
       <div style={{ marginBottom: "10px" }}></div>
       <a
-        href={
-          "https://drive.google.com/file/d/1YJp-baXFsTrbQFnxpoocjvR31WQ5Zi13/view?usp=sharing"
-        }
-        rel="noopener noreferrer"
+        href="https://drive.google.com/file/d/1-4CWsixeZoY4lfimOuxTIfLLCPuXnR64/view?usp=sharing"
+        target="_blank"
       >
         <Button style={{ background: "rgb(0, 5, 78)", color: "white" }}>
           Resume
