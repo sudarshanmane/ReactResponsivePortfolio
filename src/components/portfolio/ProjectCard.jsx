@@ -1,4 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
 import ProjectGallery from "./ProjectGallery";
 
 const projectAccents = ["#62e6b5", "#9b8cff", "#ffb454", "#51c8ff", "#ff7894"];
