@@ -9,7 +9,7 @@ const AboutMe = () => {
           <div className="about-col-1">
             <img
               id="myImage"
-              src={require("./../Images/sudarshan_1.png")}
+              src={require("./../images_1/sudarshan.jpeg")}
               alt=""
             />
           </div>
@@ -17,9 +17,7 @@ const AboutMe = () => {
             <h1 className="sub-title" id="aboute_me_title">
               About Me
             </h1>
-            <p
-              style={{ marginTop: "-25px", fontWeight: "600" }}
-            >
+            <p style={{ marginTop: "-25px", fontWeight: "600" }}>
               <ul>
                 <li>
                   MERN Stack Developer with 3 years of full-time experience
